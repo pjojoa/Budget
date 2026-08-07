@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Obra — presupuesto de obra civil (modelo Marval)",
+  "description": "Formato canonico de intercambio entre el motor de calculo, la app web y las integraciones. Los importes son costo directo.",
+  "type": "object",
+  "required": ["meta", "lineas"],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": ["proyecto", "sucursal", "anio_precios"],
+      "properties": {
+        "proyecto": { "type": "string" },
+        "version": { "type": "string", "examples": ["01", "02"] },
+        "estado": { "enum": ["BORRADOR", "EN_REVISION", "APROBADO", "SUPERSEDIDO"] },
+        "sucursal": {
+          "enum": ["BUCARAMANGA", "BOGOTA", "BARRANQUILLA", "CARTAGENA", "CALI", "ZIPAQUIRA", "RICAURTE"]
+        },
+        "anio_precios": { "type": "integer", "minimum": 2020, "maximum": 2040 },
+        "plantilla": { "enum": ["EDIFICACION", "URBANISMO_INTERNO", "URBANISMO_EXTERNO", "MIXTA"] },
+        "n_inmuebles": { "type": "integer", "minimum": 1 },
+        "area_inmueble_m2": { "type": "number", "exclusiveMinimum": 0 },
+        "elaboro": { "type": "string" },
+        "aprobo": { "type": "string" },
+        "fecha": { "type": "string", "format": "date" },
+        "total": { "type": "number", "description": "Calculado. No editar." },
+        "valor_inmueble": { "type": "number", "description": "Calculado." },
+        "valor_m2": { "type": "number", "description": "Calculado." }
+      }
+    },
+    "lineas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["codigo", "nivel", "cantidad"],
+        "properties": {
+          "codigo": {
+            "type": "string",
+            "pattern": "^\\d{8}(\\.\\d{4})?$",
+            "description": "CC SSS AAA [.SSSS]. La codificacion define la jerarquia."
+          },
+          "nivel": { "enum": [4, 5, 8, 10] },
+          "padre": { "type": ["string", "null"], "description": "Derivado del codigo. Redundante, para consumo externo." },
+          "descripcion": { "type": "string" },
+          "unidad": { "type": "string", "examples": ["UN", "M2", "M3", "ML", "KG"] },
+          "cantidad": {
+            "type": "number",
+            "description": "En N10 es la cantidad de obra. En N4/N5/N8 es MULTIPLICADOR (default 1)."
+          },
+          "tipo": { "enum": ["", "M.O", "T.C", "MAT", "EQ"], "description": "Clasificacion dominante del APU (solo N10)." },
+          "vu": { "type": "number", "description": "Calculado." },
+          "vt": { "type": "number", "description": "Calculado." },
+          "insumos": {
+            "type": "array",
+            "description": "Nivel 11. Solo presente en lineas de nivel 10.",
+            "items": {
+              "type": "object",
+              "required": ["codigo", "rendimiento", "precio"],
+              "properties": {
+                "codigo": {
+                  "type": "string",
+                  "pattern": "^((MO|TC|EQ) )?\\d+$",
+                  "description": "Codigo del maestro de articulos. El prefijo indica el tipo de recurso."
+                },
+                "descripcion": { "type": "string", "description": "Descripcion de obra; puede diferir de la del catalogo." },
+                "unidad": { "type": "string" },
+                "tipo": { "enum": ["MAT", "MO", "EQ", "TC"] },
+                "rendimiento": {
+                  "type": "number",
+                  "exclusiveMinimum": 0,
+                  "description": "Cantidad de insumo POR UNIDAD de la subactividad."
+                },
+                "precio": { "type": "number", "minimum": 0, "description": "Precio congelado al elaborar. Repreciar genera version nueva." },
+                "origen_precio": { "type": "string", "examples": ["CATALOGO", "MANUAL", "SUCURSAL_REFERENCIA"] }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "sucursales": 7,
+  "familias": {
+    "total": 74,
+    "sin_nombre": 67
+  },
+  "articulos": {
+    "total": 20784,
+    "inactivos_sugeridos": 15229,
+    "activos": 5555,
+    "pct_inactivos": 73.3
+  },
+  "cuentas": {
+    "total": 1829,
+    "del_maestro": 1748,
+    "alta_requerida": 81,
+    "sin_descripcion": 0,
+    "por_plantilla": {
+      "EDIFICACION": 1271,
+      "URBANISMO_INTERNO": 532,
+      "URBANISMO_EXTERNO": 26
+    }
+  },
+  "precios": {
+    "total": 14801,
+    "por_sucursal": {
+      "BUCARAMANGA": 2816,
+      "CARTAGENA": 2489,
+      "BOGOTA": 3228,
+      "BARRANQUILLA": 2187,
+      "CALI": 1880,
+      "ZIPAQUIRA": 1741,
+      "RICAURTE": 460
+    },
+    "anio_base_por_sucursal": {
+      "BUCARAMANGA": [
+        2025
+      ],
+      "CARTAGENA": [
+        2025
+      ],
+      "BOGOTA": [
+        2025
+      ],
+      "BARRANQUILLA": [
+        2025
+      ],
+      "CALI": [
+        2024,
+        2025
+      ],
+      "ZIPAQUIRA": [
+        2025
+      ],
+      "RICAURTE": [
+        2025
+      ]
+    },
+    "articulos_con_precio": 5461
+  },
+  "obras": {
+    "analizadas": [
+      "BAIKAL TORRE 3 V01"
+    ],
+    "insumos_problematicos": [
+      {
+        "obra": "BAIKAL TORRE 3 V01",
+        "n10": "21006001.1001",
+        "codigo": "TC 2161 60847",
+        "descripcion": "COORDINADOR SISO"
+      }
+    ]
+  }
+}

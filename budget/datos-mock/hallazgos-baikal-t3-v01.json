@@ -1,0 +1,938 @@
+[
+  {
+    "id": "h-001",
+    "severidad": "ERROR",
+    "regla": "E06_ART_INEXISTENTE",
+    "codigo": "21006001.1001/TC 2161 60847",
+    "mensaje": "Insumo no existe en el maestro de articulos",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-002",
+    "severidad": "ERROR",
+    "regla": "E07_CODIGO_MALFORMADO",
+    "codigo": "21006001.1001/TC 2161 60847",
+    "mensaje": "Codigo de insumo no cumple el patron [MO|TC|EQ ]NNNNN",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-003",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "02002003",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-004",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "02002003.1001",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-005",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "03001000",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-006",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "03001001",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-007",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "03001001.1001",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-008",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "03001004",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-009",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "03001004.1001",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-010",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "03004000",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-011",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "03004001",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-012",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "03004001.1097",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-013",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "05001000",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-014",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "05001005",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-015",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "05001005.1401",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-016",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "05007000",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-017",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "05007001",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-018",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "05007001.1002",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-019",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "05007002",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-020",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "05007002.1001",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-021",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "06003008.1001",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-022",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "06003018.1405",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-023",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "08001002.1003",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-024",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "09002004",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-025",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "09002004.1001",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-026",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "09006016",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-027",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "09006016.1001",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-028",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "10001003",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-029",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "10001003.1801",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-030",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "10001003.1803",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-031",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "10001003.1809",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-032",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "11001004",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-033",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "11001004.0100",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-034",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "11001007",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-035",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "11001007.1026",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-036",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "11001010",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-037",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "11001010.1001",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-038",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "11003005.1081",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-039",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "11007998.1001",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-040",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "12000000",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-041",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "12001000",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-042",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "12001020",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-043",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "12001020.0100",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-044",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "12002000",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-045",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "12002006",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-046",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "12002006.1001",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-047",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "12003000",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-048",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "12003001",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-049",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "12003001.0100",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-050",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "13001008",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-051",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "13001008.1001",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-052",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "13001015",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-053",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "13001015.1001",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-054",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "13003000",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-055",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "13003001",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-056",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "13003001.1001",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-057",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "13005000",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-058",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "13005003",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-059",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "13005003.1002",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-060",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "13005004",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-061",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "13005004.1001",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-062",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "13006006",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-063",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "13006006.1002",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-064",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "13006006.1003",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-065",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "14004001.1108",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-066",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "14004002.1310",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-067",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "14004003.1010",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-068",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "14004003.1118",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-069",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "15001004.1021",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-070",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "15001005.1018",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-071",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "15001006.1010",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-072",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "16002002",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-073",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "16002002.1001",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-074",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "16002003",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-075",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "16002003.1001",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-076",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "19001002.1401",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-077",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "19001005",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-078",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "19001005.1410",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-079",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "19001006",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-080",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "19001006.1401",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-081",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "19011000",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-082",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "19011001",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-083",
+    "severidad": "AVISO",
+    "regla": "A01_FUERA_MAESTRO",
+    "codigo": "19011001.1001",
+    "mensaje": "Cuenta no existe en el maestro de cuentas",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-084",
+    "severidad": "AVISO",
+    "regla": "A06_PRECIO_INCONSISTENTE",
+    "codigo": "MO 70115",
+    "mensaje": "Mismo insumo con 2 precios distintos: 400.0, 918.76",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-085",
+    "severidad": "AVISO",
+    "regla": "A06_PRECIO_INCONSISTENTE",
+    "codigo": "TC 06115",
+    "mensaje": "Mismo insumo con 3 precios distintos: 10000000.0, 1619674.0, 9000000.0",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-086",
+    "severidad": "AVISO",
+    "regla": "A06_PRECIO_INCONSISTENTE",
+    "codigo": "TC 06311",
+    "mensaje": "Mismo insumo con 2 precios distintos: 8166400.0, 93500.0",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-087",
+    "severidad": "AVISO",
+    "regla": "A06_PRECIO_INCONSISTENTE",
+    "codigo": "TC 06716",
+    "mensaje": "Mismo insumo con 2 precios distintos: 1020800.0, 5742000.0",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-088",
+    "severidad": "AVISO",
+    "regla": "A06_PRECIO_INCONSISTENTE",
+    "codigo": "TC 14201",
+    "mensaje": "Mismo insumo con 3 precios distintos: 466655.0, 508769.0, 563429.0",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-089",
+    "severidad": "AVISO",
+    "regla": "A06_PRECIO_INCONSISTENTE",
+    "codigo": "TC 15204",
+    "mensaje": "Mismo insumo con 2 precios distintos: 1032539.0, 2168786.0",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-090",
+    "severidad": "AVISO",
+    "regla": "A06_PRECIO_INCONSISTENTE",
+    "codigo": "TC 15601",
+    "mensaje": "Mismo insumo con 7 precios distintos: 194877.0, 23985.0, 24734.0, 3298.0, 38975.0",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-091",
+    "severidad": "AVISO",
+    "regla": "A06_PRECIO_INCONSISTENTE",
+    "codigo": "TC 15702",
+    "mensaje": "Mismo insumo con 5 precios distintos: 439348.0, 587443.0, 607189.0, 617062.0, 626935.0",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-092",
+    "severidad": "AVISO",
+    "regla": "A06_PRECIO_INCONSISTENTE",
+    "codigo": "TC 18201",
+    "mensaje": "Mismo insumo con 2 precios distintos: 237000.0, 330000.0",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-093",
+    "severidad": "AVISO",
+    "regla": "A06_PRECIO_INCONSISTENTE",
+    "codigo": "TC 24608",
+    "mensaje": "Mismo insumo con 2 precios distintos: 10000000.0, 906720.0",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-094",
+    "severidad": "AVISO",
+    "regla": "A06_PRECIO_INCONSISTENTE",
+    "codigo": "TC 60168",
+    "mensaje": "Mismo insumo con 3 precios distintos: 1672062.0, 2600985.0, 3158339.0",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-095",
+    "severidad": "AVISO",
+    "regla": "A06_PRECIO_INCONSISTENTE",
+    "codigo": "TC 60220",
+    "mensaje": "Mismo insumo con 15 precios distintos: 1048189.0, 1079018.0, 222665.0, 247406.0, 292614.0",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-096",
+    "severidad": "AVISO",
+    "regla": "A06_PRECIO_INCONSISTENTE",
+    "codigo": "TC 60338",
+    "mensaje": "Mismo insumo con 2 precios distintos: 104000.0, 162500.0",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-097",
+    "severidad": "AVISO",
+    "regla": "A06_PRECIO_INCONSISTENTE",
+    "codigo": "TC 60346",
+    "mensaje": "Mismo insumo con 2 precios distintos: 212600.0, 316084.0",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-098",
+    "severidad": "AVISO",
+    "regla": "A06_PRECIO_INCONSISTENTE",
+    "codigo": "TC 60503",
+    "mensaje": "Mismo insumo con 4 precios distintos: 1500000.0, 15000000.0, 2631000.0, 35000000.0",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-099",
+    "severidad": "AVISO",
+    "regla": "A06_PRECIO_INCONSISTENTE",
+    "codigo": "TC 60910",
+    "mensaje": "Mismo insumo con 3 precios distintos: 127722.0, 154770.0, 210366.0",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-100",
+    "severidad": "AVISO",
+    "regla": "A06_PRECIO_INCONSISTENTE",
+    "codigo": "TC 70691",
+    "mensaje": "Mismo insumo con 2 precios distintos: 6922.0, 69550.0",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-101",
+    "severidad": "AVISO",
+    "regla": "A06_PRECIO_INCONSISTENTE",
+    "codigo": "TC 71144",
+    "mensaje": "Mismo insumo con 2 precios distintos: 5200.0, 5233.0",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-102",
+    "severidad": "AVISO",
+    "regla": "A06_PRECIO_INCONSISTENTE",
+    "codigo": "TC 71145",
+    "mensaje": "Mismo insumo con 2 precios distintos: 6000.0, 6064.0",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-103",
+    "severidad": "AVISO",
+    "regla": "A06_PRECIO_INCONSISTENTE",
+    "codigo": "TC 71146",
+    "mensaje": "Mismo insumo con 3 precios distintos: 3485.0, 4800.0, 5920.0",
+    "estado": "ABIERTO",
+    "justificacion": null
+  },
+  {
+    "id": "h-104",
+    "severidad": "AVISO",
+    "regla": "A06_PRECIO_INCONSISTENTE",
+    "codigo": "TC 71180",
+    "mensaje": "Mismo insumo con 2 precios distintos: 15000000.0, 18212800.0",
+    "estado": "ABIERTO",
+    "justificacion": null
+  }
+]

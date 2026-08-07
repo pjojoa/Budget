@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+/*
+ * Sistema de color de Budget.
+ * Principio rector: el color solo existe cuando significa algo. La UI es casi
+ * monocroma en grafito; los únicos colores saturados son las señales
+ * semánticas y el cobalto de foco, reservado exclusivamente a "dónde estás".
+ */
+
+:root,
+[data-tema="oscuro"] {
+  --mv-lienzo: #0e1113;
+  --mv-panel: #16191c;
+  --mv-fila: #1e2226;
+  --mv-hairline: #2a2f35;
+  --mv-tinta: #e6e9ec;
+  --mv-tinta-2: #9aa3ab;
+  --mv-tinta-3: #7c858d;
+  color-scheme: dark;
+}
+
+[data-tema="claro"] {
+  --mv-lienzo: #fbfbf9;
+  --mv-panel: #ffffff;
+  --mv-fila: #f3f3f0;
+  --mv-hairline: #e4e6e3;
+  --mv-tinta: #16191c;
+  --mv-tinta-2: #5a6169;
+  /* #8b9299 daba ~3.1:1 sobre blanco (falla AA); se oscurece a ~4.7:1,
+     igual que se hizo con --mv-aviso más abajo. */
+  --mv-tinta-3: #6e747b;
+  color-scheme: light;
+}
+
+/* invariantes: iguales en ambos temas */
+:root {
+  --mv-foco: #4d8df0;
+  --mv-error: #e5484d;
+  --mv-aviso: #e5a03a;
+  --mv-aumento: var(--mv-error);
+  --mv-disminucion: #3fa66a;
+}
+
+/* el ámbar falla AA sobre blanco: se oscurece solo en tema claro */
+[data-tema="claro"] {
+  --mv-aviso: #b0741f;
+}
+
+/* tokens no cromáticos */
+:root {
+  --mv-altura-fila: 28px;
+  --mv-alto-control: 26px;
+  --mv-paso-rail: 14px;
+  --mv-duracion-rapida: 90ms;
+  --mv-duracion-base: 120ms;
+}
+
+@theme inline {
+  --color-lienzo: var(--mv-lienzo);
+  --color-panel: var(--mv-panel);
+  --color-fila: var(--mv-fila);
+  --color-hairline: var(--mv-hairline);
+  --color-tinta: var(--mv-tinta);
+  --color-tinta-2: var(--mv-tinta-2);
+  --color-tinta-3: var(--mv-tinta-3);
+  --color-foco: var(--mv-foco);
+  --color-error: var(--mv-error);
+  --color-aviso: var(--mv-aviso);
+  --color-aumento: var(--mv-aumento);
+  --color-disminucion: var(--mv-disminucion);
+
+  --font-ui: var(--fuente-ui);
+  --font-mono: var(--fuente-mono);
+  --font-condensada: var(--fuente-condensada);
+
+  --spacing: 4px;
+  --radius-none: 0px;
+  --radius-sm: 2px;
+  --radius-md: 3px;
+}
+
+@layer base {
+  * {
+    border-color: var(--color-hairline);
+  }
+
+  html {
+    color-scheme: light dark;
+  }
+
+  body {
+    background: var(--color-lienzo);
+    color: var(--color-tinta);
+  }
+
+  ::selection {
+    background: color-mix(in oklab, var(--color-foco) 30%, transparent);
+  }
+}
+
+@layer utilities {
+  /* cifras: obligatoria en toda celda numérica */
+  .cifra {
+    font-variant-numeric: tabular-nums lining-nums;
+    font-feature-settings: "tnum" 1, "lnum" 1;
+    text-align: right;
+    font-family: var(--font-mono);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

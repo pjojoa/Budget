@@ -1,0 +1,10 @@
+# Estado local de Claude Code (no forma parte del proyecto)
+.claude/
+
+# SO
+.DS_Store
+Thumbs.db
+
+# Python (skill presupuesto-obra)
+__pycache__/
+*.pyc

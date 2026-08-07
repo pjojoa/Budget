@@ -1,0 +1,6741 @@
+[
+  {
+    "codigo": "MO 71196",
+    "descripcion": "EST PLACA H>12 PISOS",
+    "unidad": "M2",
+    "tipo": "MO",
+    "cantidad": "15622.56",
+    "precio": "84000",
+    "importe": "1312295040",
+    "incidenciaPct": "4.6209",
+    "acumuladoPct": "4.6209",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "84000.0"
+    ]
+  },
+  {
+    "codigo": "TC 12303",
+    "descripcion": "INST. INTERNAS T.C.",
+    "unidad": "UN",
+    "tipo": "TC",
+    "cantidad": "144",
+    "precio": "7311768",
+    "importe": "1052894592",
+    "incidenciaPct": "3.7075",
+    "acumuladoPct": "8.3284",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "7311768.0"
+    ]
+  },
+  {
+    "codigo": "381479",
+    "descripcion": "PORCELANATO MICROCRISTAL 60*60",
+    "unidad": "M2",
+    "tipo": "MAT",
+    "cantidad": "12294.3744",
+    "precio": "81800",
+    "importe": "1005679825.92",
+    "incidenciaPct": "3.5412",
+    "acumuladoPct": "11.8696",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "81800.0"
+    ]
+  },
+  {
+    "codigo": "192019",
+    "descripcion": "CONCRETO 3000 1\" TREMIE",
+    "unidad": "M3",
+    "tipo": "MAT",
+    "cantidad": "1795.904028",
+    "precio": "461400",
+    "importe": "828630118.52",
+    "incidenciaPct": "2.9178",
+    "acumuladoPct": "14.7874",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "461400.0"
+    ]
+  },
+  {
+    "codigo": "TC 60220",
+    "descripcion": "V01 - 1.20*1.60",
+    "unidad": "UN",
+    "tipo": "TC",
+    "cantidad": "1185.999984",
+    "precio": "703832",
+    "importe": "739370901.6",
+    "incidenciaPct": "2.6035",
+    "acumuladoPct": "17.3909",
+    "apariciones": 15,
+    "preciosDistintos": [
+      "1048189.0",
+      "1079018.0",
+      "222665.0",
+      "247406.0",
+      "292614.0",
+      "296887.0",
+      "334416.0",
+      "400000.0",
+      "414043.0",
+      "700000.0",
+      "703832.0",
+      "755463.0",
+      "830129.0",
+      "924872.0",
+      "955701.0"
+    ]
+  },
+  {
+    "codigo": "TC 60910",
+    "descripcion": "CIM EXC PILOTE - D:0.6(20.45m)",
+    "unidad": "ML",
+    "tipo": "TC",
+    "cantidad": "3803.7",
+    "precio": "127722",
+    "importe": "681220086.41",
+    "incidenciaPct": "2.3987",
+    "acumuladoPct": "19.7896",
+    "apariciones": 3,
+    "preciosDistintos": [
+      "127722.0",
+      "154770.0",
+      "210366.0"
+    ]
+  },
+  {
+    "codigo": "274329",
+    "descripcion": "MALLA ELECTROSOLDADA ESTANDAR",
+    "unidad": "KG",
+    "tipo": "MAT",
+    "cantidad": "123979.205673",
+    "precio": "5300",
+    "importe": "657089790.07",
+    "incidenciaPct": "2.3138",
+    "acumuladoPct": "22.1033",
+    "apariciones": 4,
+    "preciosDistintos": [
+      "5300.0"
+    ]
+  },
+  {
+    "codigo": "273006",
+    "descripcion": "HIERRO PR-60 CORRU/FIG 3/8\"",
+    "unidad": "KG",
+    "tipo": "MAT",
+    "cantidad": "132625.940142",
+    "precio": "4900",
+    "importe": "649867106.69",
+    "incidenciaPct": "2.2883",
+    "acumuladoPct": "24.3917",
+    "apariciones": 6,
+    "preciosDistintos": [
+      "4900.0"
+    ]
+  },
+  {
+    "codigo": "192154",
+    "descripcion": "CONCRETO 3000 1/2\" OUTIN MURO",
+    "unidad": "M3",
+    "tipo": "MAT",
+    "cantidad": "1229.900916",
+    "precio": "481700",
+    "importe": "592443271.01",
+    "incidenciaPct": "2.0861",
+    "acumuladoPct": "26.4778",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "481700.0"
+    ]
+  },
+  {
+    "codigo": "TC 70497",
+    "descripcion": "MESON COCINA",
+    "unidad": "M2",
+    "tipo": "TC",
+    "cantidad": "1022.1408",
+    "precio": "541693",
+    "importe": "553686516.37",
+    "incidenciaPct": "1.9497",
+    "acumuladoPct": "28.4274",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "541693.0"
+    ]
+  },
+  {
+    "codigo": "191087",
+    "descripcion": "CONCRETO 4000 1/2\" OUTINO MURO",
+    "unidad": "M3",
+    "tipo": "MAT",
+    "cantidad": "984.782837",
+    "precio": "539200",
+    "importe": "530994905.6",
+    "incidenciaPct": "1.8698",
+    "acumuladoPct": "30.2972",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "539200.0"
+    ]
+  },
+  {
+    "codigo": "192328",
+    "descripcion": "CONCRETO 7000 1/2 OUTIN MURO",
+    "unidad": "M3",
+    "tipo": "MAT",
+    "cantidad": "786.124151",
+    "precio": "661100",
+    "importe": "519706675.94",
+    "incidenciaPct": "1.83",
+    "acumuladoPct": "32.1272",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "661100.0"
+    ]
+  },
+  {
+    "codigo": "192108",
+    "descripcion": "CONCRETO 3000 1/2\" BOMBEAB",
+    "unidad": "M3",
+    "tipo": "MAT",
+    "cantidad": "1153.14889",
+    "precio": "448200",
+    "importe": "516841332.68",
+    "incidenciaPct": "1.8199",
+    "acumuladoPct": "33.9471",
+    "apariciones": 3,
+    "preciosDistintos": [
+      "448200.0"
+    ]
+  },
+  {
+    "codigo": "192351",
+    "descripcion": "CONCRETO 6000 SIUF 1/2\"",
+    "unidad": "M3",
+    "tipo": "MAT",
+    "cantidad": "736.722635",
+    "precio": "647800",
+    "importe": "477248922.98",
+    "incidenciaPct": "1.6805",
+    "acumuladoPct": "35.6276",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "647800.0"
+    ]
+  },
+  {
+    "codigo": "TC 14201",
+    "descripcion": "PT-01 SUM/INS PUERTA PPAL+CERR",
+    "unidad": "UN",
+    "tipo": "TC",
+    "cantidad": "936",
+    "precio": "563429",
+    "importe": "468917784",
+    "incidenciaPct": "1.6512",
+    "acumuladoPct": "37.2788",
+    "apariciones": 3,
+    "preciosDistintos": [
+      "466655.0",
+      "508769.0",
+      "563429.0"
+    ]
+  },
+  {
+    "codigo": "192373",
+    "descripcion": "CONCRETO 5000 SIU 1/2",
+    "unidad": "M3",
+    "tipo": "MAT",
+    "cantidad": "738.274336",
+    "precio": "614900",
+    "importe": "453964889.11",
+    "incidenciaPct": "1.5985",
+    "acumuladoPct": "38.8773",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "614900.0"
+    ]
+  },
+  {
+    "codigo": "TC 16301",
+    "descripcion": "ASCENSOR SUMINISTRO",
+    "unidad": "UN",
+    "tipo": "TC",
+    "cantidad": "36",
+    "precio": "12426414",
+    "importe": "447350904",
+    "incidenciaPct": "1.5752",
+    "acumuladoPct": "40.4525",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "12426414.0"
+    ]
+  },
+  {
+    "codigo": "TC 14304",
+    "descripcion": "MB INF COCINA SUM/INST",
+    "unidad": "UN",
+    "tipo": "TC",
+    "cantidad": "914.4",
+    "precio": "482993",
+    "importe": "441648799.2",
+    "incidenciaPct": "1.5551",
+    "acumuladoPct": "42.0077",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "482993.0"
+    ]
+  },
+  {
+    "codigo": "TC 06306",
+    "descripcion": "ALQ-FORMALETA METALICA",
+    "unidad": "UN",
+    "tipo": "TC",
+    "cantidad": "144",
+    "precio": "2952000",
+    "importe": "425088000",
+    "incidenciaPct": "1.4968",
+    "acumuladoPct": "43.5045",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "2952000.0"
+    ]
+  },
+  {
+    "codigo": "273002",
+    "descripcion": "HIERRO PR-60 CORRU/FIG 1/2\"",
+    "unidad": "KG",
+    "tipo": "MAT",
+    "cantidad": "88084.357758",
+    "precio": "4800",
+    "importe": "422804917.24",
+    "incidenciaPct": "1.4888",
+    "acumuladoPct": "44.9933",
+    "apariciones": 7,
+    "preciosDistintos": [
+      "4800.0"
+    ]
+  },
+  {
+    "codigo": "273004",
+    "descripcion": "HIERRO 1/4 PDR-60 FIG.",
+    "unidad": "KG",
+    "tipo": "MAT",
+    "cantidad": "87682.478753",
+    "precio": "4800",
+    "importe": "420875898.01",
+    "incidenciaPct": "1.482",
+    "acumuladoPct": "46.4753",
+    "apariciones": 3,
+    "preciosDistintos": [
+      "4800.0"
+    ]
+  },
+  {
+    "codigo": "TC 14301",
+    "descripcion": "CLOSET SUM/INST ML",
+    "unidad": "UN",
+    "tipo": "TC",
+    "cantidad": "463.68",
+    "precio": "866272",
+    "importe": "401673000.96",
+    "incidenciaPct": "1.4144",
+    "acumuladoPct": "47.8897",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "866272.0"
+    ]
+  },
+  {
+    "codigo": "TC 60168",
+    "descripcion": "PV-02 PTA VENTANA 1.80x2.25",
+    "unidad": "UN",
+    "tipo": "TC",
+    "cantidad": "144",
+    "precio": "1672062",
+    "importe": "361165356",
+    "incidenciaPct": "1.2717",
+    "acumuladoPct": "49.1614",
+    "apariciones": 3,
+    "preciosDistintos": [
+      "1672062.0",
+      "2600985.0",
+      "3158339.0"
+    ]
+  },
+  {
+    "codigo": "273008",
+    "descripcion": "HIERRO PR-60 CORRU/FIG 7/8\"",
+    "unidad": "KG",
+    "tipo": "MAT",
+    "cantidad": "71534.25453",
+    "precio": "4900",
+    "importe": "350517847.2",
+    "incidenciaPct": "1.2343",
+    "acumuladoPct": "50.3956",
+    "apariciones": 4,
+    "preciosDistintos": [
+      "4900.0"
+    ]
+  },
+  {
+    "codigo": "TC 60338",
+    "descripcion": "M.SECO SUPERBOARD 1C M2",
+    "unidad": "M2",
+    "tipo": "TC",
+    "cantidad": "3150.72",
+    "precio": "104000",
+    "importe": "346291920",
+    "incidenciaPct": "1.2194",
+    "acumuladoPct": "51.615",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "104000.0",
+      "162500.0"
+    ]
+  },
+  {
+    "codigo": "TC 19303",
+    "descripcion": "GRANIPLAST FACHAD/PFIJO/VACIOS",
+    "unidad": "M2",
+    "tipo": "TC",
+    "cantidad": "19262.88",
+    "precio": "17926",
+    "importe": "345306386.88",
+    "incidenciaPct": "1.2159",
+    "acumuladoPct": "52.8309",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "17926.0"
+    ]
+  },
+  {
+    "codigo": "MO 70948",
+    "descripcion": "FRISO RELLENO MURO EST/PLACA",
+    "unidad": "M2",
+    "tipo": "MO",
+    "cantidad": "23493.6",
+    "precio": "14500",
+    "importe": "340657200",
+    "incidenciaPct": "1.1995",
+    "acumuladoPct": "54.0304",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "14500.0"
+    ]
+  },
+  {
+    "codigo": "273001",
+    "descripcion": "HIERRO FIGURADO 1\" -PDR 60",
+    "unidad": "KG",
+    "tipo": "MAT",
+    "cantidad": "68566.919241",
+    "precio": "4800",
+    "importe": "329121212.36",
+    "incidenciaPct": "1.1589",
+    "acumuladoPct": "55.1894",
+    "apariciones": 4,
+    "preciosDistintos": [
+      "4800.0"
+    ]
+  },
+  {
+    "codigo": "192024",
+    "descripcion": "BOMBEO CONCRETO",
+    "unidad": "M3",
+    "tipo": "MAT",
+    "cantidad": "4176.27015",
+    "precio": "76400",
+    "importe": "319067039.48",
+    "incidenciaPct": "1.1235",
+    "acumuladoPct": "56.3129",
+    "apariciones": 7,
+    "preciosDistintos": [
+      "76400.0"
+    ]
+  },
+  {
+    "codigo": "TC 60758",
+    "descripcion": "BAR-01 BARANDA VIDRIO TEMPLADO",
+    "unidad": "ML",
+    "tipo": "TC",
+    "cantidad": "540.72",
+    "precio": "508902",
+    "importe": "275173489.44",
+    "incidenciaPct": "0.9689",
+    "acumuladoPct": "57.2818",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "508902.0"
+    ]
+  },
+  {
+    "codigo": "TC 14309",
+    "descripcion": "VESTIER SUM-INST ML",
+    "unidad": "UN",
+    "tipo": "TC",
+    "cantidad": "311.04",
+    "precio": "883235",
+    "importe": "274721414.4",
+    "incidenciaPct": "0.9674",
+    "acumuladoPct": "58.2492",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "883235.0"
+    ]
+  },
+  {
+    "codigo": "MO 60094",
+    "descripcion": "PISO PORCELANATO INTERIOR",
+    "unidad": "M2",
+    "tipo": "MO",
+    "cantidad": "11695.68",
+    "precio": "23000",
+    "importe": "269000640",
+    "incidenciaPct": "0.9472",
+    "acumuladoPct": "59.1964",
+    "apariciones": 4,
+    "preciosDistintos": [
+      "23000.0"
+    ]
+  },
+  {
+    "codigo": "TC 20212",
+    "descripcion": "SALARIOS TEMPORALES",
+    "unidad": "UN",
+    "tipo": "TC",
+    "cantidad": "20",
+    "precio": "13195009",
+    "importe": "263900180",
+    "incidenciaPct": "0.9293",
+    "acumuladoPct": "60.1256",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "13195009.0"
+    ]
+  },
+  {
+    "codigo": "MO 06111",
+    "descripcion": "EST M. SUELTO / ANTEPECHO CUB",
+    "unidad": "M2",
+    "tipo": "MO",
+    "cantidad": "7216.348559",
+    "precio": "35700",
+    "importe": "257623643.56",
+    "incidenciaPct": "0.9072",
+    "acumuladoPct": "61.0328",
+    "apariciones": 3,
+    "preciosDistintos": [
+      "35700.0"
+    ]
+  },
+  {
+    "codigo": "TC 60346",
+    "descripcion": "BAR-05 PARALES VERTICALES",
+    "unidad": "ML",
+    "tipo": "TC",
+    "cantidad": "825.894",
+    "precio": "316084",
+    "importe": "239414616.5",
+    "incidenciaPct": "0.843",
+    "acumuladoPct": "61.8758",
+    "apariciones": 3,
+    "preciosDistintos": [
+      "212600.0",
+      "316084.0"
+    ]
+  },
+  {
+    "codigo": "TC 14307",
+    "descripcion": "MB SUP COCINA SUM/INSTA ML",
+    "unidad": "UN",
+    "tipo": "TC",
+    "cantidad": "519.84",
+    "precio": "454780",
+    "importe": "236412835.2",
+    "incidenciaPct": "0.8325",
+    "acumuladoPct": "62.7083",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "454780.0"
+    ]
+  },
+  {
+    "codigo": "TC 71145",
+    "descripcion": "PINTURA 2 MANO",
+    "unidad": "M2",
+    "tipo": "TC",
+    "cantidad": "37877.76",
+    "precio": "6000",
+    "importe": "227897118.72",
+    "incidenciaPct": "0.8025",
+    "acumuladoPct": "63.5107",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "6000.0",
+      "6064.0"
+    ]
+  },
+  {
+    "codigo": "TC 71146",
+    "descripcion": "PINTURA 3 MANO",
+    "unidad": "M2",
+    "tipo": "TC",
+    "cantidad": "45016.7634",
+    "precio": "4800",
+    "importe": "217727452.45",
+    "incidenciaPct": "0.7667",
+    "acumuladoPct": "64.2774",
+    "apariciones": 3,
+    "preciosDistintos": [
+      "3485.0",
+      "4800.0",
+      "5920.0"
+    ]
+  },
+  {
+    "codigo": "101187",
+    "descripcion": "SANIT ALONGADO MONTECARLO BLCO",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "360",
+    "precio": "600600",
+    "importe": "216216000",
+    "incidenciaPct": "0.7613",
+    "acumuladoPct": "65.0388",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "600600.0"
+    ]
+  },
+  {
+    "codigo": "MO 70181",
+    "descripcion": "EST RESANES FACH+PATIO+FOS",
+    "unidad": "M2",
+    "tipo": "MO",
+    "cantidad": "15840",
+    "precio": "12800",
+    "importe": "202752000",
+    "incidenciaPct": "0.7139",
+    "acumuladoPct": "65.7527",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "12800.0"
+    ]
+  },
+  {
+    "codigo": "151001",
+    "descripcion": "CEMENTO GRIS",
+    "unidad": "BT",
+    "tipo": "MAT",
+    "cantidad": "6448.033555",
+    "precio": "30800",
+    "importe": "198599433.51",
+    "incidenciaPct": "0.6993",
+    "acumuladoPct": "66.452",
+    "apariciones": 17,
+    "preciosDistintos": [
+      "30800.0"
+    ]
+  },
+  {
+    "codigo": "MO 06405",
+    "descripcion": "EST DINTELES ESTRUCTURALES",
+    "unidad": "ML",
+    "tipo": "MO",
+    "cantidad": "5005.44",
+    "precio": "39000",
+    "importe": "195212160",
+    "incidenciaPct": "0.6874",
+    "acumuladoPct": "67.1394",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "39000.0"
+    ]
+  },
+  {
+    "codigo": "TC 71144",
+    "descripcion": "PINTURA 1 MANO",
+    "unidad": "M2",
+    "tipo": "TC",
+    "cantidad": "36663.84",
+    "precio": "5200",
+    "importe": "190977099.84",
+    "incidenciaPct": "0.6725",
+    "acumuladoPct": "67.8119",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "5200.0",
+      "5233.0"
+    ]
+  },
+  {
+    "codigo": "TC 19201",
+    "descripcion": "PINT APTO ESTUCO",
+    "unidad": "M2",
+    "tipo": "TC",
+    "cantidad": "25571.1456",
+    "precio": "7400",
+    "importe": "189226477.44",
+    "incidenciaPct": "0.6663",
+    "acumuladoPct": "68.4782",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "7400.0"
+    ]
+  },
+  {
+    "codigo": "191278",
+    "descripcion": "CONCRETO 3000 1\" BOMBEABLE 6\"",
+    "unidad": "M3",
+    "tipo": "MAT",
+    "cantidad": "416.407",
+    "precio": "441000",
+    "importe": "183635487",
+    "incidenciaPct": "0.6466",
+    "acumuladoPct": "69.1248",
+    "apariciones": 3,
+    "preciosDistintos": [
+      "441000.0"
+    ]
+  },
+  {
+    "codigo": "TC 08102",
+    "descripcion": "CIELO RASO REGULAR DRYWALL",
+    "unidad": "M2",
+    "tipo": "TC",
+    "cantidad": "1828.8",
+    "precio": "97600",
+    "importe": "178490880",
+    "incidenciaPct": "0.6285",
+    "acumuladoPct": "69.7533",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "97600.0"
+    ]
+  },
+  {
+    "codigo": "TC 60339",
+    "descripcion": "M.SECO SUPERBOARD ML",
+    "unidad": "ML",
+    "tipo": "TC",
+    "cantidad": "3215.52",
+    "precio": "55300",
+    "importe": "177818256",
+    "incidenciaPct": "0.6261",
+    "acumuladoPct": "70.3794",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "55300.0"
+    ]
+  },
+  {
+    "codigo": "MO 09105",
+    "descripcion": "CUB MORTERO AFINADO",
+    "unidad": "M2",
+    "tipo": "MO",
+    "cantidad": "14234.78",
+    "precio": "12200",
+    "importe": "173664316",
+    "incidenciaPct": "0.6115",
+    "acumuladoPct": "70.9909",
+    "apariciones": 4,
+    "preciosDistintos": [
+      "12200.0"
+    ]
+  },
+  {
+    "codigo": "TC 20213",
+    "descripcion": "VIGILANCIA PROYECTO",
+    "unidad": "UN",
+    "tipo": "TC",
+    "cantidad": "20",
+    "precio": "8250278.89",
+    "importe": "165005577.8",
+    "incidenciaPct": "0.581",
+    "acumuladoPct": "71.572",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "8250278.89"
+    ]
+  },
+  {
+    "codigo": "191248",
+    "descripcion": "CONCRETO 5000 1/2\" BOMBEA",
+    "unidad": "M3",
+    "tipo": "MAT",
+    "cantidad": "313.011693",
+    "precio": "524600",
+    "importe": "164205933.96",
+    "incidenciaPct": "0.5782",
+    "acumuladoPct": "72.1502",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "524600.0"
+    ]
+  },
+  {
+    "codigo": "91325",
+    "descripcion": "HORNO HM6017GWAI0 MABE",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "144",
+    "precio": "1122100",
+    "importe": "161582400",
+    "incidenciaPct": "0.569",
+    "acumuladoPct": "72.7191",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "1122100.0"
+    ]
+  },
+  {
+    "codigo": "TC 60194",
+    "descripcion": "ING. DIRECTOR DE PROYECTO",
+    "unidad": "UN",
+    "tipo": "TC",
+    "cantidad": "20",
+    "precio": "8003223",
+    "importe": "160064460",
+    "incidenciaPct": "0.5636",
+    "acumuladoPct": "73.2828",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "8003223.0"
+    ]
+  },
+  {
+    "codigo": "192368",
+    "descripcion": "CONCRETO 4500 1/2\" BOMBEAB",
+    "unidad": "M3",
+    "tipo": "MAT",
+    "cantidad": "312.214942",
+    "precio": "505700",
+    "importe": "157887096.21",
+    "incidenciaPct": "0.556",
+    "acumuladoPct": "73.8387",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "505700.0"
+    ]
+  },
+  {
+    "codigo": "MO 71197",
+    "descripcion": "EST RESANE PLACA/MURO",
+    "unidad": "M2",
+    "tipo": "MO",
+    "cantidad": "15622.56",
+    "precio": "10100",
+    "importe": "157787856",
+    "incidenciaPct": "0.5556",
+    "acumuladoPct": "74.3943",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "10100.0"
+    ]
+  },
+  {
+    "codigo": "TC 15702",
+    "descripcion": "DV - 0.89*1.80",
+    "unidad": "UN",
+    "tipo": "TC",
+    "cantidad": "288",
+    "precio": "439348",
+    "importe": "157434713.84",
+    "incidenciaPct": "0.5544",
+    "acumuladoPct": "74.9487",
+    "apariciones": 5,
+    "preciosDistintos": [
+      "439348.0",
+      "587443.0",
+      "607189.0",
+      "617062.0",
+      "626935.0"
+    ]
+  },
+  {
+    "codigo": "TC 19302",
+    "descripcion": "GRANIPLAST EMPASTE FACHADA",
+    "unidad": "M2",
+    "tipo": "TC",
+    "cantidad": "19262.88",
+    "precio": "8032",
+    "importe": "154719452.16",
+    "incidenciaPct": "0.5448",
+    "acumuladoPct": "75.4935",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "8032.0"
+    ]
+  },
+  {
+    "codigo": "TC 07108",
+    "descripcion": "CUB IMP PLACA EDIF.",
+    "unidad": "M2",
+    "tipo": "TC",
+    "cantidad": "1029.034",
+    "precio": "146547",
+    "importe": "150801845.6",
+    "incidenciaPct": "0.531",
+    "acumuladoPct": "76.0245",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "146547.0"
+    ]
+  },
+  {
+    "codigo": "191136",
+    "descripcion": "CONCRETO 4000 1/2\" BOMBEA",
+    "unidad": "M3",
+    "tipo": "MAT",
+    "cantidad": "312.214942",
+    "precio": "480900",
+    "importe": "150144165.65",
+    "incidenciaPct": "0.5287",
+    "acumuladoPct": "76.5532",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "480900.0"
+    ]
+  },
+  {
+    "codigo": "TC 02122",
+    "descripcion": "CIM CARG/RET MATERIAL SOBRANT",
+    "unidad": "M3",
+    "tipo": "TC",
+    "cantidad": "2243.086902",
+    "precio": "66115",
+    "importe": "148301690.53",
+    "incidenciaPct": "0.5222",
+    "acumuladoPct": "77.0754",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "66115.0"
+    ]
+  },
+  {
+    "codigo": "TC 60963",
+    "descripcion": "SUMINISTRO DE GAS TC",
+    "unidad": "UN",
+    "tipo": "TC",
+    "cantidad": "144",
+    "precio": "977000",
+    "importe": "140688000",
+    "incidenciaPct": "0.4954",
+    "acumuladoPct": "77.5708",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "977000.0"
+    ]
+  },
+  {
+    "codigo": "275006",
+    "descripcion": "ALAMBRE NEGRO CAL. 18",
+    "unidad": "KG",
+    "tipo": "MAT",
+    "cantidad": "19110.171732",
+    "precio": "7000",
+    "importe": "133771202.12",
+    "incidenciaPct": "0.471",
+    "acumuladoPct": "78.0418",
+    "apariciones": 12,
+    "preciosDistintos": [
+      "7000.0"
+    ]
+  },
+  {
+    "codigo": "71033",
+    "descripcion": "ARENA",
+    "unidad": "M3",
+    "tipo": "MAT",
+    "cantidad": "1829.801877",
+    "precio": "72300",
+    "importe": "132294675.74",
+    "incidenciaPct": "0.4658",
+    "acumuladoPct": "78.5077",
+    "apariciones": 13,
+    "preciosDistintos": [
+      "72300.0"
+    ]
+  },
+  {
+    "codigo": "TC 18201",
+    "descripcion": "TC ASCENSOR VIDRIO",
+    "unidad": "M2",
+    "tipo": "TC",
+    "cantidad": "553.52",
+    "precio": "330000",
+    "importe": "131370240",
+    "incidenciaPct": "0.4626",
+    "acumuladoPct": "78.9702",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "237000.0",
+      "330000.0"
+    ]
+  },
+  {
+    "codigo": "274269",
+    "descripcion": "MALLA ELECTROSOLDADA ESPECIAL",
+    "unidad": "KG",
+    "tipo": "MAT",
+    "cantidad": "23573.63455",
+    "precio": "5500",
+    "importe": "129654990.03",
+    "incidenciaPct": "0.4565",
+    "acumuladoPct": "79.4268",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "5500.0"
+    ]
+  },
+  {
+    "codigo": "MO 60763",
+    "descripcion": "CIM DESCARG_ACERO VG CIM",
+    "unidad": "KG",
+    "tipo": "MO",
+    "cantidad": "646749.153739",
+    "precio": "200",
+    "importe": "129349830.75",
+    "incidenciaPct": "0.4555",
+    "acumuladoPct": "79.8823",
+    "apariciones": 8,
+    "preciosDistintos": [
+      "200.0"
+    ]
+  },
+  {
+    "codigo": "91295",
+    "descripcion": "CUB ASL CG INOX ML GN",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "144",
+    "precio": "878900",
+    "importe": "126561600",
+    "incidenciaPct": "0.4457",
+    "acumuladoPct": "80.3279",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "878900.0"
+    ]
+  },
+  {
+    "codigo": "MO 60098",
+    "descripcion": "APTO PUNTO SANITARIO",
+    "unidad": "UN",
+    "tipo": "MO",
+    "cantidad": "4703.04",
+    "precio": "26800",
+    "importe": "126041472",
+    "incidenciaPct": "0.4438",
+    "acumuladoPct": "80.7717",
+    "apariciones": 5,
+    "preciosDistintos": [
+      "26800.0"
+    ]
+  },
+  {
+    "codigo": "TC 70493",
+    "descripcion": "M.SECO PF SUPERBOARD 1C ML",
+    "unidad": "ML",
+    "tipo": "TC",
+    "cantidad": "2161.62",
+    "precio": "55300",
+    "importe": "119537586",
+    "incidenciaPct": "0.4209",
+    "acumuladoPct": "81.1926",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "55300.0"
+    ]
+  },
+  {
+    "codigo": "TC 71226",
+    "descripcion": "TUBERIA AC  SCH 10 DE 1 1/4\"",
+    "unidad": "ML",
+    "tipo": "TC",
+    "cantidad": "144",
+    "precio": "808856.74",
+    "importe": "116475370.56",
+    "incidenciaPct": "0.4101",
+    "acumuladoPct": "81.6028",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "808856.74"
+    ]
+  },
+  {
+    "codigo": "TC 01101",
+    "descripcion": "PREL COMISION TOPOGRAFIA",
+    "unidad": "UN",
+    "tipo": "TC",
+    "cantidad": "220",
+    "precio": "511000",
+    "importe": "112420000",
+    "incidenciaPct": "0.3959",
+    "acumuladoPct": "81.9986",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "511000.0"
+    ]
+  },
+  {
+    "codigo": "TC 60799",
+    "descripcion": "M.SECO PF SUPERBOARD 1C M2",
+    "unidad": "M2",
+    "tipo": "TC",
+    "cantidad": "1030.14",
+    "precio": "104000",
+    "importe": "107134560",
+    "incidenciaPct": "0.3772",
+    "acumuladoPct": "82.3759",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "104000.0"
+    ]
+  },
+  {
+    "codigo": "273007",
+    "descripcion": "HIERRO PR-60 CORRU/FIG 5/8\"",
+    "unidad": "KG",
+    "tipo": "MAT",
+    "cantidad": "20937.999183",
+    "precio": "4900",
+    "importe": "102596196",
+    "incidenciaPct": "0.3613",
+    "acumuladoPct": "82.7371",
+    "apariciones": 5,
+    "preciosDistintos": [
+      "4900.0"
+    ]
+  },
+  {
+    "codigo": "MO 71219",
+    "descripcion": "EST TERMIACIÓN PLACA/MURO",
+    "unidad": "M2",
+    "tipo": "MO",
+    "cantidad": "15622.56",
+    "precio": "6500",
+    "importe": "101546640",
+    "incidenciaPct": "0.3576",
+    "acumuladoPct": "83.0947",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "6500.0"
+    ]
+  },
+  {
+    "codigo": "TC 14305",
+    "descripcion": "MUEBLE LAVAMANOS ML",
+    "unidad": "UN",
+    "tipo": "TC",
+    "cantidad": "208.8",
+    "precio": "442552",
+    "importe": "92404857.6",
+    "incidenciaPct": "0.3254",
+    "acumuladoPct": "83.4201",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "442552.0"
+    ]
+  },
+  {
+    "codigo": "385039",
+    "descripcion": "PEGACOR MAX GRIS",
+    "unidad": "KG",
+    "tipo": "MAT",
+    "cantidad": "91768.32",
+    "precio": "1000",
+    "importe": "91768320",
+    "incidenciaPct": "0.3231",
+    "acumuladoPct": "83.7432",
+    "apariciones": 7,
+    "preciosDistintos": [
+      "1000.0"
+    ]
+  },
+  {
+    "codigo": "TC 15204",
+    "descripcion": "PT- 0.80*2.20 CUARTO ASEO/PATI",
+    "unidad": "UN",
+    "tipo": "TC",
+    "cantidad": "47",
+    "precio": "1032539",
+    "importe": "91706719",
+    "incidenciaPct": "0.3229",
+    "acumuladoPct": "84.0661",
+    "apariciones": 3,
+    "preciosDistintos": [
+      "1032539.0",
+      "2168786.0"
+    ]
+  },
+  {
+    "codigo": "TC 60195",
+    "descripcion": "ING. RESIDENTE",
+    "unidad": "UN",
+    "tipo": "TC",
+    "cantidad": "20",
+    "precio": "4500000",
+    "importe": "90000000",
+    "incidenciaPct": "0.3169",
+    "acumuladoPct": "84.3831",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "4500000.0"
+    ]
+  },
+  {
+    "codigo": "TC 60198",
+    "descripcion": "RESIDENTE CONTRALORIA",
+    "unidad": "UN",
+    "tipo": "TC",
+    "cantidad": "20",
+    "precio": "4500000",
+    "importe": "90000000",
+    "incidenciaPct": "0.3169",
+    "acumuladoPct": "84.7",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "4500000.0"
+    ]
+  },
+  {
+    "codigo": "MO 60092",
+    "descripcion": "PISO GD.ESCOBAS INTERNO",
+    "unidad": "ML",
+    "tipo": "MO",
+    "cantidad": "12672",
+    "precio": "7100",
+    "importe": "89971200",
+    "incidenciaPct": "0.3168",
+    "acumuladoPct": "85.0168",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "7100.0"
+    ]
+  },
+  {
+    "codigo": "MO 60097",
+    "descripcion": "APTO PUNTO AGUA FRIA",
+    "unidad": "UN",
+    "tipo": "MO",
+    "cantidad": "3312",
+    "precio": "26700",
+    "importe": "88430400",
+    "incidenciaPct": "0.3114",
+    "acumuladoPct": "85.3282",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "26700.0"
+    ]
+  },
+  {
+    "codigo": "TC 19205",
+    "descripcion": "PINT APTO ESTUCO PLACA",
+    "unidad": "M2",
+    "tipo": "TC",
+    "cantidad": "9997.3728",
+    "precio": "8400",
+    "importe": "83977931.52",
+    "incidenciaPct": "0.2957",
+    "acumuladoPct": "85.6239",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "8400.0"
+    ]
+  },
+  {
+    "codigo": "273005",
+    "descripcion": "HIERRO PR-60 CORRU/FIG 3/4\"",
+    "unidad": "KG",
+    "tipo": "MAT",
+    "cantidad": "14465.95381",
+    "precio": "4900",
+    "importe": "70883173.67",
+    "incidenciaPct": "0.2496",
+    "acumuladoPct": "85.8735",
+    "apariciones": 4,
+    "preciosDistintos": [
+      "4900.0"
+    ]
+  },
+  {
+    "codigo": "TC 60120",
+    "descripcion": "ASCENSOR INSTALACION",
+    "unidad": "UN",
+    "tipo": "TC",
+    "cantidad": "36",
+    "precio": "1938200",
+    "importe": "69775200",
+    "incidenciaPct": "0.2457",
+    "acumuladoPct": "86.1192",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "1938200.0"
+    ]
+  },
+  {
+    "codigo": "191015",
+    "descripcion": "CONCRETO 1500 1\"",
+    "unidad": "M3",
+    "tipo": "MAT",
+    "cantidad": "179.460621",
+    "precio": "386800",
+    "importe": "69415368.07",
+    "incidenciaPct": "0.2444",
+    "acumuladoPct": "86.3636",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "386800.0"
+    ]
+  },
+  {
+    "codigo": "261413",
+    "descripcion": "GRIFERIA LAVAMANOS ALTO VERA",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "396",
+    "precio": "175000",
+    "importe": "69300000",
+    "incidenciaPct": "0.244",
+    "acumuladoPct": "86.6076",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "175000.0"
+    ]
+  },
+  {
+    "codigo": "TC 20104",
+    "descripcion": "ASEO OFIC ACABADOS1 MANO",
+    "unidad": "M2",
+    "tipo": "TC",
+    "cantidad": "13794.48",
+    "precio": "4968",
+    "importe": "68530976.64",
+    "incidenciaPct": "0.2413",
+    "acumuladoPct": "86.8489",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "4968.0"
+    ]
+  },
+  {
+    "codigo": "TC 14208",
+    "descripcion": "PT-04 SUM/INS P.ROPAS",
+    "unidad": "UN",
+    "tipo": "TC",
+    "cantidad": "144",
+    "precio": "466655",
+    "importe": "67198320",
+    "incidenciaPct": "0.2366",
+    "acumuladoPct": "87.0855",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "466655.0"
+    ]
+  },
+  {
+    "codigo": "TC 2161 60847",
+    "descripcion": "COORDINADOR SISO",
+    "unidad": "UN",
+    "tipo": "TC",
+    "cantidad": "20",
+    "precio": "3150000",
+    "importe": "63000000",
+    "incidenciaPct": "0.2218",
+    "acumuladoPct": "87.3074",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "3150000.0"
+    ]
+  },
+  {
+    "codigo": "221056",
+    "descripcion": "CARTON CORRUGADO",
+    "unidad": "RL",
+    "tipo": "MAT",
+    "cantidad": "267.3504",
+    "precio": "229800",
+    "importe": "61437121.92",
+    "incidenciaPct": "0.2163",
+    "acumuladoPct": "87.5237",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "229800.0"
+    ]
+  },
+  {
+    "codigo": "TC 02115",
+    "descripcion": "CIM MANEJO/COLOC/ARMADO HIERRO",
+    "unidad": "KG",
+    "tipo": "TC",
+    "cantidad": "57542.130312",
+    "precio": "1052",
+    "importe": "60534321.09",
+    "incidenciaPct": "0.2132",
+    "acumuladoPct": "87.7369",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "1052.0"
+    ]
+  },
+  {
+    "codigo": "MO 60308",
+    "descripcion": "CIM BORDILLO PERIM-MUROS",
+    "unidad": "ML",
+    "tipo": "MO",
+    "cantidad": "2085.362988",
+    "precio": "28800",
+    "importe": "60058454.06",
+    "incidenciaPct": "0.2115",
+    "acumuladoPct": "87.9483",
+    "apariciones": 3,
+    "preciosDistintos": [
+      "28800.0"
+    ]
+  },
+  {
+    "codigo": "TC 60197",
+    "descripcion": "ING. RESIDENTE AUXILIAR",
+    "unidad": "UN",
+    "tipo": "TC",
+    "cantidad": "20",
+    "precio": "3000000",
+    "importe": "60000000",
+    "incidenciaPct": "0.2113",
+    "acumuladoPct": "88.1596",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "3000000.0"
+    ]
+  },
+  {
+    "codigo": "TC 60364",
+    "descripcion": "RESIDENTE ADMINISTRATIVO",
+    "unidad": "UN",
+    "tipo": "TC",
+    "cantidad": "20",
+    "precio": "3000000",
+    "importe": "60000000",
+    "incidenciaPct": "0.2113",
+    "acumuladoPct": "88.3709",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "3000000.0"
+    ]
+  },
+  {
+    "codigo": "73005",
+    "descripcion": "RECEBO",
+    "unidad": "M3",
+    "tipo": "MAT",
+    "cantidad": "1309.1",
+    "precio": "45700",
+    "importe": "59825870",
+    "incidenciaPct": "0.2107",
+    "acumuladoPct": "88.5815",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "45700.0"
+    ]
+  },
+  {
+    "codigo": "MO 60193",
+    "descripcion": "PISOS SUBIDA MATERIAL MORTEROS",
+    "unidad": "M2",
+    "tipo": "MO",
+    "cantidad": "288",
+    "precio": "201500",
+    "importe": "58032000",
+    "incidenciaPct": "0.2043",
+    "acumuladoPct": "88.7859",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "201500.0"
+    ]
+  },
+  {
+    "codigo": "101394",
+    "descripcion": "LAVAMANOS SPAZIO II",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "324.000072",
+    "precio": "178400",
+    "importe": "57801612.84",
+    "incidenciaPct": "0.2035",
+    "acumuladoPct": "88.9894",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "178400.0"
+    ]
+  },
+  {
+    "codigo": "101326",
+    "descripcion": "JUEGO 6 PIEZ EN CROMO PALERMO",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "288",
+    "precio": "195000",
+    "importe": "56160000",
+    "incidenciaPct": "0.1978",
+    "acumuladoPct": "89.1872",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "195000.0"
+    ]
+  },
+  {
+    "codigo": "381656",
+    "descripcion": "PISO ABETO REC BEIGE 90X20",
+    "unidad": "M2",
+    "tipo": "MAT",
+    "cantidad": "792.669191",
+    "precio": "69200",
+    "importe": "54852708",
+    "incidenciaPct": "0.1931",
+    "acumuladoPct": "89.3803",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "69200.0"
+    ]
+  },
+  {
+    "codigo": "381963",
+    "descripcion": "PORC. NUE. BOSS GRIS 56.6X56.6",
+    "unidad": "M2",
+    "tipo": "MAT",
+    "cantidad": "1077.7536",
+    "precio": "50500",
+    "importe": "54426556.8",
+    "incidenciaPct": "0.1916",
+    "acumuladoPct": "89.572",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "50500.0"
+    ]
+  },
+  {
+    "codigo": "TC 60503",
+    "descripcion": "ELEMENTOS DE PROTECCIÓN",
+    "unidad": "UN",
+    "tipo": "TC",
+    "cantidad": "4",
+    "precio": "35000000",
+    "importe": "54131000",
+    "incidenciaPct": "0.1906",
+    "acumuladoPct": "89.7626",
+    "apariciones": 4,
+    "preciosDistintos": [
+      "1500000.0",
+      "15000000.0",
+      "2631000.0",
+      "35000000.0"
+    ]
+  },
+  {
+    "codigo": "381867",
+    "descripcion": "PARED VANCOUVER HIELO 28.7X57.",
+    "unidad": "M2",
+    "tipo": "MAT",
+    "cantidad": "1469.444196",
+    "precio": "36700",
+    "importe": "53928601.99",
+    "incidenciaPct": "0.1899",
+    "acumuladoPct": "89.9525",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "36700.0"
+    ]
+  },
+  {
+    "codigo": "MO 20207",
+    "descripcion": "CIM OPERADOR MOTOBOMBA",
+    "unidad": "UN",
+    "tipo": "MO",
+    "cantidad": "532.002262",
+    "precio": "101300",
+    "importe": "53891829.16",
+    "incidenciaPct": "0.1898",
+    "acumuladoPct": "90.1422",
+    "apariciones": 4,
+    "preciosDistintos": [
+      "101300.0"
+    ]
+  },
+  {
+    "codigo": "MO 02106",
+    "descripcion": "CIM DESCABECE PILOTES",
+    "unidad": "M3",
+    "tipo": "MO",
+    "cantidad": "156.18",
+    "precio": "337500",
+    "importe": "52710750",
+    "incidenciaPct": "0.1856",
+    "acumuladoPct": "90.3278",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "337500.0"
+    ]
+  },
+  {
+    "codigo": "TC 60573",
+    "descripcion": "DETECCION Y ALARMA",
+    "unidad": "UN",
+    "tipo": "TC",
+    "cantidad": "144",
+    "precio": "359339",
+    "importe": "51744816",
+    "incidenciaPct": "0.1822",
+    "acumuladoPct": "90.51",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "359339.0"
+    ]
+  },
+  {
+    "codigo": "381197",
+    "descripcion": "PISO STONE BLANCO 30,5 X 30,5",
+    "unidad": "M2",
+    "tipo": "MAT",
+    "cantidad": "1754.22996",
+    "precio": "29400",
+    "importe": "51574360.82",
+    "incidenciaPct": "0.1816",
+    "acumuladoPct": "90.6917",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "29400.0"
+    ]
+  },
+  {
+    "codigo": "TC 71199",
+    "descripcion": "MATERIALES FLAUTAS",
+    "unidad": "UN",
+    "tipo": "TC",
+    "cantidad": "144",
+    "precio": "330000",
+    "importe": "47520000",
+    "incidenciaPct": "0.1673",
+    "acumuladoPct": "90.859",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "330000.0"
+    ]
+  },
+  {
+    "codigo": "181002",
+    "descripcion": "A C P M",
+    "unidad": "GA",
+    "tipo": "MAT",
+    "cantidad": "3500",
+    "precio": "13536",
+    "importe": "47376000",
+    "incidenciaPct": "0.1668",
+    "acumuladoPct": "91.0258",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "13536.0"
+    ]
+  },
+  {
+    "codigo": "TC 20105",
+    "descripcion": "ASEO OFIC ACABADOS2 MANO",
+    "unidad": "M2",
+    "tipo": "TC",
+    "cantidad": "13794.48",
+    "precio": "3348",
+    "importe": "46183919.04",
+    "incidenciaPct": "0.1626",
+    "acumuladoPct": "91.1884",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "3348.0"
+    ]
+  },
+  {
+    "codigo": "MO 70020",
+    "descripcion": "CIM VIGAS CIMENTACIÓN",
+    "unidad": "M3",
+    "tipo": "MO",
+    "cantidad": "205.16",
+    "precio": "208300",
+    "importe": "42734828",
+    "incidenciaPct": "0.1505",
+    "acumuladoPct": "91.3389",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "208300.0"
+    ]
+  },
+  {
+    "codigo": "92001",
+    "descripcion": "LAVADERO EN FIBRA",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "144",
+    "precio": "289700",
+    "importe": "41716800",
+    "incidenciaPct": "0.1469",
+    "acumuladoPct": "91.4858",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "289700.0"
+    ]
+  },
+  {
+    "codigo": "381103",
+    "descripcion": "PISO STONE GRADINO 30,5 X 30,5",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "6968.412",
+    "precio": "5900",
+    "importe": "41113630.8",
+    "incidenciaPct": "0.1448",
+    "acumuladoPct": "91.6306",
+    "apariciones": 3,
+    "preciosDistintos": [
+      "5900.0"
+    ]
+  },
+  {
+    "codigo": "472100",
+    "descripcion": "TUBERIA PVC SANITARIA 4\"",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "443.000016",
+    "precio": "91700",
+    "importe": "40623101.47",
+    "incidenciaPct": "0.143",
+    "acumuladoPct": "91.7736",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "91700.0"
+    ]
+  },
+  {
+    "codigo": "61012",
+    "descripcion": "CURASEAL BLANCO X 200 KG",
+    "unidad": "KG",
+    "tipo": "MAT",
+    "cantidad": "7950",
+    "precio": "4900",
+    "importe": "38955000",
+    "incidenciaPct": "0.1372",
+    "acumuladoPct": "91.9108",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "4900.0"
+    ]
+  },
+  {
+    "codigo": "261208",
+    "descripcion": "DUCHA SENCILLA ALUVIA",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "288",
+    "precio": "135000",
+    "importe": "38880000",
+    "incidenciaPct": "0.1369",
+    "acumuladoPct": "92.0477",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "135000.0"
+    ]
+  },
+  {
+    "codigo": "MO 70518",
+    "descripcion": "ANCLAJE TUBERIA CON CINTA",
+    "unidad": "UN",
+    "tipo": "MO",
+    "cantidad": "3960",
+    "precio": "9700",
+    "importe": "38412000",
+    "incidenciaPct": "0.1353",
+    "acumuladoPct": "92.1829",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "9700.0"
+    ]
+  },
+  {
+    "codigo": "264041",
+    "descripcion": "VALVULA 1/2 RED WHITE T.P.",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "648.999936",
+    "precio": "57000",
+    "importe": "36992996.35",
+    "incidenciaPct": "0.1303",
+    "acumuladoPct": "92.3132",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "57000.0"
+    ]
+  },
+  {
+    "codigo": "TC 24608",
+    "descripcion": "TRANSPORTE EQUIPOS T.C SIN IVA",
+    "unidad": "UN",
+    "tipo": "TC",
+    "cantidad": "29.8",
+    "precio": "10000000",
+    "importe": "36113536",
+    "incidenciaPct": "0.1272",
+    "acumuladoPct": "92.4404",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "10000000.0",
+      "906720.0"
+    ]
+  },
+  {
+    "codigo": "273013",
+    "descripcion": "HIERRO PR-60 CORRU/FIG 1 1/4\"",
+    "unidad": "KG",
+    "tipo": "MAT",
+    "cantidad": "7089.568171",
+    "precio": "5000",
+    "importe": "35447840.85",
+    "incidenciaPct": "0.1248",
+    "acumuladoPct": "92.5652",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "5000.0"
+    ]
+  },
+  {
+    "codigo": "474045",
+    "descripcion": "TUBO PVC CONDUIT 1/2",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "6911.998121",
+    "precio": "5100",
+    "importe": "35251190.42",
+    "incidenciaPct": "0.1241",
+    "acumuladoPct": "92.6893",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "5100.0"
+    ]
+  },
+  {
+    "codigo": "61246",
+    "descripcion": "CONCOLOR PORCELANATO X 5KG",
+    "unidad": "KG",
+    "tipo": "MAT",
+    "cantidad": "7537.6512",
+    "precio": "4500",
+    "importe": "33919430.4",
+    "incidenciaPct": "0.1194",
+    "acumuladoPct": "92.8088",
+    "apariciones": 15,
+    "preciosDistintos": [
+      "4500.0"
+    ]
+  },
+  {
+    "codigo": "TC 60348",
+    "descripcion": "CRASO DRYWAL CARTERAS 0.3-0.6m",
+    "unidad": "ML",
+    "tipo": "TC",
+    "cantidad": "835.2",
+    "precio": "40200",
+    "importe": "33575040",
+    "incidenciaPct": "0.1182",
+    "acumuladoPct": "92.927",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "40200.0"
+    ]
+  },
+  {
+    "codigo": "TC 71180",
+    "descripcion": "TRANSPORTE TIPO 2",
+    "unidad": "UN",
+    "tipo": "TC",
+    "cantidad": "2",
+    "precio": "15000000",
+    "importe": "33212800",
+    "incidenciaPct": "0.1169",
+    "acumuladoPct": "93.0439",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "15000000.0",
+      "18212800.0"
+    ]
+  },
+  {
+    "codigo": "272031",
+    "descripcion": "HIERRO PDR-60 CORRU/REC 3/8\"",
+    "unidad": "KG",
+    "tipo": "MAT",
+    "cantidad": "6793.584727",
+    "precio": "4800",
+    "importe": "32609206.69",
+    "incidenciaPct": "0.1148",
+    "acumuladoPct": "93.1588",
+    "apariciones": 3,
+    "preciosDistintos": [
+      "4800.0"
+    ]
+  },
+  {
+    "codigo": "TC 60450",
+    "descripcion": "ALQ MINICARGADOR OBRA",
+    "unidad": "UN",
+    "tipo": "TC",
+    "cantidad": "360",
+    "precio": "90000",
+    "importe": "32400000",
+    "incidenciaPct": "0.1141",
+    "acumuladoPct": "93.2728",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "90000.0"
+    ]
+  },
+  {
+    "codigo": "TC 60200",
+    "descripcion": "AUXILIAR TECNICO ALMACEN",
+    "unidad": "UN",
+    "tipo": "TC",
+    "cantidad": "20",
+    "precio": "1620000",
+    "importe": "32400000",
+    "incidenciaPct": "0.1141",
+    "acumuladoPct": "93.3869",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "1620000.0"
+    ]
+  },
+  {
+    "codigo": "TC 70500",
+    "descripcion": "EST IMPERMABILIZ F. ASCENSOR",
+    "unidad": "M2",
+    "tipo": "TC",
+    "cantidad": "462.96",
+    "precio": "69833",
+    "importe": "32329885.68",
+    "incidenciaPct": "0.1138",
+    "acumuladoPct": "93.5008",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "69833.0"
+    ]
+  },
+  {
+    "codigo": "192039",
+    "descripcion": "CONCRETO 3000 1/2 FLUIDO",
+    "unidad": "M3",
+    "tipo": "MAT",
+    "cantidad": "69.1425",
+    "precio": "457400",
+    "importe": "31625779.5",
+    "incidenciaPct": "0.1114",
+    "acumuladoPct": "93.6121",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "457400.0"
+    ]
+  },
+  {
+    "codigo": "TC 12401",
+    "descripcion": "T.C SALIDA CITOFONO",
+    "unidad": "UN",
+    "tipo": "TC",
+    "cantidad": "144",
+    "precio": "218811",
+    "importe": "31508784",
+    "incidenciaPct": "0.1109",
+    "acumuladoPct": "93.7231",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "218811.0"
+    ]
+  },
+  {
+    "codigo": "MO 10104",
+    "descripcion": "ENCHAPE COCINA/ROPAS",
+    "unidad": "M2",
+    "tipo": "MO",
+    "cantidad": "2118.672",
+    "precio": "14800",
+    "importe": "31356345.6",
+    "incidenciaPct": "0.1104",
+    "acumuladoPct": "93.8335",
+    "apariciones": 3,
+    "preciosDistintos": [
+      "14800.0"
+    ]
+  },
+  {
+    "codigo": "MO 60469",
+    "descripcion": "EST ESCALERA CONCRETO",
+    "unidad": "M2",
+    "tipo": "MO",
+    "cantidad": "283.68",
+    "precio": "109700",
+    "importe": "31119696",
+    "incidenciaPct": "0.1096",
+    "acumuladoPct": "93.9431",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "109700.0"
+    ]
+  },
+  {
+    "codigo": "TC 07201",
+    "descripcion": "CUB SUM/INS CUBIERT/POLICAR",
+    "unidad": "M2",
+    "tipo": "TC",
+    "cantidad": "79.85",
+    "precio": "385500",
+    "importe": "30782175",
+    "incidenciaPct": "0.1084",
+    "acumuladoPct": "94.0515",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "385500.0"
+    ]
+  },
+  {
+    "codigo": "91288",
+    "descripcion": "CAMPANA KALA 60V2 NE",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "144",
+    "precio": "212000",
+    "importe": "30528000",
+    "incidenciaPct": "0.1075",
+    "acumuladoPct": "94.159",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "212000.0"
+    ]
+  },
+  {
+    "codigo": "TC 70691",
+    "descripcion": "ASEO VENTANAS",
+    "unidad": "M2",
+    "tipo": "TC",
+    "cantidad": "2928.099092",
+    "precio": "6922",
+    "importe": "30313971.74",
+    "incidenciaPct": "0.1067",
+    "acumuladoPct": "94.2657",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "6922.0",
+      "69550.0"
+    ]
+  },
+  {
+    "codigo": "MO 60022",
+    "descripcion": "CIM DADOS CONCRETO PILOTES",
+    "unidad": "M3",
+    "tipo": "MO",
+    "cantidad": "156.18",
+    "precio": "193200",
+    "importe": "30173976",
+    "incidenciaPct": "0.1062",
+    "acumuladoPct": "94.372",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "193200.0"
+    ]
+  },
+  {
+    "codigo": "383023",
+    "descripcion": "CRUCETA PLAST PORCELANATO 3 MM",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "118425.6",
+    "precio": "250",
+    "importe": "29606400",
+    "incidenciaPct": "0.1043",
+    "acumuladoPct": "94.4762",
+    "apariciones": 5,
+    "preciosDistintos": [
+      "250.0"
+    ]
+  },
+  {
+    "codigo": "MO 24202",
+    "descripcion": "CIM RELLE/NIV+EQUIP-VIGAS",
+    "unidad": "M3",
+    "tipo": "MO",
+    "cantidad": "1007",
+    "precio": "29100",
+    "importe": "29303700",
+    "incidenciaPct": "0.1032",
+    "acumuladoPct": "94.5794",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "29100.0"
+    ]
+  },
+  {
+    "codigo": "MO 11402",
+    "descripcion": "RETIRO DE ESCOMBOROS",
+    "unidad": "M3",
+    "tipo": "MO",
+    "cantidad": "810",
+    "precio": "36150",
+    "importe": "29281500",
+    "incidenciaPct": "0.1031",
+    "acumuladoPct": "94.6825",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "36150.0"
+    ]
+  },
+  {
+    "codigo": "MO 70552",
+    "descripcion": "INSPECTOR SISO",
+    "unidad": "UN",
+    "tipo": "MO",
+    "cantidad": "315",
+    "precio": "89600",
+    "importe": "28224000",
+    "incidenciaPct": "0.0994",
+    "acumuladoPct": "94.7819",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "89600.0"
+    ]
+  },
+  {
+    "codigo": "262037",
+    "descripcion": "GRIF. LAVAP. MONCONT VERA",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "144",
+    "precio": "195000",
+    "importe": "28080000",
+    "incidenciaPct": "0.0989",
+    "acumuladoPct": "94.8808",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "195000.0"
+    ]
+  },
+  {
+    "codigo": "MO 71111",
+    "descripcion": "PISO EMPAPELADA INTERIOR/PFIJO",
+    "unidad": "M2",
+    "tipo": "MO",
+    "cantidad": "13367.52",
+    "precio": "2100",
+    "importe": "28071792",
+    "incidenciaPct": "0.0988",
+    "acumuladoPct": "94.9796",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "2100.0"
+    ]
+  },
+  {
+    "codigo": "381726",
+    "descripcion": "PORC QUARX SUMER TAN 56,6x56,6",
+    "unidad": "M2",
+    "tipo": "MAT",
+    "cantidad": "505.008",
+    "precio": "53900",
+    "importe": "27219931.2",
+    "incidenciaPct": "0.0958",
+    "acumuladoPct": "95.0754",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "53900.0"
+    ]
+  },
+  {
+    "codigo": "162089",
+    "descripcion": "CERRADURA MANIJA KL102 ALC",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "432",
+    "precio": "62000",
+    "importe": "26784000",
+    "incidenciaPct": "0.0943",
+    "acumuladoPct": "95.1698",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "62000.0"
+    ]
+  },
+  {
+    "codigo": "MO 60492",
+    "descripcion": "OPERADOR MALACATERO+EQ",
+    "unidad": "UN",
+    "tipo": "MO",
+    "cantidad": "144",
+    "precio": "183200",
+    "importe": "26380800",
+    "incidenciaPct": "0.0929",
+    "acumuladoPct": "95.2627",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "183200.0"
+    ]
+  },
+  {
+    "codigo": "MO 70115",
+    "descripcion": "CIM FIGURAD_ACERO VG CIM",
+    "unidad": "KG",
+    "tipo": "MO",
+    "cantidad": "64674.875656",
+    "precio": "400",
+    "importe": "25899404.77",
+    "incidenciaPct": "0.0912",
+    "acumuladoPct": "95.3538",
+    "apariciones": 8,
+    "preciosDistintos": [
+      "400.0",
+      "918.76"
+    ]
+  },
+  {
+    "codigo": "MO 13303",
+    "descripcion": "MEZCLADOR LAVAMAN",
+    "unidad": "UN",
+    "tipo": "MO",
+    "cantidad": "828",
+    "precio": "30600",
+    "importe": "25336800",
+    "incidenciaPct": "0.0892",
+    "acumuladoPct": "95.4431",
+    "apariciones": 3,
+    "preciosDistintos": [
+      "30600.0"
+    ]
+  },
+  {
+    "codigo": "TC 15512",
+    "descripcion": "PASAMANOS METAL ESCAL",
+    "unidad": "ML",
+    "tipo": "TC",
+    "cantidad": "227.556",
+    "precio": "110629",
+    "importe": "25174292.72",
+    "incidenciaPct": "0.0886",
+    "acumuladoPct": "95.5317",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "110629.0"
+    ]
+  },
+  {
+    "codigo": "MO 71110",
+    "descripcion": "PISO PORCELANATO DETALLADA",
+    "unidad": "M2",
+    "tipo": "MO",
+    "cantidad": "15402.492",
+    "precio": "1600",
+    "importe": "24643987.2",
+    "incidenciaPct": "0.0868",
+    "acumuladoPct": "95.6185",
+    "apariciones": 9,
+    "preciosDistintos": [
+      "1600.0"
+    ]
+  },
+  {
+    "codigo": "TC 02114",
+    "descripcion": "CIM COLOC/FUND CONCRETO PILOTE",
+    "unidad": "M3",
+    "tipo": "TC",
+    "cantidad": "1632.639924",
+    "precio": "15026",
+    "importe": "24532047.5",
+    "incidenciaPct": "0.0864",
+    "acumuladoPct": "95.7049",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "15026.0"
+    ]
+  },
+  {
+    "codigo": "MO 70264",
+    "descripcion": "INSTALACIÓN LAVAMANOS",
+    "unidad": "UN",
+    "tipo": "MO",
+    "cantidad": "900",
+    "precio": "26700",
+    "importe": "24030000",
+    "incidenciaPct": "0.0846",
+    "acumuladoPct": "95.7895",
+    "apariciones": 3,
+    "preciosDistintos": [
+      "26700.0"
+    ]
+  },
+  {
+    "codigo": "471148",
+    "descripcion": "SOLDADURA PVC 1 / 4",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "432",
+    "precio": "54200",
+    "importe": "23414400",
+    "incidenciaPct": "0.0824",
+    "acumuladoPct": "95.8719",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "54200.0"
+    ]
+  },
+  {
+    "codigo": "MO 09221",
+    "descripcion": "PISO PFIJO CERAMICA",
+    "unidad": "M2",
+    "tipo": "MO",
+    "cantidad": "1588.14",
+    "precio": "14700",
+    "importe": "23345658",
+    "incidenciaPct": "0.0822",
+    "acumuladoPct": "95.9541",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "14700.0"
+    ]
+  },
+  {
+    "codigo": "92026",
+    "descripcion": "LAVAPLATOS SUBMONTAR 55X43",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "144",
+    "precio": "161300",
+    "importe": "23227200",
+    "incidenciaPct": "0.0818",
+    "acumuladoPct": "96.0359",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "161300.0"
+    ]
+  },
+  {
+    "codigo": "162090",
+    "descripcion": "CERRADURA MANIJA KL102 BAÑO",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "504",
+    "precio": "45800",
+    "importe": "23083200",
+    "incidenciaPct": "0.0813",
+    "acumuladoPct": "96.1172",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "45800.0"
+    ]
+  },
+  {
+    "codigo": "473026",
+    "descripcion": "TUBERIA CPVC 1/2",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "1829.000016",
+    "precio": "12500",
+    "importe": "22862500.2",
+    "incidenciaPct": "0.0805",
+    "acumuladoPct": "96.1977",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "12500.0"
+    ]
+  },
+  {
+    "codigo": "TC 06115",
+    "descripcion": "MANTENIMIENTO DE EQUIPOS",
+    "unidad": "UN",
+    "tipo": "TC",
+    "cantidad": "4",
+    "precio": "9000000",
+    "importe": "22239348",
+    "incidenciaPct": "0.0783",
+    "acumuladoPct": "96.276",
+    "apariciones": 3,
+    "preciosDistintos": [
+      "10000000.0",
+      "1619674.0",
+      "9000000.0"
+    ]
+  },
+  {
+    "codigo": "TC 71116",
+    "descripcion": "PINTURA DETALLADA",
+    "unidad": "M2",
+    "tipo": "TC",
+    "cantidad": "37877.76",
+    "precio": "555",
+    "importe": "21022156.8",
+    "incidenciaPct": "0.074",
+    "acumuladoPct": "96.35",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "555.0"
+    ]
+  },
+  {
+    "codigo": "TC 70690",
+    "descripcion": "ASEO VIV FULL ACABADOS",
+    "unidad": "M2",
+    "tipo": "TC",
+    "cantidad": "13794.48",
+    "precio": "1489",
+    "importe": "20539980.72",
+    "incidenciaPct": "0.0723",
+    "acumuladoPct": "96.4224",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "1489.0"
+    ]
+  },
+  {
+    "codigo": "MO 20204",
+    "descripcion": "ARM POLEAS ANDAMIO FRISO",
+    "unidad": "UN",
+    "tipo": "MO",
+    "cantidad": "174",
+    "precio": "114100",
+    "importe": "19853400",
+    "incidenciaPct": "0.0699",
+    "acumuladoPct": "96.4923",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "114100.0"
+    ]
+  },
+  {
+    "codigo": "385013",
+    "descripcion": "PEGACOR",
+    "unidad": "KG",
+    "tipo": "MAT",
+    "cantidad": "27314.496",
+    "precio": "700",
+    "importe": "19120147.2",
+    "incidenciaPct": "0.0673",
+    "acumuladoPct": "96.5596",
+    "apariciones": 8,
+    "preciosDistintos": [
+      "700.0"
+    ]
+  },
+  {
+    "codigo": "472220",
+    "descripcion": "TUBERIA SANITARIA NOVATEC 4\"",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "222.000048",
+    "precio": "85200",
+    "importe": "18914404.09",
+    "incidenciaPct": "0.0666",
+    "acumuladoPct": "96.6262",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "85200.0"
+    ]
+  },
+  {
+    "codigo": "272015",
+    "descripcion": "HIERRO PDR-60 3/8 RECTO",
+    "unidad": "KG",
+    "tipo": "MAT",
+    "cantidad": "3854.232549",
+    "precio": "4800",
+    "importe": "18500316.23",
+    "incidenciaPct": "0.0651",
+    "acumuladoPct": "96.6913",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "4800.0"
+    ]
+  },
+  {
+    "codigo": "TC 15601",
+    "descripcion": "AVISOS ESCALERAS/GAB",
+    "unidad": "UN",
+    "tipo": "TC",
+    "cantidad": "1137.000096",
+    "precio": "38975",
+    "importe": "17740434.35",
+    "incidenciaPct": "0.0625",
+    "acumuladoPct": "96.7538",
+    "apariciones": 11,
+    "preciosDistintos": [
+      "194877.0",
+      "23985.0",
+      "24734.0",
+      "3298.0",
+      "38975.0",
+      "44972.0",
+      "97439.0"
+    ]
+  },
+  {
+    "codigo": "322261",
+    "descripcion": "TABLON EN AMARILLO 10\"X2\"X3M",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "340",
+    "precio": "51800",
+    "importe": "17612000",
+    "incidenciaPct": "0.062",
+    "acumuladoPct": "96.8158",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "51800.0"
+    ]
+  },
+  {
+    "codigo": "TC 06716",
+    "descripcion": "MONTAJE DE GRUA",
+    "unidad": "UN",
+    "tipo": "TC",
+    "cantidad": "12",
+    "precio": "5742000",
+    "importe": "16970800",
+    "incidenciaPct": "0.0598",
+    "acumuladoPct": "96.8756",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "1020800.0",
+      "5742000.0"
+    ]
+  },
+  {
+    "codigo": "277017",
+    "descripcion": "GRAFIL 7 MM",
+    "unidad": "KG",
+    "tipo": "MAT",
+    "cantidad": "3000.000197",
+    "precio": "5300",
+    "importe": "15900001.04",
+    "incidenciaPct": "0.056",
+    "acumuladoPct": "96.9316",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "5300.0"
+    ]
+  },
+  {
+    "codigo": "TC 60117",
+    "descripcion": "V16 - 1.10*0.80",
+    "unidad": "UN",
+    "tipo": "TC",
+    "cantidad": "33.999984",
+    "precio": "456000",
+    "importe": "15503992.7",
+    "incidenciaPct": "0.0546",
+    "acumuladoPct": "96.9862",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "456000.0"
+    ]
+  },
+  {
+    "codigo": "MO 71199",
+    "descripcion": "CINTA TEFL+SHELAC-FLAUT MED",
+    "unidad": "UN",
+    "tipo": "MO",
+    "cantidad": "144",
+    "precio": "105300",
+    "importe": "15163200",
+    "incidenciaPct": "0.0534",
+    "acumuladoPct": "97.0396",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "105300.0"
+    ]
+  },
+  {
+    "codigo": "472096",
+    "descripcion": "TUBERIA PVC SANITARIO 2\"",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "324",
+    "precio": "46800",
+    "importe": "15163200",
+    "incidenciaPct": "0.0534",
+    "acumuladoPct": "97.093",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "46800.0"
+    ]
+  },
+  {
+    "codigo": "103104",
+    "descripcion": "CANASTILLA DUCHA ARIZONA",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "288",
+    "precio": "52600",
+    "importe": "15148800",
+    "incidenciaPct": "0.0533",
+    "acumuladoPct": "97.1463",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "52600.0"
+    ]
+  },
+  {
+    "codigo": "272026",
+    "descripcion": "HIERRO PR-60 CORRU/REC 1/2\"",
+    "unidad": "KG",
+    "tipo": "MAT",
+    "cantidad": "3132.221216",
+    "precio": "4800",
+    "importe": "15034661.84",
+    "incidenciaPct": "0.0529",
+    "acumuladoPct": "97.1992",
+    "apariciones": 3,
+    "preciosDistintos": [
+      "4800.0"
+    ]
+  },
+  {
+    "codigo": "61394",
+    "descripcion": "SEPAROL N (200KG) O SEPAROL MO",
+    "unidad": "KG",
+    "tipo": "MAT",
+    "cantidad": "2385",
+    "precio": "6300",
+    "importe": "15025500",
+    "incidenciaPct": "0.0529",
+    "acumuladoPct": "97.2521",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "6300.0"
+    ]
+  },
+  {
+    "codigo": "MO 26102",
+    "descripcion": "INST MEDIDOR AGUA Y ACOPL",
+    "unidad": "UN",
+    "tipo": "MO",
+    "cantidad": "288",
+    "precio": "51500",
+    "importe": "14832000",
+    "incidenciaPct": "0.0522",
+    "acumuladoPct": "97.3044",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "51500.0"
+    ]
+  },
+  {
+    "codigo": "262022",
+    "descripcion": "LLAVE VERTICAL PARA LAVADORA",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "288",
+    "precio": "47600",
+    "importe": "13708800",
+    "incidenciaPct": "0.0483",
+    "acumuladoPct": "97.3526",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "47600.0"
+    ]
+  },
+  {
+    "codigo": "472104",
+    "descripcion": "TUBERIA VENT. 3",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "296.000064",
+    "precio": "45500",
+    "importe": "13468002.91",
+    "incidenciaPct": "0.0474",
+    "acumuladoPct": "97.4001",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "45500.0"
+    ]
+  },
+  {
+    "codigo": "TC 60054",
+    "descripcion": "GRANIPLAST DILATACIONES",
+    "unidad": "ML",
+    "tipo": "TC",
+    "cantidad": "4815.72",
+    "precio": "2773",
+    "importe": "13353991.56",
+    "incidenciaPct": "0.047",
+    "acumuladoPct": "97.4471",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "2773.0"
+    ]
+  },
+  {
+    "codigo": "MO 70279",
+    "descripcion": "INSTALACIÓN VALVULAS",
+    "unidad": "UN",
+    "tipo": "MO",
+    "cantidad": "613.44",
+    "precio": "21100",
+    "importe": "12943584",
+    "incidenciaPct": "0.0456",
+    "acumuladoPct": "97.4927",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "21100.0"
+    ]
+  },
+  {
+    "codigo": "MO 11201",
+    "descripcion": "APTO PRUEBA HIDRAULICA",
+    "unidad": "UN",
+    "tipo": "MO",
+    "cantidad": "288",
+    "precio": "44900",
+    "importe": "12931200",
+    "incidenciaPct": "0.0455",
+    "acumuladoPct": "97.5382",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "44900.0"
+    ]
+  },
+  {
+    "codigo": "MO 70695",
+    "descripcion": "DESAGUE TUBERIA PVC 2\"-3\"-4\"",
+    "unidad": "ML",
+    "tipo": "MO",
+    "cantidad": "704.16",
+    "precio": "18300",
+    "importe": "12886128",
+    "incidenciaPct": "0.0454",
+    "acumuladoPct": "97.5836",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "18300.0"
+    ]
+  },
+  {
+    "codigo": "TC 06311",
+    "descripcion": "ALQUILER CAMION GRUA",
+    "unidad": "UN",
+    "tipo": "TC",
+    "cantidad": "51",
+    "precio": "93500",
+    "importe": "12841400",
+    "incidenciaPct": "0.0452",
+    "acumuladoPct": "97.6288",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "8166400.0",
+      "93500.0"
+    ]
+  },
+  {
+    "codigo": "221175",
+    "descripcion": "PAPEL CRAFT",
+    "unidad": "KG",
+    "tipo": "MAT",
+    "cantidad": "1685.644272",
+    "precio": "7600",
+    "importe": "12810896.47",
+    "incidenciaPct": "0.0451",
+    "acumuladoPct": "97.6739",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "7600.0"
+    ]
+  },
+  {
+    "codigo": "MO 09101",
+    "descripcion": "CIM PLACA ANTEPISO",
+    "unidad": "M2",
+    "tipo": "MO",
+    "cantidad": "960.25",
+    "precio": "13100",
+    "importe": "12579275",
+    "incidenciaPct": "0.0443",
+    "acumuladoPct": "97.7182",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "13100.0"
+    ]
+  },
+  {
+    "codigo": "333004",
+    "descripcion": "LAMINAS FORMAPLAC 19 MM",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "50",
+    "precio": "250600",
+    "importe": "12530000",
+    "incidenciaPct": "0.0441",
+    "acumuladoPct": "97.7623",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "250600.0"
+    ]
+  },
+  {
+    "codigo": "MO 70663",
+    "descripcion": "JGO INCRUST BAÑO AUX",
+    "unidad": "UN",
+    "tipo": "MO",
+    "cantidad": "1944",
+    "precio": "6200",
+    "importe": "12052800",
+    "incidenciaPct": "0.0424",
+    "acumuladoPct": "97.8048",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "6200.0"
+    ]
+  },
+  {
+    "codigo": "473012",
+    "descripcion": "LIMPIADOR 1/4",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "432",
+    "precio": "26900",
+    "importe": "11620800",
+    "incidenciaPct": "0.0409",
+    "acumuladoPct": "97.8457",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "26900.0"
+    ]
+  },
+  {
+    "codigo": "TC 06308",
+    "descripcion": "ALQ-ANDAMIOS Y ACCESORIOS",
+    "unidad": "UN",
+    "tipo": "TC",
+    "cantidad": "1",
+    "precio": "10200000",
+    "importe": "10200000",
+    "incidenciaPct": "0.0359",
+    "acumuladoPct": "97.8816",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "10200000.0"
+    ]
+  },
+  {
+    "codigo": "MO 09203",
+    "descripcion": "PISO PFIJO CERAMICA GESCOBA",
+    "unidad": "ML",
+    "tipo": "MO",
+    "cantidad": "1976.04",
+    "precio": "5100",
+    "importe": "10077804",
+    "incidenciaPct": "0.0355",
+    "acumuladoPct": "97.9171",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "5100.0"
+    ]
+  },
+  {
+    "codigo": "161028",
+    "descripcion": "CERRADURA JUPITER A80PD",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "144",
+    "precio": "69800",
+    "importe": "10051200",
+    "incidenciaPct": "0.0354",
+    "acumuladoPct": "97.9525",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "69800.0"
+    ]
+  },
+  {
+    "codigo": "101048",
+    "descripcion": "LAVAMANOS AVANTI CON PEDESTAL",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "71.999928",
+    "precio": "134107",
+    "importe": "9655694.34",
+    "incidenciaPct": "0.034",
+    "acumuladoPct": "97.9865",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "134107.0"
+    ]
+  },
+  {
+    "codigo": "322365",
+    "descripcion": "TABLON DE 10X2 OTOBO",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "275",
+    "precio": "34500",
+    "importe": "9487500",
+    "incidenciaPct": "0.0334",
+    "acumuladoPct": "98.0199",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "34500.0"
+    ]
+  },
+  {
+    "codigo": "TC 15407",
+    "descripcion": "DUCTO PROV METAL. BASURAS",
+    "unidad": "ML",
+    "tipo": "TC",
+    "cantidad": "93.6",
+    "precio": "100000",
+    "importe": "9360000",
+    "incidenciaPct": "0.033",
+    "acumuladoPct": "98.0528",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "100000.0"
+    ]
+  },
+  {
+    "codigo": "471141",
+    "descripcion": "TUBERIA 1/2 RDE 13.5 E.L",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "875.000016",
+    "precio": "9900",
+    "importe": "8662500.16",
+    "incidenciaPct": "0.0305",
+    "acumuladoPct": "98.0833",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "9900.0"
+    ]
+  },
+  {
+    "codigo": "MO 71174",
+    "descripcion": "CIM NIVELACION-VIGAS+BOBEDA",
+    "unidad": "M2",
+    "tipo": "MO",
+    "cantidad": "1693.999568",
+    "precio": "5100",
+    "importe": "8639397.8",
+    "incidenciaPct": "0.0304",
+    "acumuladoPct": "98.1138",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "5100.0"
+    ]
+  },
+  {
+    "codigo": "TC 60438",
+    "descripcion": "MANT-MINICARGADOR",
+    "unidad": "UN",
+    "tipo": "TC",
+    "cantidad": "1",
+    "precio": "8300000",
+    "importe": "8300000",
+    "incidenciaPct": "0.0292",
+    "acumuladoPct": "98.143",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "8300000.0"
+    ]
+  },
+  {
+    "codigo": "472068",
+    "descripcion": "YEE REDUCIDA 4 * 2",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "630.999936",
+    "precio": "13100",
+    "importe": "8266099.16",
+    "incidenciaPct": "0.0291",
+    "acumuladoPct": "98.1721",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "13100.0"
+    ]
+  },
+  {
+    "codigo": "MO 09205",
+    "descripcion": "PISO PFIJO PASO EN CERAMICA",
+    "unidad": "ML",
+    "tipo": "MO",
+    "cantidad": "324",
+    "precio": "25500",
+    "importe": "8262000",
+    "incidenciaPct": "0.0291",
+    "acumuladoPct": "98.2012",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "25500.0"
+    ]
+  },
+  {
+    "codigo": "MO 71203",
+    "descripcion": "CIM SOLADO ANTEPISO/ ENTRE VG",
+    "unidad": "M2",
+    "tipo": "MO",
+    "cantidad": "1694",
+    "precio": "4600",
+    "importe": "7792400",
+    "incidenciaPct": "0.0274",
+    "acumuladoPct": "98.2286",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "4600.0"
+    ]
+  },
+  {
+    "codigo": "TC 15409",
+    "descripcion": "CAJA INSPEC MARCO METALICO",
+    "unidad": "UN",
+    "tipo": "TC",
+    "cantidad": "12",
+    "precio": "645000",
+    "importe": "7740000",
+    "incidenciaPct": "0.0273",
+    "acumuladoPct": "98.2559",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "645000.0"
+    ]
+  },
+  {
+    "codigo": "TC 70377",
+    "descripcion": "ASEO PFIJO 1MANO CON ACABADOS",
+    "unidad": "M2",
+    "tipo": "TC",
+    "cantidad": "1792.386",
+    "precio": "4277",
+    "importe": "7666034.92",
+    "incidenciaPct": "0.027",
+    "acumuladoPct": "98.2829",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "4277.0"
+    ]
+  },
+  {
+    "codigo": "343011",
+    "descripcion": "CAJA CONTADOR APTO METALICA",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "18",
+    "precio": "422500",
+    "importe": "7605000",
+    "incidenciaPct": "0.0268",
+    "acumuladoPct": "98.3097",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "422500.0"
+    ]
+  },
+  {
+    "codigo": "472099",
+    "descripcion": "TUBERIA SANIT 3",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "90",
+    "precio": "80800",
+    "importe": "7272000",
+    "incidenciaPct": "0.0256",
+    "acumuladoPct": "98.3353",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "80800.0"
+    ]
+  },
+  {
+    "codigo": "472097",
+    "descripcion": "TUBERIA PVC SANITARIA 6\"",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "29.999952",
+    "precio": "235900",
+    "importe": "7076988.68",
+    "incidenciaPct": "0.0249",
+    "acumuladoPct": "98.3602",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "235900.0"
+    ]
+  },
+  {
+    "codigo": "TC 24604",
+    "descripcion": "CIM TRANSPORTE EQUIPOS PILOTES",
+    "unidad": "UN",
+    "tipo": "TC",
+    "cantidad": "0.999936",
+    "precio": "7000000",
+    "importe": "6999552",
+    "incidenciaPct": "0.0246",
+    "acumuladoPct": "98.3848",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "7000000.0"
+    ]
+  },
+  {
+    "codigo": "72013",
+    "descripcion": "TRITURADO 3/4\"",
+    "unidad": "M3",
+    "tipo": "MAT",
+    "cantidad": "75.579866",
+    "precio": "90800",
+    "importe": "6862651.83",
+    "incidenciaPct": "0.0242",
+    "acumuladoPct": "98.409",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "90800.0"
+    ]
+  },
+  {
+    "codigo": "322363",
+    "descripcion": "CUARTON 2X3 OTOBO",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "702.4",
+    "precio": "9700",
+    "importe": "6813280",
+    "incidenciaPct": "0.024",
+    "acumuladoPct": "98.433",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "9700.0"
+    ]
+  },
+  {
+    "codigo": "322394",
+    "descripcion": "TABLA DE 1\" * 10\" EN OTOBO",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "400",
+    "precio": "16800",
+    "importe": "6720000",
+    "incidenciaPct": "0.0237",
+    "acumuladoPct": "98.4566",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "16800.0"
+    ]
+  },
+  {
+    "codigo": "472083",
+    "descripcion": "TEE REDUCIDA SANIT. 3 * 2",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "733.999968",
+    "precio": "9100",
+    "importe": "6679399.71",
+    "incidenciaPct": "0.0235",
+    "acumuladoPct": "98.4802",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "9100.0"
+    ]
+  },
+  {
+    "codigo": "MO 13402",
+    "descripcion": "INSTALACION HORNO",
+    "unidad": "UN",
+    "tipo": "MO",
+    "cantidad": "288",
+    "precio": "23000",
+    "importe": "6624000",
+    "incidenciaPct": "0.0233",
+    "acumuladoPct": "98.5035",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "23000.0"
+    ]
+  },
+  {
+    "codigo": "263002",
+    "descripcion": "LLAVE JARDIN CON EXTENSOR",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "144",
+    "precio": "45700",
+    "importe": "6580800",
+    "incidenciaPct": "0.0232",
+    "acumuladoPct": "98.5267",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "45700.0"
+    ]
+  },
+  {
+    "codigo": "MO 13203",
+    "descripcion": "INST REJILLAS CON SOSCO",
+    "unidad": "UN",
+    "tipo": "MO",
+    "cantidad": "815",
+    "precio": "8000",
+    "importe": "6520000",
+    "incidenciaPct": "0.023",
+    "acumuladoPct": "98.5496",
+    "apariciones": 3,
+    "preciosDistintos": [
+      "8000.0"
+    ]
+  },
+  {
+    "codigo": "221309",
+    "descripcion": "TINA DE 55 GAL",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "36",
+    "precio": "179900",
+    "importe": "6476400",
+    "incidenciaPct": "0.0228",
+    "acumuladoPct": "98.5724",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "179900.0"
+    ]
+  },
+  {
+    "codigo": "TC 12304",
+    "descripcion": "EST INST MALLA CON VENA",
+    "unidad": "UN",
+    "tipo": "TC",
+    "cantidad": "143.993657",
+    "precio": "44660",
+    "importe": "6430756.71",
+    "incidenciaPct": "0.0226",
+    "acumuladoPct": "98.5951",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "44660.0"
+    ]
+  },
+  {
+    "codigo": "221827",
+    "descripcion": "SEPARADOR PLASTICO DE MURO 2.5",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "15999.996398",
+    "precio": "400",
+    "importe": "6399998.56",
+    "incidenciaPct": "0.0225",
+    "acumuladoPct": "98.6176",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "400.0"
+    ]
+  },
+  {
+    "codigo": "221065",
+    "descripcion": "CINTA DE DE SEÑALIZACION",
+    "unidad": "RL",
+    "tipo": "MAT",
+    "cantidad": "170",
+    "precio": "35600",
+    "importe": "6052000",
+    "incidenciaPct": "0.0213",
+    "acumuladoPct": "98.6389",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "35600.0"
+    ]
+  },
+  {
+    "codigo": "TC 06014",
+    "descripcion": "COMP-ANDAMIOS Y ACCESORIOS",
+    "unidad": "UN",
+    "tipo": "TC",
+    "cantidad": "1",
+    "precio": "6000000",
+    "importe": "6000000",
+    "incidenciaPct": "0.0211",
+    "acumuladoPct": "98.66",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "6000000.0"
+    ]
+  },
+  {
+    "codigo": "472031",
+    "descripcion": "CODO 45 C * C 4",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "681.999984",
+    "precio": "8700",
+    "importe": "5933399.86",
+    "incidenciaPct": "0.0209",
+    "acumuladoPct": "98.6809",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "8700.0"
+    ]
+  },
+  {
+    "codigo": "391003",
+    "descripcion": "PLASTICO NEGRO X 3 MTS.",
+    "unidad": "ML",
+    "tipo": "MAT",
+    "cantidad": "2394.217629",
+    "precio": "2400",
+    "importe": "5746122.31",
+    "incidenciaPct": "0.0202",
+    "acumuladoPct": "98.7012",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "2400.0"
+    ]
+  },
+  {
+    "codigo": "MO 60310",
+    "descripcion": "DESAGUE PRUEBA SANITARIA",
+    "unidad": "UN",
+    "tipo": "MO",
+    "cantidad": "152",
+    "precio": "37000",
+    "importe": "5624000",
+    "incidenciaPct": "0.0198",
+    "acumuladoPct": "98.721",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "37000.0"
+    ]
+  },
+  {
+    "codigo": "471121",
+    "descripcion": "TUBERIA 1 RDE 21",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "326.000016",
+    "precio": "17100",
+    "importe": "5574600.27",
+    "incidenciaPct": "0.0196",
+    "acumuladoPct": "98.7406",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "17100.0"
+    ]
+  },
+  {
+    "codigo": "MO 60053",
+    "descripcion": "FRISO ABUZARDADO",
+    "unidad": "M2",
+    "tipo": "MO",
+    "cantidad": "1720.8",
+    "precio": "3200",
+    "importe": "5506560",
+    "incidenciaPct": "0.0194",
+    "acumuladoPct": "98.76",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "3200.0"
+    ]
+  },
+  {
+    "codigo": "263005",
+    "descripcion": "LLAVE JARDIN T.P.",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "147",
+    "precio": "37400",
+    "importe": "5497800",
+    "incidenciaPct": "0.0194",
+    "acumuladoPct": "98.7794",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "37400.0"
+    ]
+  },
+  {
+    "codigo": "472103",
+    "descripcion": "TUBERIA VENT. 2",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "159.999984",
+    "precio": "34100",
+    "importe": "5455999.45",
+    "incidenciaPct": "0.0192",
+    "acumuladoPct": "98.7986",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "34100.0"
+    ]
+  },
+  {
+    "codigo": "472020",
+    "descripcion": "CODO 45 C * C 2",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "2337.999984",
+    "precio": "2300",
+    "importe": "5377399.96",
+    "incidenciaPct": "0.0189",
+    "acumuladoPct": "98.8175",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "2300.0"
+    ]
+  },
+  {
+    "codigo": "TC 60811",
+    "descripcion": "ACOMETIDA 1/2 TENSION",
+    "unidad": "UN",
+    "tipo": "TC",
+    "cantidad": "1",
+    "precio": "5366622.49",
+    "importe": "5366622.49",
+    "incidenciaPct": "0.0189",
+    "acumuladoPct": "98.8364",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "5366622.492"
+    ]
+  },
+  {
+    "codigo": "221071",
+    "descripcion": "CINTA TRANSPARENTE 2\"",
+    "unidad": "RL",
+    "tipo": "MAT",
+    "cantidad": "154.167608",
+    "precio": "34200",
+    "importe": "5272532.2",
+    "incidenciaPct": "0.0186",
+    "acumuladoPct": "98.855",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "34200.0"
+    ]
+  },
+  {
+    "codigo": "472108",
+    "descripcion": "CODO 90 C * C 2",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "2569.000032",
+    "precio": "2000",
+    "importe": "5138000.06",
+    "incidenciaPct": "0.0181",
+    "acumuladoPct": "98.8731",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "2000.0"
+    ]
+  },
+  {
+    "codigo": "TC 70378",
+    "descripcion": "ASEO PFIJO 2MANO CON ACABADOS",
+    "unidad": "M2",
+    "tipo": "TC",
+    "cantidad": "1792.386",
+    "precio": "2852",
+    "importe": "5111884.87",
+    "incidenciaPct": "0.018",
+    "acumuladoPct": "98.8911",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "2852.0"
+    ]
+  },
+  {
+    "codigo": "61132",
+    "descripcion": "CEMENTO MARINO",
+    "unidad": "KG",
+    "tipo": "MAT",
+    "cantidad": "530",
+    "precio": "9600",
+    "importe": "5088000",
+    "incidenciaPct": "0.0179",
+    "acumuladoPct": "98.909",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "9600.0"
+    ]
+  },
+  {
+    "codigo": "TC 19401",
+    "descripcion": "PINT PFIJO FOSO CAL+VINILO",
+    "unidad": "M2",
+    "tipo": "TC",
+    "cantidad": "891.594",
+    "precio": "5700",
+    "importe": "5082085.8",
+    "incidenciaPct": "0.0179",
+    "acumuladoPct": "98.9269",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "5700.0"
+    ]
+  },
+  {
+    "codigo": "201458",
+    "descripcion": "PARED PLANA SATINADA BLANCO 30",
+    "unidad": "M2",
+    "tipo": "MAT",
+    "cantidad": "116.7264",
+    "precio": "42600",
+    "importe": "4972544.64",
+    "incidenciaPct": "0.0175",
+    "acumuladoPct": "98.9444",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "42600.0"
+    ]
+  },
+  {
+    "codigo": "324108",
+    "descripcion": "COLUMNAS 4\"*4\" EN AMARILLO",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "100",
+    "precio": "49200",
+    "importe": "4920000",
+    "incidenciaPct": "0.0173",
+    "acumuladoPct": "98.9617",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "49200.0"
+    ]
+  },
+  {
+    "codigo": "MO 60133",
+    "descripcion": "CIM-EXCAVACION BORDILLO",
+    "unidad": "ML",
+    "tipo": "MO",
+    "cantidad": "680",
+    "precio": "7100",
+    "importe": "4828000",
+    "incidenciaPct": "0.017",
+    "acumuladoPct": "98.9787",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "7100.0"
+    ]
+  },
+  {
+    "codigo": "221424",
+    "descripcion": "YUMBOLOM",
+    "unidad": "RL",
+    "tipo": "MAT",
+    "cantidad": "50",
+    "precio": "95900",
+    "importe": "4795000",
+    "incidenciaPct": "0.0169",
+    "acumuladoPct": "98.9956",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "95900.0"
+    ]
+  },
+  {
+    "codigo": "221489",
+    "descripcion": "PAPEL VINIPEL",
+    "unidad": "RL",
+    "tipo": "MAT",
+    "cantidad": "100",
+    "precio": "47200",
+    "importe": "4720000",
+    "incidenciaPct": "0.0166",
+    "acumuladoPct": "99.0122",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "47200.0"
+    ]
+  },
+  {
+    "codigo": "MO 22101",
+    "descripcion": "CIM INST PLASTICO SOBRE RLL",
+    "unidad": "ML",
+    "tipo": "MO",
+    "cantidad": "960.25",
+    "precio": "4800",
+    "importe": "4609200",
+    "incidenciaPct": "0.0162",
+    "acumuladoPct": "99.0284",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "4800.0"
+    ]
+  },
+  {
+    "codigo": "MO 03204",
+    "descripcion": "DESAGUES TUB PVC 6\"",
+    "unidad": "ML",
+    "tipo": "MO",
+    "cantidad": "208.95",
+    "precio": "21800",
+    "importe": "4555110",
+    "incidenciaPct": "0.016",
+    "acumuladoPct": "99.0445",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "21800.0"
+    ]
+  },
+  {
+    "codigo": "472059",
+    "descripcion": "YEE PVC SANITARIA 4\"",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "290.999952",
+    "precio": "15600",
+    "importe": "4539599.25",
+    "incidenciaPct": "0.016",
+    "acumuladoPct": "99.0605",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "15600.0"
+    ]
+  },
+  {
+    "codigo": "261212",
+    "descripcion": "DESAGUE SENCILLO SIN REBOSE",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "396",
+    "precio": "11400",
+    "importe": "4514400",
+    "incidenciaPct": "0.0159",
+    "acumuladoPct": "99.0764",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "11400.0"
+    ]
+  },
+  {
+    "codigo": "192009",
+    "descripcion": "CONCRETO 3000 1\" BOMBEABLE",
+    "unidad": "M3",
+    "tipo": "MAT",
+    "cantidad": "10.300965",
+    "precio": "437900",
+    "importe": "4510792.58",
+    "incidenciaPct": "0.0159",
+    "acumuladoPct": "99.0922",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "437900.0"
+    ]
+  },
+  {
+    "codigo": "MO 60738",
+    "descripcion": "ESCAL PFIJO AFINADO PASO",
+    "unidad": "ML",
+    "tipo": "MO",
+    "cantidad": "324",
+    "precio": "13800",
+    "importe": "4471200",
+    "incidenciaPct": "0.0157",
+    "acumuladoPct": "99.108",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "13800.0"
+    ]
+  },
+  {
+    "codigo": "472069",
+    "descripcion": "YEE SANIT 2",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "1007.000064",
+    "precio": "4300",
+    "importe": "4330100.28",
+    "incidenciaPct": "0.0152",
+    "acumuladoPct": "99.1232",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "4300.0"
+    ]
+  },
+  {
+    "codigo": "472084",
+    "descripcion": "TEE REDUCIDA SANIT. 4 * 2",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "272.000016",
+    "precio": "15900",
+    "importe": "4324800.25",
+    "incidenciaPct": "0.0152",
+    "acumuladoPct": "99.1385",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "15900.0"
+    ]
+  },
+  {
+    "codigo": "MO 13301",
+    "descripcion": "LLAVES BAÑO AUXILIAR",
+    "unidad": "UN",
+    "tipo": "MO",
+    "cantidad": "831",
+    "precio": "5000",
+    "importe": "4155000",
+    "incidenciaPct": "0.0146",
+    "acumuladoPct": "99.1531",
+    "apariciones": 4,
+    "preciosDistintos": [
+      "5000.0"
+    ]
+  },
+  {
+    "codigo": "473010",
+    "descripcion": "CODO 90 * 1/2 CPVC",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "4122",
+    "precio": "1000",
+    "importe": "4122000",
+    "incidenciaPct": "0.0145",
+    "acumuladoPct": "99.1676",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "1000.0"
+    ]
+  },
+  {
+    "codigo": "62035",
+    "descripcion": "SIKADUR ANCHORFIX 4 - 600CC",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "50",
+    "precio": "79000",
+    "importe": "3950000",
+    "incidenciaPct": "0.0139",
+    "acumuladoPct": "99.1815",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "79000.0"
+    ]
+  },
+  {
+    "codigo": "MO 71191",
+    "descripcion": "CAJA INSPEC CONCR 1.2M<H<1.5 M",
+    "unidad": "UN",
+    "tipo": "MO",
+    "cantidad": "12",
+    "precio": "329000",
+    "importe": "3948000",
+    "incidenciaPct": "0.0139",
+    "acumuladoPct": "99.1954",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "329000.0"
+    ]
+  },
+  {
+    "codigo": "221123",
+    "descripcion": "ICOPOR 1 CM. DENSIDAD 15 1X1",
+    "unidad": "M2",
+    "tipo": "MAT",
+    "cantidad": "800",
+    "precio": "4900",
+    "importe": "3920000",
+    "incidenciaPct": "0.0138",
+    "acumuladoPct": "99.2092",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "4900.0"
+    ]
+  },
+  {
+    "codigo": "182003",
+    "descripcion": "GRASA",
+    "unidad": "LB",
+    "tipo": "MAT",
+    "cantidad": "350",
+    "precio": "11200",
+    "importe": "3920000",
+    "incidenciaPct": "0.0138",
+    "acumuladoPct": "99.223",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "11200.0"
+    ]
+  },
+  {
+    "codigo": "472087",
+    "descripcion": "TEE SANIT 4",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "389.999952",
+    "precio": "10000",
+    "importe": "3899999.52",
+    "incidenciaPct": "0.0137",
+    "acumuladoPct": "99.2368",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "10000.0"
+    ]
+  },
+  {
+    "codigo": "471124",
+    "descripcion": "TUBERIA 3/4 RDE 21 E.L",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "321.000048",
+    "precio": "12100",
+    "importe": "3884100.58",
+    "incidenciaPct": "0.0137",
+    "acumuladoPct": "99.2504",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "12100.0"
+    ]
+  },
+  {
+    "codigo": "261340",
+    "descripcion": "SIFON P Y CANASTILLA 4\"",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "144",
+    "precio": "26800",
+    "importe": "3859200",
+    "incidenciaPct": "0.0136",
+    "acumuladoPct": "99.264",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "26800.0"
+    ]
+  },
+  {
+    "codigo": "164010",
+    "descripcion": "TOPE PARA PUERTA",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "1080",
+    "precio": "3500",
+    "importe": "3780000",
+    "incidenciaPct": "0.0133",
+    "acumuladoPct": "99.2773",
+    "apariciones": 4,
+    "preciosDistintos": [
+      "3500.0"
+    ]
+  },
+  {
+    "codigo": "261051",
+    "descripcion": "SIFON BOTELLA",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "396",
+    "precio": "9500",
+    "importe": "3762000",
+    "incidenciaPct": "0.0132",
+    "acumuladoPct": "99.2906",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "9500.0"
+    ]
+  },
+  {
+    "codigo": "MO 06112",
+    "descripcion": "CIM TORRE GRUA",
+    "unidad": "M2",
+    "tipo": "MO",
+    "cantidad": "80",
+    "precio": "46800",
+    "importe": "3744000",
+    "incidenciaPct": "0.0132",
+    "acumuladoPct": "99.3038",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "46800.0"
+    ]
+  },
+  {
+    "codigo": "471060",
+    "descripcion": "CODO 90 PVC-P 1/2\"",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "7411.000032",
+    "precio": "500",
+    "importe": "3705500.02",
+    "incidenciaPct": "0.013",
+    "acumuladoPct": "99.3168",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "500.0"
+    ]
+  },
+  {
+    "codigo": "MO 13403",
+    "descripcion": "INSTALACION CAMPANA",
+    "unidad": "UN",
+    "tipo": "MO",
+    "cantidad": "144",
+    "precio": "25500",
+    "importe": "3672000",
+    "incidenciaPct": "0.0129",
+    "acumuladoPct": "99.3297",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "25500.0"
+    ]
+  },
+  {
+    "codigo": "221932",
+    "descripcion": "SEPARADOR CANASTILLA PLAST 7.5",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "9000.00059",
+    "precio": "400",
+    "importe": "3600000.24",
+    "incidenciaPct": "0.0127",
+    "acumuladoPct": "99.3424",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "400.0"
+    ]
+  },
+  {
+    "codigo": "225079",
+    "descripcion": "SEPARADOR PLASTICO SILLETA 2.5",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "9000.00059",
+    "precio": "400",
+    "importe": "3600000.24",
+    "incidenciaPct": "0.0127",
+    "acumuladoPct": "99.3551",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "400.0"
+    ]
+  },
+  {
+    "codigo": "221518",
+    "descripcion": "COSTAL FIBRA",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "3000",
+    "precio": "1200",
+    "importe": "3600000",
+    "incidenciaPct": "0.0127",
+    "acumuladoPct": "99.3678",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "1200.0"
+    ]
+  },
+  {
+    "codigo": "472035",
+    "descripcion": "CODO 90 C * C 4",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "474.000048",
+    "precio": "7500",
+    "importe": "3555000.36",
+    "incidenciaPct": "0.0125",
+    "acumuladoPct": "99.3803",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "7500.0"
+    ]
+  },
+  {
+    "codigo": "TC 06005",
+    "descripcion": "ALQ-MONTACARGAS",
+    "unidad": "UN",
+    "tipo": "TC",
+    "cantidad": "30",
+    "precio": "118000",
+    "importe": "3540000",
+    "incidenciaPct": "0.0125",
+    "acumuladoPct": "99.3928",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "118000.0"
+    ]
+  },
+  {
+    "codigo": "322148",
+    "descripcion": "TABLA EN AMARILLO",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "150",
+    "precio": "23400",
+    "importe": "3510000",
+    "incidenciaPct": "0.0124",
+    "acumuladoPct": "99.4051",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "23400.0"
+    ]
+  },
+  {
+    "codigo": "151004",
+    "descripcion": "CEMENTO BLANCO X 40 KG",
+    "unidad": "BT",
+    "tipo": "MAT",
+    "cantidad": "49.04",
+    "precio": "70700",
+    "importe": "3467128",
+    "incidenciaPct": "0.0122",
+    "acumuladoPct": "99.4173",
+    "apariciones": 4,
+    "preciosDistintos": [
+      "70700.0"
+    ]
+  },
+  {
+    "codigo": "221244",
+    "descripcion": "TEJA DE ZINC 3,05",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "100.8",
+    "precio": "34300",
+    "importe": "3457440",
+    "incidenciaPct": "0.0122",
+    "acumuladoPct": "99.4295",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "34300.0"
+    ]
+  },
+  {
+    "codigo": "MO 70818",
+    "descripcion": "INSTALACION LAVADERO ROPAS",
+    "unidad": "UN",
+    "tipo": "MO",
+    "cantidad": "144",
+    "precio": "23500",
+    "importe": "3384000",
+    "incidenciaPct": "0.0119",
+    "acumuladoPct": "99.4414",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "23500.0"
+    ]
+  },
+  {
+    "codigo": "61045",
+    "descripcion": "SIKA LATEX (20 KG) ACRILESTIRE",
+    "unidad": "KG",
+    "tipo": "MAT",
+    "cantidad": "200",
+    "precio": "16800",
+    "importe": "3360000",
+    "incidenciaPct": "0.0118",
+    "acumuladoPct": "99.4532",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "16800.0"
+    ]
+  },
+  {
+    "codigo": "TC 60810",
+    "descripcion": "ALQ-FORMALETA METALICA M2",
+    "unidad": "M2",
+    "tipo": "TC",
+    "cantidad": "495.616",
+    "precio": "6439.9",
+    "importe": "3191717.48",
+    "incidenciaPct": "0.0112",
+    "acumuladoPct": "99.4645",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "6439.9"
+    ]
+  },
+  {
+    "codigo": "384044",
+    "descripcion": "CRUCETA PLAST PORCELANATO 2 MM",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "20075.04",
+    "precio": "150",
+    "importe": "3011256",
+    "incidenciaPct": "0.0106",
+    "acumuladoPct": "99.4751",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "150.0"
+    ]
+  },
+  {
+    "codigo": "TC 06326",
+    "descripcion": "TRANSPORTE FORMALETA SIN IVA",
+    "unidad": "UN",
+    "tipo": "TC",
+    "cantidad": "1",
+    "precio": "3000000",
+    "importe": "3000000",
+    "incidenciaPct": "0.0106",
+    "acumuladoPct": "99.4856",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "3000000.0"
+    ]
+  },
+  {
+    "codigo": "MO 60495",
+    "descripcion": "REGATA TUBERIA PVC-CPVC",
+    "unidad": "ML",
+    "tipo": "MO",
+    "cantidad": "1296.000504",
+    "precio": "2300",
+    "importe": "2980801.16",
+    "incidenciaPct": "0.0105",
+    "acumuladoPct": "99.4961",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "2300.0"
+    ]
+  },
+  {
+    "codigo": "61561",
+    "descripcion": "SIKA100 MORTERO IMPERMEABLE BL",
+    "unidad": "KG",
+    "tipo": "MAT",
+    "cantidad": "1238.4",
+    "precio": "2400",
+    "importe": "2972160",
+    "incidenciaPct": "0.0105",
+    "acumuladoPct": "99.5066",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "2400.0"
+    ]
+  },
+  {
+    "codigo": "TC 06318",
+    "descripcion": "ALQ-MOTOBOMBAS",
+    "unidad": "UN",
+    "tipo": "TC",
+    "cantidad": "2",
+    "precio": "1485000",
+    "importe": "2970000",
+    "incidenciaPct": "0.0105",
+    "acumuladoPct": "99.5171",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "1485000.0"
+    ]
+  },
+  {
+    "codigo": "MO 71204",
+    "descripcion": "CIM APLICA IGOL-MUROS",
+    "unidad": "M2",
+    "tipo": "MO",
+    "cantidad": "300.000345",
+    "precio": "9800",
+    "importe": "2940003.38",
+    "incidenciaPct": "0.0104",
+    "acumuladoPct": "99.5274",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "9800.0"
+    ]
+  },
+  {
+    "codigo": "221049",
+    "descripcion": "CANDADO",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "180.8",
+    "precio": "16000",
+    "importe": "2892800",
+    "incidenciaPct": "0.0102",
+    "acumuladoPct": "99.5376",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "16000.0"
+    ]
+  },
+  {
+    "codigo": "MO 24104",
+    "descripcion": "CIM_RETIRO DE TIERRA INTERNO",
+    "unidad": "M3",
+    "tipo": "MO",
+    "cantidad": "419.9503",
+    "precio": "6800",
+    "importe": "2855662.04",
+    "incidenciaPct": "0.0101",
+    "acumuladoPct": "99.5477",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "6800.0"
+    ]
+  },
+  {
+    "codigo": "192097",
+    "descripcion": "CONCRETO 4000 B/PERM A/C<0.45",
+    "unidad": "M3",
+    "tipo": "MAT",
+    "cantidad": "5.0925",
+    "precio": "545000",
+    "importe": "2775412.5",
+    "incidenciaPct": "0.0098",
+    "acumuladoPct": "99.5574",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "545000.0"
+    ]
+  },
+  {
+    "codigo": "101027",
+    "descripcion": "ACOPLE P/LAVAMANOS",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "792",
+    "precio": "3400",
+    "importe": "2692800",
+    "incidenciaPct": "0.0095",
+    "acumuladoPct": "99.5669",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "3400.0"
+    ]
+  },
+  {
+    "codigo": "MO 13305",
+    "descripcion": "CAJA LLAVE LAVADORA",
+    "unidad": "UN",
+    "tipo": "MO",
+    "cantidad": "144",
+    "precio": "18000",
+    "importe": "2592000",
+    "incidenciaPct": "0.0091",
+    "acumuladoPct": "99.576",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "18000.0"
+    ]
+  },
+  {
+    "codigo": "322264",
+    "descripcion": "CUARTON 2\" X 3\" EN AMARILLO",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "130",
+    "precio": "18500",
+    "importe": "2405000",
+    "incidenciaPct": "0.0085",
+    "acumuladoPct": "99.5845",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "18500.0"
+    ]
+  },
+  {
+    "codigo": "468121",
+    "descripcion": "ADAPTADOR HEMBRA 1/2 COBRE",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "432",
+    "precio": "5177",
+    "importe": "2236464",
+    "incidenciaPct": "0.0079",
+    "acumuladoPct": "99.5924",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "5177.0"
+    ]
+  },
+  {
+    "codigo": "61558",
+    "descripcion": "SIKA100 MORTERO IMPERMEABLE GR",
+    "unidad": "KG",
+    "tipo": "MAT",
+    "cantidad": "1238.4",
+    "precio": "1800",
+    "importe": "2229120",
+    "incidenciaPct": "0.0078",
+    "acumuladoPct": "99.6002",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "1800.0"
+    ]
+  },
+  {
+    "codigo": "221053",
+    "descripcion": "CANECA 55 GALONES S/TAPA",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "30",
+    "precio": "73300",
+    "importe": "2199000",
+    "incidenciaPct": "0.0077",
+    "acumuladoPct": "99.608",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "73300.0"
+    ]
+  },
+  {
+    "codigo": "322266",
+    "descripcion": "LISTON 8 CMX3 CMX 3 M AMARILLO",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "150",
+    "precio": "14247",
+    "importe": "2137050",
+    "incidenciaPct": "0.0075",
+    "acumuladoPct": "99.6155",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "14247.0"
+    ]
+  },
+  {
+    "codigo": "467003",
+    "descripcion": "CAJA LLAVES LAVADORA 23*15*8",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "144",
+    "precio": "14800",
+    "importe": "2131200",
+    "incidenciaPct": "0.0075",
+    "acumuladoPct": "99.623",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "14800.0"
+    ]
+  },
+  {
+    "codigo": "472075",
+    "descripcion": "YEE SANIT REDUCIDA 4 * 3",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "159.000048",
+    "precio": "13400",
+    "importe": "2130600.64",
+    "incidenciaPct": "0.0075",
+    "acumuladoPct": "99.6305",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "13400.0"
+    ]
+  },
+  {
+    "codigo": "472080",
+    "descripcion": "TEE REDUCIDA SANIT. 4 * 3",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "128.000016",
+    "precio": "16300",
+    "importe": "2086400.26",
+    "incidenciaPct": "0.0073",
+    "acumuladoPct": "99.6379",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "16300.0"
+    ]
+  },
+  {
+    "codigo": "MO 70556",
+    "descripcion": "MO INST MAMPARAS 4 APTO PISO",
+    "unidad": "UN",
+    "tipo": "MO",
+    "cantidad": "24",
+    "precio": "86400",
+    "importe": "2073600",
+    "incidenciaPct": "0.0073",
+    "acumuladoPct": "99.6452",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "86400.0"
+    ]
+  },
+  {
+    "codigo": "472013",
+    "descripcion": "CODO SANIT. 45 C * C 6",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "67.000032",
+    "precio": "30500",
+    "importe": "2043500.98",
+    "incidenciaPct": "0.0072",
+    "acumuladoPct": "99.6524",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "30500.0"
+    ]
+  },
+  {
+    "codigo": "472076",
+    "descripcion": "YEE SANIT REDUCIDA 6 * 4",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "27.999936",
+    "precio": "69200",
+    "importe": "1937595.57",
+    "incidenciaPct": "0.0068",
+    "acumuladoPct": "99.6592",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "69200.0"
+    ]
+  },
+  {
+    "codigo": "TC 60116",
+    "descripcion": "ADECUACION ASCENSOR QUICIO",
+    "unidad": "UN",
+    "tipo": "TC",
+    "cantidad": "2",
+    "precio": "958000",
+    "importe": "1916000",
+    "incidenciaPct": "0.0067",
+    "acumuladoPct": "99.6659",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "958000.0"
+    ]
+  },
+  {
+    "codigo": "222022",
+    "descripcion": "CARRETILLA BUGGY R-N",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "6",
+    "precio": "312100",
+    "importe": "1872600",
+    "incidenciaPct": "0.0066",
+    "acumuladoPct": "99.6725",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "312100.0"
+    ]
+  },
+  {
+    "codigo": "MO 23301",
+    "descripcion": "PISO IMPERMEAB BALCON,WC,PAT",
+    "unidad": "M2",
+    "tipo": "MO",
+    "cantidad": "1238.4",
+    "precio": "1500",
+    "importe": "1857600",
+    "incidenciaPct": "0.0065",
+    "acumuladoPct": "99.6791",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "1500.0"
+    ]
+  },
+  {
+    "codigo": "472041",
+    "descripcion": "SIFON SANIT. 2 SIN CODO",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "576.999936",
+    "precio": "3200",
+    "importe": "1846399.8",
+    "incidenciaPct": "0.0065",
+    "acumuladoPct": "99.6856",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "3200.0"
+    ]
+  },
+  {
+    "codigo": "TC 19103",
+    "descripcion": "PINT ALFAGIA CUBIERTA",
+    "unidad": "ML",
+    "tipo": "TC",
+    "cantidad": "174.55",
+    "precio": "10516",
+    "importe": "1835567.8",
+    "incidenciaPct": "0.0065",
+    "acumuladoPct": "99.692",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "10516.0"
+    ]
+  },
+  {
+    "codigo": "61053",
+    "descripcion": "SIKA TOP 122 PLUS MC - MONOCOM",
+    "unidad": "KG",
+    "tipo": "MAT",
+    "cantidad": "250",
+    "precio": "7300",
+    "importe": "1825000",
+    "incidenciaPct": "0.0064",
+    "acumuladoPct": "99.6984",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "7300.0"
+    ]
+  },
+  {
+    "codigo": "151006",
+    "descripcion": "CEMENTO BLANCO X 20KG",
+    "unidad": "BT",
+    "tipo": "MAT",
+    "cantidad": "50.00004",
+    "precio": "36100",
+    "importe": "1805001.44",
+    "incidenciaPct": "0.0064",
+    "acumuladoPct": "99.7048",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "36100.0"
+    ]
+  },
+  {
+    "codigo": "462023",
+    "descripcion": "CODO HG 1/2 X 90",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "722.000016",
+    "precio": "2500",
+    "importe": "1805000.04",
+    "incidenciaPct": "0.0064",
+    "acumuladoPct": "99.7112",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "2500.0"
+    ]
+  },
+  {
+    "codigo": "MO 60093",
+    "descripcion": "CUB MEDIA CAÑA IMPER.",
+    "unidad": "ML",
+    "tipo": "MO",
+    "cantidad": "392.18",
+    "precio": "4400",
+    "importe": "1725592",
+    "incidenciaPct": "0.0061",
+    "acumuladoPct": "99.7172",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "4400.0"
+    ]
+  },
+  {
+    "codigo": "MO 70683",
+    "descripcion": "DETALLADA CAJA LAVADORA",
+    "unidad": "UN",
+    "tipo": "MO",
+    "cantidad": "144",
+    "precio": "11800",
+    "importe": "1699200",
+    "incidenciaPct": "0.006",
+    "acumuladoPct": "99.7232",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "11800.0"
+    ]
+  },
+  {
+    "codigo": "221144",
+    "descripcion": "MALLA CON VENA 0.60 X 2.40 M.",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "143.29012",
+    "precio": "11200",
+    "importe": "1604849.35",
+    "incidenciaPct": "0.0057",
+    "acumuladoPct": "99.7289",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "11200.0"
+    ]
+  },
+  {
+    "codigo": "MO 06213",
+    "descripcion": "EST PLACA CUB e=0.12m",
+    "unidad": "M2",
+    "tipo": "MO",
+    "cantidad": "53.23",
+    "precio": "29900",
+    "importe": "1591577",
+    "incidenciaPct": "0.0056",
+    "acumuladoPct": "99.7345",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "29900.0"
+    ]
+  },
+  {
+    "codigo": "333016",
+    "descripcion": "LAMINA TRIPLEX  7MM 1,20X2,40",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "10",
+    "precio": "154000",
+    "importe": "1540000",
+    "incidenciaPct": "0.0054",
+    "acumuladoPct": "99.7399",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "154000.0"
+    ]
+  },
+  {
+    "codigo": "MO 10113",
+    "descripcion": "ENCHAPE INSTALACION WIN BAÑOS",
+    "unidad": "ML",
+    "tipo": "MO",
+    "cantidad": "604.8",
+    "precio": "2500",
+    "importe": "1512000",
+    "incidenciaPct": "0.0053",
+    "acumuladoPct": "99.7452",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "2500.0"
+    ]
+  },
+  {
+    "codigo": "472009",
+    "descripcion": "BUJE SOLDADO 4 X 2 SANIT.",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "261.999936",
+    "precio": "5600",
+    "importe": "1467199.64",
+    "incidenciaPct": "0.0052",
+    "acumuladoPct": "99.7504",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "5600.0"
+    ]
+  },
+  {
+    "codigo": "472060",
+    "descripcion": "YEE PVC SANITARIA 6\"",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "20.000016",
+    "precio": "71700",
+    "importe": "1434001.15",
+    "incidenciaPct": "0.005",
+    "acumuladoPct": "99.7554",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "71700.0"
+    ]
+  },
+  {
+    "codigo": "MO 15201",
+    "descripcion": "PUERTA PROVISIONAL APTO",
+    "unidad": "UN",
+    "tipo": "MO",
+    "cantidad": "100.8",
+    "precio": "14000",
+    "importe": "1411200",
+    "incidenciaPct": "0.005",
+    "acumuladoPct": "99.7604",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "14000.0"
+    ]
+  },
+  {
+    "codigo": "472118",
+    "descripcion": "CODO 90 C * E 2",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "576.999936",
+    "precio": "2400",
+    "importe": "1384799.85",
+    "incidenciaPct": "0.0049",
+    "acumuladoPct": "99.7653",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "2400.0"
+    ]
+  },
+  {
+    "codigo": "333010",
+    "descripcion": "TABLEMAC 18 MM",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "5",
+    "precio": "276100",
+    "importe": "1380500",
+    "incidenciaPct": "0.0049",
+    "acumuladoPct": "99.7701",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "276100.0"
+    ]
+  },
+  {
+    "codigo": "472011",
+    "descripcion": "CODO 90 C * C 6",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "20.999952",
+    "precio": "64600",
+    "importe": "1356596.9",
+    "incidenciaPct": "0.0048",
+    "acumuladoPct": "99.7749",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "64600.0"
+    ]
+  },
+  {
+    "codigo": "472070",
+    "descripcion": "YEE SANIT 3",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "153",
+    "precio": "8800",
+    "importe": "1346400",
+    "incidenciaPct": "0.0047",
+    "acumuladoPct": "99.7797",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "8800.0"
+    ]
+  },
+  {
+    "codigo": "473021",
+    "descripcion": "TEE CPVC 1/2",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "1116",
+    "precio": "1200",
+    "importe": "1339200",
+    "incidenciaPct": "0.0047",
+    "acumuladoPct": "99.7844",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "1200.0"
+    ]
+  },
+  {
+    "codigo": "222070",
+    "descripcion": "FLEXOMETRO 8 MTS",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "39",
+    "precio": "34300",
+    "importe": "1337700",
+    "incidenciaPct": "0.0047",
+    "acumuladoPct": "99.7891",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "34300.0"
+    ]
+  },
+  {
+    "codigo": "MO 60629",
+    "descripcion": "CIM PLACA FOSO ASCEN",
+    "unidad": "M3",
+    "tipo": "MO",
+    "cantidad": "4.85",
+    "precio": "263800",
+    "importe": "1279430",
+    "incidenciaPct": "0.0045",
+    "acumuladoPct": "99.7936",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "263800.0"
+    ]
+  },
+  {
+    "codigo": "221430",
+    "descripcion": "PRECINTO PLASTICO",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "2500",
+    "precio": "500",
+    "importe": "1250000",
+    "incidenciaPct": "0.0044",
+    "acumuladoPct": "99.798",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "500.0"
+    ]
+  },
+  {
+    "codigo": "465026",
+    "descripcion": "REJILLA METAL. 6 X 4 C/SOSCO",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "77",
+    "precio": "16100",
+    "importe": "1239700",
+    "incidenciaPct": "0.0044",
+    "acumuladoPct": "99.8024",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "16100.0"
+    ]
+  },
+  {
+    "codigo": "466249",
+    "descripcion": "UNION 1/2\" ACERO INOX ROSCADA",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "147",
+    "precio": "8300",
+    "importe": "1220100",
+    "incidenciaPct": "0.0043",
+    "acumuladoPct": "99.8067",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "8300.0"
+    ]
+  },
+  {
+    "codigo": "477060",
+    "descripcion": "REJILLA DE PISO DIAGONAL 3X2",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "576",
+    "precio": "2100",
+    "importe": "1209600",
+    "incidenciaPct": "0.0043",
+    "acumuladoPct": "99.8109",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "2100.0"
+    ]
+  },
+  {
+    "codigo": "321055",
+    "descripcion": "TACOS DE GUADUA 3 MTS",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "175",
+    "precio": "6900",
+    "importe": "1207500",
+    "incidenciaPct": "0.0043",
+    "acumuladoPct": "99.8152",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "6900.0"
+    ]
+  },
+  {
+    "codigo": "MO 24106",
+    "descripcion": "CIM TORRE GRUA EXCAVACION",
+    "unidad": "M3",
+    "tipo": "MO",
+    "cantidad": "37",
+    "precio": "32500",
+    "importe": "1202500",
+    "incidenciaPct": "0.0042",
+    "acumuladoPct": "99.8194",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "32500.0"
+    ]
+  },
+  {
+    "codigo": "471123",
+    "descripcion": "TUBERIA PVC-P 3 RDE 21",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "9",
+    "precio": "133300",
+    "importe": "1199700",
+    "incidenciaPct": "0.0042",
+    "acumuladoPct": "99.8236",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "133300.0"
+    ]
+  },
+  {
+    "codigo": "MO 60526",
+    "descripcion": "MONTANTE HIDRAULICA",
+    "unidad": "ML",
+    "tipo": "MO",
+    "cantidad": "93.68",
+    "precio": "12600",
+    "importe": "1180368",
+    "incidenciaPct": "0.0042",
+    "acumuladoPct": "99.8278",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "12600.0"
+    ]
+  },
+  {
+    "codigo": "222288",
+    "descripcion": "BOMBA SUCCION COMBUSTIBLE",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "6",
+    "precio": "193600",
+    "importe": "1161600",
+    "incidenciaPct": "0.0041",
+    "acumuladoPct": "99.8319",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "193600.0"
+    ]
+  },
+  {
+    "codigo": "225051",
+    "descripcion": "SEPARADOR PLACA CONCRETO 7.5",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "2880.75",
+    "precio": "400",
+    "importe": "1152300",
+    "incidenciaPct": "0.0041",
+    "acumuladoPct": "99.8359",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "400.0"
+    ]
+  },
+  {
+    "codigo": "101028",
+    "descripcion": "ACOPLE P/SANITARIO",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "360",
+    "precio": "3200",
+    "importe": "1152000",
+    "incidenciaPct": "0.0041",
+    "acumuladoPct": "99.84",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "3200.0"
+    ]
+  },
+  {
+    "codigo": "472034",
+    "descripcion": "CODO 90 C * C 3",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "265.999968",
+    "precio": "4300",
+    "importe": "1143799.86",
+    "incidenciaPct": "0.004",
+    "acumuladoPct": "99.844",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "4300.0"
+    ]
+  },
+  {
+    "codigo": "471125",
+    "descripcion": "TUBERIA PVC-P 4\" RDE 21",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "4.999968",
+    "precio": "226700",
+    "importe": "1133492.75",
+    "incidenciaPct": "0.004",
+    "acumuladoPct": "99.848",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "226700.0"
+    ]
+  },
+  {
+    "codigo": "151010",
+    "descripcion": "DESCARGUE MECANIZADO",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "3726.547932",
+    "precio": "300",
+    "importe": "1117964.38",
+    "incidenciaPct": "0.0039",
+    "acumuladoPct": "99.8519",
+    "apariciones": 5,
+    "preciosDistintos": [
+      "300.0"
+    ]
+  },
+  {
+    "codigo": "472052",
+    "descripcion": "TAPON DE PRUEBA 2\"",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "1397.000016",
+    "precio": "800",
+    "importe": "1117600.01",
+    "incidenciaPct": "0.0039",
+    "acumuladoPct": "99.8559",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "800.0"
+    ]
+  },
+  {
+    "codigo": "221169",
+    "descripcion": "MANILA DE 1/2",
+    "unidad": "ML",
+    "tipo": "MAT",
+    "cantidad": "215",
+    "precio": "4900",
+    "importe": "1053500",
+    "incidenciaPct": "0.0037",
+    "acumuladoPct": "99.8596",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "4900.0"
+    ]
+  },
+  {
+    "codigo": "321054",
+    "descripcion": "GUADUA LARGA",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "65",
+    "precio": "16200",
+    "importe": "1053000",
+    "incidenciaPct": "0.0037",
+    "acumuladoPct": "99.8633",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "16200.0"
+    ]
+  },
+  {
+    "codigo": "61065",
+    "descripcion": "SIKAFLEX-11FC BLANCO",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "24",
+    "precio": "43000",
+    "importe": "1032000",
+    "incidenciaPct": "0.0036",
+    "acumuladoPct": "99.8669",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "43000.0"
+    ]
+  },
+  {
+    "codigo": "TC 06307",
+    "descripcion": "MANTENIMIENTO DE FORMALETA",
+    "unidad": "UN",
+    "tipo": "TC",
+    "cantidad": "1",
+    "precio": "1000000",
+    "importe": "1000000",
+    "incidenciaPct": "0.0035",
+    "acumuladoPct": "99.8704",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "1000000.0"
+    ]
+  },
+  {
+    "codigo": "472085",
+    "descripcion": "TEE SANIT 2",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "252.999936",
+    "precio": "3900",
+    "importe": "986699.75",
+    "incidenciaPct": "0.0035",
+    "acumuladoPct": "99.8739",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "3900.0"
+    ]
+  },
+  {
+    "codigo": "MO 70000",
+    "descripcion": "DESG EXC A MANO CAJAS",
+    "unidad": "M3",
+    "tipo": "MO",
+    "cantidad": "24.63",
+    "precio": "39900",
+    "importe": "982737",
+    "incidenciaPct": "0.0035",
+    "acumuladoPct": "99.8774",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "39900.0"
+    ]
+  },
+  {
+    "codigo": "61092",
+    "descripcion": "ACRONAL",
+    "unidad": "KG",
+    "tipo": "MAT",
+    "cantidad": "19.609",
+    "precio": "49877",
+    "importe": "978038.09",
+    "incidenciaPct": "0.0034",
+    "acumuladoPct": "99.8808",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "49877.0"
+    ]
+  },
+  {
+    "codigo": "61064",
+    "descripcion": "SIKAFLEX 221 (TUBO)",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "14.4",
+    "precio": "64600",
+    "importe": "930240",
+    "incidenciaPct": "0.0033",
+    "acumuladoPct": "99.8841",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "64600.0"
+    ]
+  },
+  {
+    "codigo": "181001",
+    "descripcion": "GASOLINA",
+    "unidad": "GA",
+    "tipo": "MAT",
+    "cantidad": "56",
+    "precio": "15485",
+    "importe": "867160",
+    "incidenciaPct": "0.0031",
+    "acumuladoPct": "99.8872",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "15485.0"
+    ]
+  },
+  {
+    "codigo": "477018",
+    "descripcion": "TAPA REGISTRO 15x15 Cm",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "144",
+    "precio": "6000",
+    "importe": "864000",
+    "incidenciaPct": "0.003",
+    "acumuladoPct": "99.8902",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "6000.0"
+    ]
+  },
+  {
+    "codigo": "132009",
+    "descripcion": "BASTIDOR DE 2\"*2\" OTOBO",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "135",
+    "precio": "6200",
+    "importe": "837000",
+    "incidenciaPct": "0.0029",
+    "acumuladoPct": "99.8931",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "6200.0"
+    ]
+  },
+  {
+    "codigo": "MO 70276",
+    "descripcion": "INST GABINETE MEDIDOR AGUA",
+    "unidad": "UN",
+    "tipo": "MO",
+    "cantidad": "18",
+    "precio": "43800",
+    "importe": "788400",
+    "incidenciaPct": "0.0028",
+    "acumuladoPct": "99.8959",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "43800.0"
+    ]
+  },
+  {
+    "codigo": "472021",
+    "descripcion": "CODO 45 C * E 2",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "339.999984",
+    "precio": "2300",
+    "importe": "781999.96",
+    "incidenciaPct": "0.0028",
+    "acumuladoPct": "99.8987",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "2300.0"
+    ]
+  },
+  {
+    "codigo": "477078",
+    "descripcion": "REJILLA PISO CORRIE 4X3",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "144",
+    "precio": "5400",
+    "importe": "777600",
+    "incidenciaPct": "0.0027",
+    "acumuladoPct": "99.9014",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "5400.0"
+    ]
+  },
+  {
+    "codigo": "61044",
+    "descripcion": "SIKA GROUT 212 - HI FLOW GROUT",
+    "unidad": "KG",
+    "tipo": "MAT",
+    "cantidad": "150",
+    "precio": "5100",
+    "importe": "765000",
+    "incidenciaPct": "0.0027",
+    "acumuladoPct": "99.9041",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "5100.0"
+    ]
+  },
+  {
+    "codigo": "472054",
+    "descripcion": "TAPON DE PRUEBA 4\"",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "396",
+    "precio": "1900",
+    "importe": "752400",
+    "incidenciaPct": "0.0026",
+    "acumuladoPct": "99.9068",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "1900.0"
+    ]
+  },
+  {
+    "codigo": "462089",
+    "descripcion": "TAPON COPA H.G. 1/2",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "720.999936",
+    "precio": "987",
+    "importe": "711626.94",
+    "incidenciaPct": "0.0025",
+    "acumuladoPct": "99.9093",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "987.0"
+    ]
+  },
+  {
+    "codigo": "472046",
+    "descripcion": "UNION PVC SANITARIA 4\"",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "157.999968",
+    "precio": "4500",
+    "importe": "710999.86",
+    "incidenciaPct": "0.0025",
+    "acumuladoPct": "99.9118",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "4500.0"
+    ]
+  },
+  {
+    "codigo": "384023",
+    "descripcion": "DILATACION PTA. DIAMANTE",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "116.542961",
+    "precio": "6100",
+    "importe": "710912.06",
+    "incidenciaPct": "0.0025",
+    "acumuladoPct": "99.9143",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "6100.0"
+    ]
+  },
+  {
+    "codigo": "471095",
+    "descripcion": "TEE PVC-P 1/2\"",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "1134",
+    "precio": "600",
+    "importe": "680400",
+    "incidenciaPct": "0.0024",
+    "acumuladoPct": "99.9167",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "600.0"
+    ]
+  },
+  {
+    "codigo": "471011",
+    "descripcion": "ADAPTADOR MACHO PVC-P 1/2\"",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "1658.000016",
+    "precio": "400",
+    "importe": "663200.01",
+    "incidenciaPct": "0.0023",
+    "acumuladoPct": "99.919",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "400.0"
+    ]
+  },
+  {
+    "codigo": "221473",
+    "descripcion": "SUNCHO PARA TABLON",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "2",
+    "precio": "324800",
+    "importe": "649600",
+    "incidenciaPct": "0.0023",
+    "acumuladoPct": "99.9213",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "324800.0"
+    ]
+  },
+  {
+    "codigo": "221342",
+    "descripcion": "ESCOBA INDUSTRIAL TIPO CEPILLO",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "20",
+    "precio": "31400",
+    "importe": "628000",
+    "incidenciaPct": "0.0022",
+    "acumuladoPct": "99.9235",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "31400.0"
+    ]
+  },
+  {
+    "codigo": "472010",
+    "descripcion": "BUJE SOLDADO SANIT. 6 * 4",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "29.999952",
+    "precio": "20900",
+    "importe": "626999",
+    "incidenciaPct": "0.0022",
+    "acumuladoPct": "99.9257",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "20900.0"
+    ]
+  },
+  {
+    "codigo": "477023",
+    "descripcion": "REJILLA PLAS VENT 15X15 CORRIE",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "144",
+    "precio": "4300",
+    "importe": "619200",
+    "incidenciaPct": "0.0022",
+    "acumuladoPct": "99.9279",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "4300.0"
+    ]
+  },
+  {
+    "codigo": "472036",
+    "descripcion": "CODO 90 C * E 4\"",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "69.999984",
+    "precio": "8800",
+    "importe": "615999.86",
+    "incidenciaPct": "0.0022",
+    "acumuladoPct": "99.9301",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "8800.0"
+    ]
+  },
+  {
+    "codigo": "473018",
+    "descripcion": "TAPON SOLDADO CPVC 1/2",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "684",
+    "precio": "900",
+    "importe": "615600",
+    "incidenciaPct": "0.0022",
+    "acumuladoPct": "99.9322",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "900.0"
+    ]
+  },
+  {
+    "codigo": "344156",
+    "descripcion": "CINTA BANDIT 1/2\"",
+    "unidad": "ML",
+    "tipo": "MAT",
+    "cantidad": "240.000048",
+    "precio": "2498",
+    "importe": "599520.12",
+    "incidenciaPct": "0.0021",
+    "acumuladoPct": "99.9343",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "2498.0"
+    ]
+  },
+  {
+    "codigo": "472030",
+    "descripcion": "CODO 45 C * C 3",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "121.999968",
+    "precio": "4900",
+    "importe": "597799.84",
+    "incidenciaPct": "0.0021",
+    "acumuladoPct": "99.9364",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "4900.0"
+    ]
+  },
+  {
+    "codigo": "472105",
+    "descripcion": "TUBERIA VENT. 4",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "9.999936",
+    "precio": "59600",
+    "importe": "595996.19",
+    "incidenciaPct": "0.0021",
+    "acumuladoPct": "99.9385",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "59600.0"
+    ]
+  },
+  {
+    "codigo": "222156",
+    "descripcion": "PLOMADAS",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "5",
+    "precio": "111900",
+    "importe": "559500",
+    "incidenciaPct": "0.002",
+    "acumuladoPct": "99.9405",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "111900.0"
+    ]
+  },
+  {
+    "codigo": "272024",
+    "descripcion": "HIERRO PR-60 CORRU/REC 7/8\"",
+    "unidad": "KG",
+    "tipo": "MAT",
+    "cantidad": "115.744707",
+    "precio": "4800",
+    "importe": "555574.59",
+    "incidenciaPct": "0.002",
+    "acumuladoPct": "99.9425",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "4800.0"
+    ]
+  },
+  {
+    "codigo": "277028",
+    "descripcion": "GRAFIL 8 MM",
+    "unidad": "KG",
+    "tipo": "MAT",
+    "cantidad": "100.000007",
+    "precio": "5300",
+    "importe": "530000.03",
+    "incidenciaPct": "0.0019",
+    "acumuladoPct": "99.9443",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "5300.0"
+    ]
+  },
+  {
+    "codigo": "277030",
+    "descripcion": "GRAFIL 5,5",
+    "unidad": "KG",
+    "tipo": "MAT",
+    "cantidad": "100.000007",
+    "precio": "5300",
+    "importe": "530000.03",
+    "incidenciaPct": "0.0019",
+    "acumuladoPct": "99.9462",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "5300.0"
+    ]
+  },
+  {
+    "codigo": "471065",
+    "descripcion": "CODO PVC-P 90 * 3/4",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "720",
+    "precio": "700",
+    "importe": "504000",
+    "incidenciaPct": "0.0018",
+    "acumuladoPct": "99.948",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "700.0"
+    ]
+  },
+  {
+    "codigo": "322395",
+    "descripcion": "CUARTON 8*4CMS OTOBO",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "50",
+    "precio": "9900",
+    "importe": "495000",
+    "incidenciaPct": "0.0017",
+    "acumuladoPct": "99.9497",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "9900.0"
+    ]
+  },
+  {
+    "codigo": "TC 15515",
+    "descripcion": "MONT HIDR SOPORTE",
+    "unidad": "UN",
+    "tipo": "TC",
+    "cantidad": "38.23671",
+    "precio": "12550",
+    "importe": "479870.71",
+    "incidenciaPct": "0.0017",
+    "acumuladoPct": "99.9514",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "12550.0"
+    ]
+  },
+  {
+    "codigo": "163002",
+    "descripcion": "BISAGRA 3 * 3 NUDO",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "201.6",
+    "precio": "2300",
+    "importe": "463680",
+    "incidenciaPct": "0.0016",
+    "acumuladoPct": "99.953",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "2300.0"
+    ]
+  },
+  {
+    "codigo": "221895",
+    "descripcion": "CANASTILLA PARA BOMBILLO",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "20",
+    "precio": "22400",
+    "importe": "448000",
+    "incidenciaPct": "0.0016",
+    "acumuladoPct": "99.9546",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "22400.0"
+    ]
+  },
+  {
+    "codigo": "333019",
+    "descripcion": "LAM TRIPLEX (0,86*2,40) 2,7MM",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "10",
+    "precio": "43814",
+    "importe": "438140",
+    "incidenciaPct": "0.0015",
+    "acumuladoPct": "99.9562",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "43814.0"
+    ]
+  },
+  {
+    "codigo": "471099",
+    "descripcion": "TEE PVC-P 3/4\"X 1/2\"",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "324",
+    "precio": "1300",
+    "importe": "421200",
+    "incidenciaPct": "0.0015",
+    "acumuladoPct": "99.9576",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "1300.0"
+    ]
+  },
+  {
+    "codigo": "462057",
+    "descripcion": "NIPLE HG 1/2 X 15 CM",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "144",
+    "precio": "2800",
+    "importe": "403200",
+    "incidenciaPct": "0.0014",
+    "acumuladoPct": "99.9591",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "2800.0"
+    ]
+  },
+  {
+    "codigo": "471202",
+    "descripcion": "TUBERIA PVC-P 2 1/2 RDE 21",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "4.000032",
+    "precio": "99100",
+    "importe": "396403.17",
+    "incidenciaPct": "0.0014",
+    "acumuladoPct": "99.9605",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "99100.0"
+    ]
+  },
+  {
+    "codigo": "221220",
+    "descripcion": "RODILLO DE FELPA",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "48",
+    "precio": "8200",
+    "importe": "393600",
+    "incidenciaPct": "0.0014",
+    "acumuladoPct": "99.9618",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "8200.0"
+    ]
+  },
+  {
+    "codigo": "MO 70255",
+    "descripcion": "MONT HIDR MANOMETRO/VALVULAS",
+    "unidad": "UN",
+    "tipo": "MO",
+    "cantidad": "9.999965",
+    "precio": "38900",
+    "importe": "388998.65",
+    "incidenciaPct": "0.0014",
+    "acumuladoPct": "99.9632",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "38900.0"
+    ]
+  },
+  {
+    "codigo": "221338",
+    "descripcion": "MEDIA TINA",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "10",
+    "precio": "38200",
+    "importe": "382000",
+    "incidenciaPct": "0.0013",
+    "acumuladoPct": "99.9646",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "38200.0"
+    ]
+  },
+  {
+    "codigo": "385008",
+    "descripcion": "BINDA BOQUILLA COLOR",
+    "unidad": "KG",
+    "tipo": "MAT",
+    "cantidad": "95.612",
+    "precio": "3900",
+    "importe": "372886.8",
+    "incidenciaPct": "0.0013",
+    "acumuladoPct": "99.9659",
+    "apariciones": 5,
+    "preciosDistintos": [
+      "3900.0"
+    ]
+  },
+  {
+    "codigo": "471194",
+    "descripcion": "TUBERIA PVC-P 2\" RDE 21",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "6.000048",
+    "precio": "61100",
+    "importe": "366602.93",
+    "incidenciaPct": "0.0013",
+    "acumuladoPct": "99.9672",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "61100.0"
+    ]
+  },
+  {
+    "codigo": "471081",
+    "descripcion": "TAPON SOLDADO PVC-P 1/2\"",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "1188",
+    "precio": "300",
+    "importe": "356400",
+    "incidenciaPct": "0.0013",
+    "acumuladoPct": "99.9684",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "300.0"
+    ]
+  },
+  {
+    "codigo": "61146",
+    "descripcion": "SIKASIL-E",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "24",
+    "precio": "14600",
+    "importe": "350400",
+    "incidenciaPct": "0.0012",
+    "acumuladoPct": "99.9697",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "14600.0"
+    ]
+  },
+  {
+    "codigo": "471100",
+    "descripcion": "TEE RECUCIDA 1 * 1/2 (PVC)",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "144",
+    "precio": "2400",
+    "importe": "345600",
+    "incidenciaPct": "0.0012",
+    "acumuladoPct": "99.9709",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "2400.0"
+    ]
+  },
+  {
+    "codigo": "472221",
+    "descripcion": "TUBERIA SANITARIA NOVATEC 6\"",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "2.000016",
+    "precio": "169500",
+    "importe": "339002.71",
+    "incidenciaPct": "0.0012",
+    "acumuladoPct": "99.9721",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "169500.0"
+    ]
+  },
+  {
+    "codigo": "224006",
+    "descripcion": "ARANDELAS DE 1/2",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "320",
+    "precio": "1000",
+    "importe": "320000",
+    "incidenciaPct": "0.0011",
+    "acumuladoPct": "99.9732",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "1000.0"
+    ]
+  },
+  {
+    "codigo": "473008",
+    "descripcion": "CODO 45 * 1/2 CPVC",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "306",
+    "precio": "1000",
+    "importe": "306000",
+    "incidenciaPct": "0.0011",
+    "acumuladoPct": "99.9743",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "1000.0"
+    ]
+  },
+  {
+    "codigo": "333003",
+    "descripcion": "LAMINA TRIPLEX DE 4MM",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "5",
+    "precio": "59600",
+    "importe": "298000",
+    "incidenciaPct": "0.001",
+    "acumuladoPct": "99.9753",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "59600.0"
+    ]
+  },
+  {
+    "codigo": "224086",
+    "descripcion": "TUERCAS DE 1/2\"",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "320",
+    "precio": "900",
+    "importe": "288000",
+    "incidenciaPct": "0.001",
+    "acumuladoPct": "99.9763",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "900.0"
+    ]
+  },
+  {
+    "codigo": "471119",
+    "descripcion": "TUBERIA PVC-P 1 1/2 RDE 21",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "6.999984",
+    "precio": "40000",
+    "importe": "279999.36",
+    "incidenciaPct": "0.001",
+    "acumuladoPct": "99.9773",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "40000.0"
+    ]
+  },
+  {
+    "codigo": "222013",
+    "descripcion": "BOQUILLERA ALUMINIO 3X1.1/2X6",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "2",
+    "precio": "139500",
+    "importe": "279000",
+    "incidenciaPct": "0.001",
+    "acumuladoPct": "99.9783",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "139500.0"
+    ]
+  },
+  {
+    "codigo": "61277",
+    "descripcion": "SIKACONCRELISTO RE 5000",
+    "unidad": "KG",
+    "tipo": "MAT",
+    "cantidad": "100",
+    "precio": "2700",
+    "importe": "270000",
+    "incidenciaPct": "0.001",
+    "acumuladoPct": "99.9792",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "2700.0"
+    ]
+  },
+  {
+    "codigo": "MO 70816",
+    "descripcion": "PRUEBA MONTANTE HIDRAULICA",
+    "unidad": "UN",
+    "tipo": "MO",
+    "cantidad": "6",
+    "precio": "44600",
+    "importe": "267600",
+    "incidenciaPct": "0.0009",
+    "acumuladoPct": "99.9802",
+    "apariciones": 2,
+    "preciosDistintos": [
+      "44600.0"
+    ]
+  },
+  {
+    "codigo": "221423",
+    "descripcion": "CADENA 3/8\"",
+    "unidad": "ML",
+    "tipo": "MAT",
+    "cantidad": "5",
+    "precio": "49800",
+    "importe": "249000",
+    "incidenciaPct": "0.0009",
+    "acumuladoPct": "99.9811",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "49800.0"
+    ]
+  },
+  {
+    "codigo": "221666",
+    "descripcion": "MARCADOR INDUSTRIAL",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "5",
+    "precio": "48200",
+    "importe": "241000",
+    "incidenciaPct": "0.0008",
+    "acumuladoPct": "99.9819",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "48200.0"
+    ]
+  },
+  {
+    "codigo": "471057",
+    "descripcion": "CODO 45 * 1/2\" PVC-P",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "342",
+    "precio": "700",
+    "importe": "239400",
+    "incidenciaPct": "0.0008",
+    "acumuladoPct": "99.9828",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "700.0"
+    ]
+  },
+  {
+    "codigo": "221050",
+    "descripcion": "CANDADO YALE 840",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "3",
+    "precio": "77700",
+    "importe": "233100",
+    "incidenciaPct": "0.0008",
+    "acumuladoPct": "99.9836",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "77700.0"
+    ]
+  },
+  {
+    "codigo": "151005",
+    "descripcion": "DESCARGUE CEMENTO POR BULTO",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "381.152373",
+    "precio": "600",
+    "importe": "228691.42",
+    "incidenciaPct": "0.0008",
+    "acumuladoPct": "99.9844",
+    "apariciones": 3,
+    "preciosDistintos": [
+      "600.0"
+    ]
+  },
+  {
+    "codigo": "473022",
+    "descripcion": "UNION CPVC 1 / 2",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "270.999936",
+    "precio": "800",
+    "importe": "216799.95",
+    "incidenciaPct": "0.0008",
+    "acumuladoPct": "99.9851",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "800.0"
+    ]
+  },
+  {
+    "codigo": "472053",
+    "descripcion": "TAPON DE PRUEBA 3\"",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "195.999984",
+    "precio": "1000",
+    "importe": "195999.98",
+    "incidenciaPct": "0.0007",
+    "acumuladoPct": "99.9858",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "1000.0"
+    ]
+  },
+  {
+    "codigo": "472007",
+    "descripcion": "BUJE SOLDADO 3 * 2 SANITARIO",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "56.000016",
+    "precio": "3300",
+    "importe": "184800.05",
+    "incidenciaPct": "0.0007",
+    "acumuladoPct": "99.9865",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "3300.0"
+    ]
+  },
+  {
+    "codigo": "222031",
+    "descripcion": "CIZALLA DE 24\"",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "1",
+    "precio": "178600",
+    "importe": "178600",
+    "incidenciaPct": "0.0006",
+    "acumuladoPct": "99.9871",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "178600.0"
+    ]
+  },
+  {
+    "codigo": "225125",
+    "descripcion": "JABON LIQUIDO EXENTO",
+    "unidad": "GA",
+    "tipo": "MAT",
+    "cantidad": "15",
+    "precio": "11600",
+    "importe": "174000",
+    "incidenciaPct": "0.0006",
+    "acumuladoPct": "99.9877",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "11600.0"
+    ]
+  },
+  {
+    "codigo": "221370",
+    "descripcion": "CADENA ESLABONADA DE 1/2",
+    "unidad": "ML",
+    "tipo": "MAT",
+    "cantidad": "2",
+    "precio": "79100",
+    "importe": "158200",
+    "incidenciaPct": "0.0006",
+    "acumuladoPct": "99.9883",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "79100.0"
+    ]
+  },
+  {
+    "codigo": "472014",
+    "descripcion": "CODO SANIT. 45 C * E 6",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "4.999968",
+    "precio": "30500",
+    "importe": "152499.02",
+    "incidenciaPct": "0.0005",
+    "acumuladoPct": "99.9888",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "30500.0"
+    ]
+  },
+  {
+    "codigo": "472043",
+    "descripcion": "SIFON SANIT.3",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "24.000048",
+    "precio": "6300",
+    "importe": "151200.3",
+    "incidenciaPct": "0.0005",
+    "acumuladoPct": "99.9894",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "6300.0"
+    ]
+  },
+  {
+    "codigo": "471059",
+    "descripcion": "CODO 90 * 1",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "125.000064",
+    "precio": "1200",
+    "importe": "150000.08",
+    "incidenciaPct": "0.0005",
+    "acumuladoPct": "99.9899",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "1200.0"
+    ]
+  },
+  {
+    "codigo": "152001",
+    "descripcion": "CAL",
+    "unidad": "KG",
+    "tipo": "MAT",
+    "cantidad": "100",
+    "precio": "1500",
+    "importe": "150000",
+    "incidenciaPct": "0.0005",
+    "acumuladoPct": "99.9904",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "1500.0"
+    ]
+  },
+  {
+    "codigo": "472008",
+    "descripcion": "BUJE SOLDADO 4 X 3 SANIT.",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "26.000064",
+    "precio": "5600",
+    "importe": "145600.36",
+    "incidenciaPct": "0.0005",
+    "acumuladoPct": "99.9909",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "5600.0"
+    ]
+  },
+  {
+    "codigo": "471153",
+    "descripcion": "UNION DE 1\" PRESION",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "180",
+    "precio": "800",
+    "importe": "144000",
+    "incidenciaPct": "0.0005",
+    "acumuladoPct": "99.9914",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "800.0"
+    ]
+  },
+  {
+    "codigo": "471192",
+    "descripcion": "CODO PVC-P 45 * 3/4",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "144",
+    "precio": "1000",
+    "importe": "144000",
+    "incidenciaPct": "0.0005",
+    "acumuladoPct": "99.9919",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "1000.0"
+    ]
+  },
+  {
+    "codigo": "221104",
+    "descripcion": "ESPUMA RETAL",
+    "unidad": "KG",
+    "tipo": "MAT",
+    "cantidad": "5",
+    "precio": "25100",
+    "importe": "125500",
+    "incidenciaPct": "0.0004",
+    "acumuladoPct": "99.9924",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "25100.0"
+    ]
+  },
+  {
+    "codigo": "472219",
+    "descripcion": "TUBERIA SANITARIA NOVATEC 3\"",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "2.000016",
+    "precio": "60600",
+    "importe": "121200.97",
+    "incidenciaPct": "0.0004",
+    "acumuladoPct": "99.9928",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "60600.0"
+    ]
+  },
+  {
+    "codigo": "465032",
+    "descripcion": "REJILLA METÁLICA 3X2 CON SOSCO",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "18",
+    "precio": "6500",
+    "importe": "117000",
+    "incidenciaPct": "0.0004",
+    "acumuladoPct": "99.9932",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "6500.0"
+    ]
+  },
+  {
+    "codigo": "471150",
+    "descripcion": "UNION PVC-P 1/2\"",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "290.999952",
+    "precio": "400",
+    "importe": "116399.98",
+    "incidenciaPct": "0.0004",
+    "acumuladoPct": "99.9936",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "400.0"
+    ]
+  },
+  {
+    "codigo": "471022",
+    "descripcion": "BUJE SOLDADO 1 * 3/4",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "144",
+    "precio": "800",
+    "importe": "115200",
+    "incidenciaPct": "0.0004",
+    "acumuladoPct": "99.994",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "800.0"
+    ]
+  },
+  {
+    "codigo": "472047",
+    "descripcion": "UNION PVC SANITARIA 6\"",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "6.000048",
+    "precio": "18900",
+    "importe": "113400.91",
+    "incidenciaPct": "0.0004",
+    "acumuladoPct": "99.9944",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "18900.0"
+    ]
+  },
+  {
+    "codigo": "221137",
+    "descripcion": "LINTERNA",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "2",
+    "precio": "56500",
+    "importe": "113000",
+    "incidenciaPct": "0.0004",
+    "acumuladoPct": "99.9948",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "56500.0"
+    ]
+  },
+  {
+    "codigo": "221097",
+    "descripcion": "ESCOBA",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "15",
+    "precio": "6300",
+    "importe": "94500",
+    "incidenciaPct": "0.0003",
+    "acumuladoPct": "99.9952",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "6300.0"
+    ]
+  },
+  {
+    "codigo": "222582",
+    "descripcion": "PALA CUADRADA CON CABO",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "2",
+    "precio": "39300",
+    "importe": "78600",
+    "incidenciaPct": "0.0003",
+    "acumuladoPct": "99.9954",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "39300.0"
+    ]
+  },
+  {
+    "codigo": "222581",
+    "descripcion": "PALA PUNTA REDONDA CON CABO",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "2",
+    "precio": "37600",
+    "importe": "75200",
+    "incidenciaPct": "0.0003",
+    "acumuladoPct": "99.9957",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "37600.0"
+    ]
+  },
+  {
+    "codigo": "221608",
+    "descripcion": "ICOPOR DE 1 X 1 X 1 CM",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "15",
+    "precio": "4900",
+    "importe": "73500",
+    "incidenciaPct": "0.0003",
+    "acumuladoPct": "99.996",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "4900.0"
+    ]
+  },
+  {
+    "codigo": "222060",
+    "descripcion": "ESCUADRA METALICA 24\"",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "2",
+    "precio": "36200",
+    "importe": "72400",
+    "incidenciaPct": "0.0003",
+    "acumuladoPct": "99.9962",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "36200.0"
+    ]
+  },
+  {
+    "codigo": "471038",
+    "descripcion": "BUJE SOLDADO 3/4 * 1/2",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "144",
+    "precio": "500",
+    "importe": "72000",
+    "incidenciaPct": "0.0003",
+    "acumuladoPct": "99.9965",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "500.0"
+    ]
+  },
+  {
+    "codigo": "471088",
+    "descripcion": "TAPON SOLDADO 3 / 4",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "144",
+    "precio": "500",
+    "importe": "72000",
+    "incidenciaPct": "0.0003",
+    "acumuladoPct": "99.9967",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "500.0"
+    ]
+  },
+  {
+    "codigo": "221205",
+    "descripcion": "PUNTILLA 3\"",
+    "unidad": "LB",
+    "tipo": "MAT",
+    "cantidad": "12",
+    "precio": "5700",
+    "importe": "68400",
+    "incidenciaPct": "0.0002",
+    "acumuladoPct": "99.997",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "5700.0"
+    ]
+  },
+  {
+    "codigo": "221200",
+    "descripcion": "PUNTILLA 2\"",
+    "unidad": "LB",
+    "tipo": "MAT",
+    "cantidad": "12",
+    "precio": "5300",
+    "importe": "63600",
+    "incidenciaPct": "0.0002",
+    "acumuladoPct": "99.9972",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "5300.0"
+    ]
+  },
+  {
+    "codigo": "221248",
+    "descripcion": "TRAPERO",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "4",
+    "precio": "14400",
+    "importe": "57600",
+    "incidenciaPct": "0.0002",
+    "acumuladoPct": "99.9974",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "14400.0"
+    ]
+  },
+  {
+    "codigo": "221206",
+    "descripcion": "PUNTILLA 4\"",
+    "unidad": "LB",
+    "tipo": "MAT",
+    "cantidad": "10",
+    "precio": "5700",
+    "importe": "57000",
+    "incidenciaPct": "0.0002",
+    "acumuladoPct": "99.9976",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "5700.0"
+    ]
+  },
+  {
+    "codigo": "472012",
+    "descripcion": "CODO 90 C * E 6",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "0.999936",
+    "precio": "55259",
+    "importe": "55255.46",
+    "incidenciaPct": "0.0002",
+    "acumuladoPct": "99.9978",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "55259.0"
+    ]
+  },
+  {
+    "codigo": "472067",
+    "descripcion": "YEE REDUCIDA 3 * 2",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "6.999984",
+    "precio": "7800",
+    "importe": "54599.88",
+    "incidenciaPct": "0.0002",
+    "acumuladoPct": "99.998",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "7800.0"
+    ]
+  },
+  {
+    "codigo": "221121",
+    "descripcion": "HOJA DE SEGUETA",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "10",
+    "precio": "5400",
+    "importe": "54000",
+    "incidenciaPct": "0.0002",
+    "acumuladoPct": "99.9982",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "5400.0"
+    ]
+  },
+  {
+    "codigo": "322351",
+    "descripcion": "CUARTON 10 CM X 4 CM AMARILLO",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "2.5",
+    "precio": "21200",
+    "importe": "53000",
+    "incidenciaPct": "0.0002",
+    "acumuladoPct": "99.9984",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "21200.0"
+    ]
+  },
+  {
+    "codigo": "221194",
+    "descripcion": "PUNTILLA 1 1/2\"",
+    "unidad": "LB",
+    "tipo": "MAT",
+    "cantidad": "10",
+    "precio": "5200",
+    "importe": "52000",
+    "incidenciaPct": "0.0002",
+    "acumuladoPct": "99.9985",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "5200.0"
+    ]
+  },
+  {
+    "codigo": "222004",
+    "descripcion": "BALDE NEGRO GOMA",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "8",
+    "precio": "6500",
+    "importe": "52000",
+    "incidenciaPct": "0.0002",
+    "acumuladoPct": "99.9987",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "6500.0"
+    ]
+  },
+  {
+    "codigo": "471167",
+    "descripcion": "UNION PVC 4",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "2.000016",
+    "precio": "25900",
+    "importe": "51800.41",
+    "incidenciaPct": "0.0002",
+    "acumuladoPct": "99.9989",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "25900.0"
+    ]
+  },
+  {
+    "codigo": "472033",
+    "descripcion": "CODO 45 C * E 4",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "6.999984",
+    "precio": "7400",
+    "importe": "51799.88",
+    "incidenciaPct": "0.0002",
+    "acumuladoPct": "99.9991",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "7400.0"
+    ]
+  },
+  {
+    "codigo": "471162",
+    "descripcion": "UNION PVC 3",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "4.000032",
+    "precio": "12000",
+    "importe": "48000.38",
+    "incidenciaPct": "0.0002",
+    "acumuladoPct": "99.9993",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "12000.0"
+    ]
+  },
+  {
+    "codigo": "222122",
+    "descripcion": "MARTILLO DE CAUCHO",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "2",
+    "precio": "19200",
+    "importe": "38400",
+    "incidenciaPct": "0.0001",
+    "acumuladoPct": "99.9994",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "19200.0"
+    ]
+  },
+  {
+    "codigo": "323017",
+    "descripcion": "VARETA 5 CM X 2CM X 3MTS",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "7.5",
+    "precio": "4400",
+    "importe": "33000",
+    "incidenciaPct": "0.0001",
+    "acumuladoPct": "99.9995",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "4400.0"
+    ]
+  },
+  {
+    "codigo": "221038",
+    "descripcion": "BROCHA 2 1/2\"",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "4",
+    "precio": "7600",
+    "importe": "30400",
+    "incidenciaPct": "0.0001",
+    "acumuladoPct": "99.9996",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "7600.0"
+    ]
+  },
+  {
+    "codigo": "221001",
+    "descripcion": "ACOPLES DE MANGUERA",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "5",
+    "precio": "5800",
+    "importe": "29000",
+    "incidenciaPct": "0.0001",
+    "acumuladoPct": "99.9997",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "5800.0"
+    ]
+  },
+  {
+    "codigo": "222095",
+    "descripcion": "LLANA LISA",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "2",
+    "precio": "13400",
+    "importe": "26800",
+    "incidenciaPct": "0.0001",
+    "acumuladoPct": "99.9998",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "13400.0"
+    ]
+  },
+  {
+    "codigo": "471163",
+    "descripcion": "UNION PVC 3/4\"",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "36",
+    "precio": "500",
+    "importe": "18000",
+    "incidenciaPct": "0.0001",
+    "acumuladoPct": "99.9999",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "500.0"
+    ]
+  },
+  {
+    "codigo": "221352",
+    "descripcion": "RECOGEDOR",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "2",
+    "precio": "3900",
+    "importe": "7800",
+    "incidenciaPct": "0",
+    "acumuladoPct": "99.9999",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "3900.0"
+    ]
+  },
+  {
+    "codigo": "221189",
+    "descripcion": "PINCEL",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "2",
+    "precio": "3500",
+    "importe": "7000",
+    "incidenciaPct": "0",
+    "acumuladoPct": "99.9999",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "3500.0"
+    ]
+  },
+  {
+    "codigo": "471097",
+    "descripcion": "TEE PVC-P  1 1/2\"",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "0.999936",
+    "precio": "5400",
+    "importe": "5399.65",
+    "incidenciaPct": "0",
+    "acumuladoPct": "100",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "5400.0"
+    ]
+  },
+  {
+    "codigo": "471066",
+    "descripcion": "CODO 90 * 1 1/2\" PVC-P",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "0.999936",
+    "precio": "4200",
+    "importe": "4199.73",
+    "incidenciaPct": "0",
+    "acumuladoPct": "100",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "4200.0"
+    ]
+  },
+  {
+    "codigo": "472032",
+    "descripcion": "CODO 45 C * E 3",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "0.999936",
+    "precio": "4200",
+    "importe": "4199.73",
+    "incidenciaPct": "0",
+    "acumuladoPct": "100",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "4200.0"
+    ]
+  },
+  {
+    "codigo": "471025",
+    "descripcion": "BUJE SOLDADO 1 1/2 * 1/2",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "0.999936",
+    "precio": "2200",
+    "importe": "2199.86",
+    "incidenciaPct": "0",
+    "acumuladoPct": "100",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "2200.0"
+    ]
+  },
+  {
+    "codigo": "462059",
+    "descripcion": "NIPLE HG 1/2 X 5 CM",
+    "unidad": "UN",
+    "tipo": "MAT",
+    "cantidad": "3",
+    "precio": "727",
+    "importe": "2181",
+    "incidenciaPct": "0",
+    "acumuladoPct": "100",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "727.0"
+    ]
+  },
+  {
+    "codigo": "221367",
+    "descripcion": "NYLON - HILO GUIA",
+    "unidad": "ML",
+    "tipo": "MAT",
+    "cantidad": "5",
+    "precio": "200",
+    "importe": "1000",
+    "incidenciaPct": "0",
+    "acumuladoPct": "100",
+    "apariciones": 1,
+    "preciosDistintos": [
+      "200.0"
+    ]
+  }
+]

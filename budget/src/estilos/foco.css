@@ -1,0 +1,13 @@
+/*
+ * Único lugar (junto a src/componentes/arbol/) donde el cobalto de foco puede
+ * aparecer. Verificado por `npm run verificar:color`.
+ */
+
+:focus-visible {
+  outline: 2px solid var(--color-foco);
+  outline-offset: -2px;
+  border-radius: var(--radius-sm);
+}
+
+/* dentro del árbol el offset negativo ya alinea con la retícula de 1px;
+   fuera del árbol basta con el outline por defecto de arriba. */
