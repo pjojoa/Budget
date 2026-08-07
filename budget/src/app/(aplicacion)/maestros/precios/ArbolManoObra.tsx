@@ -98,7 +98,8 @@ function coincide(nodo: NodoManoObra, texto: string): boolean {
   return (
     (a.noInventariable ?? "").toLowerCase().includes(t) ||
     (a.articuloVinculado?.descripcion ?? "").toLowerCase().includes(t) ||
-    (a.articuloVinculado?.familiaNombre ?? "").toLowerCase().includes(t)
+    (a.articuloVinculado?.familiaNombre ?? "").toLowerCase().includes(t) ||
+    (a.articuloVinculado?.familiaCodigo ?? "").toLowerCase().includes(t)
   );
 }
 
@@ -161,6 +162,13 @@ export function ArbolManoObra({ filas }: { filas: ActividadManoObra[] }) {
   const columnas = useMemo<ColumnDef<NodoManoObra, string>[]>(
     () => [
       {
+        id: "codigo",
+        header: "Código",
+        cell: ({ row }) => (
+          <span className="whitespace-nowrap font-mono text-xs text-tinta-2">{row.original.codigo}</span>
+        ),
+      },
+      {
         id: "estructura",
         header: "Capítulo / Subcapítulo / Actividad",
         cell: ({ row }) => {
@@ -187,7 +195,6 @@ export function ArbolManoObra({ filas }: { filas: ActividadManoObra[] }) {
               ) : (
                 <span className="size-4 shrink-0" aria-hidden />
               )}
-              {n.nivel === 3 && <span className="shrink-0 font-mono text-xs text-tinta-3">{n.codigo}</span>}
               <span className={`min-w-0 truncate ${pesoTexto}`} title={n.etiqueta}>
                 {n.etiqueta}
               </span>
@@ -226,8 +233,10 @@ export function ArbolManoObra({ filas }: { filas: ActividadManoObra[] }) {
       },
       {
         id: "familiaMaestro",
-        header: "Familia (maestro)",
-        cell: ({ row }) => row.original.actividad?.articuloVinculado?.familiaNombre ?? "",
+        header: "Familia",
+        cell: ({ row }) => (
+          <span className="font-mono text-xs">{row.original.actividad?.articuloVinculado?.familiaCodigo ?? ""}</span>
+        ),
       },
       ...SUCURSALES.map(
         ({ clave, etiqueta }): ColumnDef<NodoManoObra, string> => ({
@@ -291,7 +300,9 @@ export function ArbolManoObra({ filas }: { filas: ActividadManoObra[] }) {
       </div>
 
       <div className="overflow-auto rounded-sm border border-hairline">
-        <table className="tabla" role="treegrid">
+        {/* ancho de contenido, no 100%: con pocas columnas o filtros muy
+            restrictivos no debe estirarse a ocupar toda la página */}
+        <table className="tabla" style={{ width: "auto" }} role="treegrid">
           <thead>
             {table.getHeaderGroups().map((hg) => (
               <tr key={hg.id}>
