@@ -1,14 +1,21 @@
 import { repositorioMaestros } from "@/datos";
 import { obtenerContextoActual, obtenerContextoPrecioActual } from "@/datos/simulado/sesion";
-import { Moneda } from "@/componentes/dominio/Moneda";
-import { BadgeOrigenPrecio } from "@/componentes/dominio/Insignias";
+import { puedeEditarMaestros } from "@/datos/contexto";
+import { TablaPrecios } from "./TablaPrecios";
 
 export default async function PaginaPrecios({ searchParams }: { searchParams: Promise<{ codigo?: string }> }) {
   const { codigo } = await searchParams;
   const ctx = await obtenerContextoActual();
+  const editable = puedeEditarMaestros(ctx);
   const { anio } = await obtenerContextoPrecioActual();
   const anioConsulta = anio ?? 2025;
   const sucursales = await repositorioMaestros.listarSucursales(ctx);
+
+  const filas = codigo
+    ? await Promise.all(
+        sucursales.map(async (s) => ({ sucursal: s, resuelto: await repositorioMaestros.resolverPrecio(ctx, codigo, s, anioConsulta) })),
+      )
+    : [];
 
   return (
     <div className="p-4">
@@ -17,6 +24,7 @@ export default async function PaginaPrecios({ searchParams }: { searchParams: Pr
       </h1>
       <p className="mb-3 text-[11px] text-tinta-3">
         Formato ancho: un registro por (artículo, sucursal). Año consultado: {anioConsulta}.
+        {editable && " Haga clic en un precio para fijar un valor manual."}
       </p>
       <form method="GET" className="mb-4">
         <input
@@ -27,35 +35,7 @@ export default async function PaginaPrecios({ searchParams }: { searchParams: Pr
         />
       </form>
 
-      {codigo && (
-        <table className="tabla max-w-md">
-          <thead>
-            <tr>
-              <th>Sucursal</th>
-              <th data-alinear="der">Precio</th>
-              <th>Origen</th>
-            </tr>
-          </thead>
-          <tbody>
-            {await Promise.all(
-              sucursales.map(async (s) => {
-                const resuelto = await repositorioMaestros.resolverPrecio(ctx, codigo, s, anioConsulta);
-                return (
-                  <tr key={s}>
-                    <td className="text-tinta-2">{s}</td>
-                    <td data-alinear="der">
-                      <Moneda valor={resuelto?.origen === "SIN_PRECIO" ? null : (resuelto?.precio ?? null)} decimales={2} />
-                    </td>
-                    <td>
-                      <BadgeOrigenPrecio origen={resuelto?.origen ?? "SIN_PRECIO"} />
-                    </td>
-                  </tr>
-                );
-              }),
-            )}
-          </tbody>
-        </table>
-      )}
+      {codigo && <TablaPrecios codigo={codigo} anio={anioConsulta} editable={editable} filas={filas} />}
     </div>
   );
 }

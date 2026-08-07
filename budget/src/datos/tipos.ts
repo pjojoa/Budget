@@ -183,9 +183,16 @@ export interface Familia {
 
 export interface PrecioResuelto {
   precio: Decimal;
-  origen: "CATALOGO" | "SUCURSAL_REFERENCIA" | "SIN_PRECIO";
+  origen: "CATALOGO" | "MANUAL" | "SUCURSAL_REFERENCIA" | "SIN_PRECIO";
   unidad?: string;
   descripcionCatalogo?: string;
+}
+
+/** Registro del catálogo de sucursales (distinto del `Sucursal` de dominio: ese es el literal fijo de 7 valores usado en todo el resto de la app; este es el registro editable del maestro). */
+export interface SucursalCatalogo {
+  codigo: string;
+  nombre: string;
+  activa: boolean;
 }
 
 export interface Usuario {

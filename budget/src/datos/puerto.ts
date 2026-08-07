@@ -15,6 +15,7 @@
  * 5. El módulo que selecciona la implementación (`index.ts`) importa
  *    'server-only': el fixture de BAIKAL no puede acabar en el bundle del cliente.
  */
+import type { Decimal } from "@/dominio/decimal";
 import type { Insumo, LineaPresupuesto, FilaExplosion } from "@/dominio/tipos";
 import type { ContextoAcceso } from "./contexto";
 import type {
@@ -39,6 +40,7 @@ import type {
   ResultadoTransicion,
   ResumenPresupuesto,
   Sucursal,
+  SucursalCatalogo,
   Usuario,
 } from "./tipos";
 
@@ -114,8 +116,82 @@ export interface RepositorioMaestros {
     codigo: string,
     cambios: { descripcion?: string; unidadMedida?: string; activa?: boolean },
   ): Promise<{ ok: true; cuenta: Cuenta } | { ok: false; motivo: "SIN_PERMISO" | "CUENTA_INEXISTENTE" }>;
+  /**
+   * El nivel/plantilla/padre se derivan del código (nunca se digitan aparte);
+   * si el código no es N4 el padre debe existir ya en el maestro.
+   */
+  crearCuenta(
+    ctx: ContextoAcceso,
+    cuenta: { codigo: string; descripcion: string; unidadMedida: string },
+  ): Promise<
+    | { ok: true; cuenta: Cuenta }
+    | { ok: false; motivo: "SIN_PERMISO" | "CODIGO_INVALIDO" | "CODIGO_DUPLICADO" | "PADRE_INEXISTENTE" }
+  >;
+  /** Bloqueada si la cuenta tiene hijas en el maestro o está referenciada por un presupuesto cargado. */
+  eliminarCuenta(
+    ctx: ContextoAcceso,
+    codigo: string,
+  ): Promise<{ ok: true } | { ok: false; motivo: "SIN_PERMISO" | "CUENTA_INEXISTENTE" | "TIENE_HIJOS" | "EN_USO" }>;
+
   listarFamilias(ctx: ContextoAcceso): Promise<Familia[]>;
+  crearFamilia(
+    ctx: ContextoAcceso,
+    familia: { codigo: string; nombre: string; tipo: string },
+  ): Promise<{ ok: true; familia: Familia } | { ok: false; motivo: "SIN_PERMISO" | "CODIGO_DUPLICADO" }>;
+  actualizarFamilia(
+    ctx: ContextoAcceso,
+    codigo: string,
+    cambios: { nombre?: string; tipo?: string },
+  ): Promise<{ ok: true; familia: Familia } | { ok: false; motivo: "SIN_PERMISO" | "FAMILIA_INEXISTENTE" }>;
+  /** Bloqueada si algún artículo del maestro sigue referenciando esta familia. */
+  eliminarFamilia(
+    ctx: ContextoAcceso,
+    codigo: string,
+  ): Promise<{ ok: true } | { ok: false; motivo: "SIN_PERMISO" | "FAMILIA_INEXISTENTE" | "EN_USO" }>;
+
+  crearArticulo(
+    ctx: ContextoAcceso,
+    articulo: { codigo: string; descripcion: string; unidadMedida: string; familia: string },
+  ): Promise<{ ok: true; articulo: Articulo } | { ok: false; motivo: "SIN_PERMISO" | "CODIGO_DUPLICADO" }>;
+  actualizarArticulo(
+    ctx: ContextoAcceso,
+    codigo: string,
+    cambios: { descripcion?: string; unidadMedida?: string; familia?: string; activo?: boolean },
+  ): Promise<{ ok: true; articulo: Articulo } | { ok: false; motivo: "SIN_PERMISO" | "ARTICULO_INEXISTENTE" }>;
+  /** Bloqueada si el artículo aparece como insumo en algún presupuesto cargado. */
+  eliminarArticulo(
+    ctx: ContextoAcceso,
+    codigo: string,
+  ): Promise<{ ok: true } | { ok: false; motivo: "SIN_PERMISO" | "ARTICULO_INEXISTENTE" | "EN_USO" }>;
+
   listarSucursales(ctx: ContextoAcceso): Promise<Sucursal[]>;
+  /** Registro completo del catálogo (código corto + nombre + activa), para la pantalla de administración. */
+  listarCatalogoSucursales(ctx: ContextoAcceso): Promise<SucursalCatalogo[]>;
+  /**
+   * Solo `activa` es editable: `nombre` es el mismo valor que el literal
+   * `Sucursal` usado en toda la app (presupuestos, precios, contexto de
+   * acceso) — renombrarlo aquí dejaría esas referencias apuntando a un valor
+   * que ya no existe. Crear/eliminar sucursales tampoco se soporta por la
+   * misma razón: `Sucursal` es una unión de 7 literales fija en el dominio,
+   * no una tabla libre.
+   */
+  actualizarSucursal(
+    ctx: ContextoAcceso,
+    codigo: string,
+    cambios: { activa: boolean },
+  ): Promise<{ ok: true; sucursal: SucursalCatalogo } | { ok: false; motivo: "SIN_PERMISO" | "SUCURSAL_INEXISTENTE" }>;
+
+  /** Fija un precio manual para (artículo, sucursal, año) — tiene prioridad sobre el catálogo al resolver. */
+  fijarPrecioManual(
+    ctx: ContextoAcceso,
+    entrada: { articulo: string; sucursal: Sucursal; anio: number; precio: Decimal },
+  ): Promise<{ ok: true } | { ok: false; motivo: "SIN_PERMISO" | "ARTICULO_INEXISTENTE" | "VALOR_INVALIDO" }>;
+  eliminarPrecioManual(
+    ctx: ContextoAcceso,
+    articulo: string,
+    sucursal: Sucursal,
+    anio: number,
+  ): Promise<{ ok: true } | { ok: false; motivo: "SIN_PERMISO" | "PRECIO_INEXISTENTE" }>;
 }
 
 export interface RepositorioSesion {

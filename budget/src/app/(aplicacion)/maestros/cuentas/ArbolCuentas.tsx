@@ -13,9 +13,14 @@ import {
 } from "@tanstack/react-table";
 import { RailIndentacion } from "@/componentes/dominio/RailIndentacion";
 import { InsigniaNivel, claseTextoNivel } from "@/componentes/dominio/Insignias";
+import { Boton } from "@/componentes/ui/Boton";
 import { CeldaEditorTexto } from "@/componentes/ui/CeldaEditorTexto";
 import { FiltroColumnaExcel } from "@/componentes/ui/FiltroColumnaExcel";
-import { actualizarCuentaAccion } from "@/datos/simulado/accionesMaestros";
+import {
+  actualizarCuentaAccion,
+  crearCuentaAccion,
+  eliminarCuentaAccion,
+} from "@/datos/simulado/accionesMaestros";
 import type { Nivel } from "@/dominio/codigo";
 import type { Cuenta } from "@/datos/tipos";
 
@@ -85,6 +90,16 @@ interface Props {
 
 type Campo = "descripcion" | "unidadMedida";
 
+const CUENTA_MOTIVOS: Record<string, string> = {
+  SIN_PERMISO: "No tiene permiso para editar el maestro de cuentas.",
+  CODIGO_INVALIDO: "El código no tiene una forma válida de cuenta (N4/N5/N8/N10).",
+  CODIGO_DUPLICADO: "Ya existe una cuenta con ese código.",
+  PADRE_INEXISTENTE: "La cuenta padre de ese código no existe en el maestro.",
+  CUENTA_INEXISTENTE: "La cuenta ya no existe.",
+  TIENE_HIJOS: "No se puede eliminar: tiene cuentas hijas en el maestro.",
+  EN_USO: "No se puede eliminar: está referenciada por un presupuesto cargado.",
+};
+
 export function ArbolCuentas({ cuentas, editable }: Props) {
   const [cuentasLocal, setCuentasLocal] = useState(cuentas);
   const [nivelVisible, setNivelVisible] = useState<Nivel>(10);
@@ -92,6 +107,12 @@ export function ArbolCuentas({ cuentas, editable }: Props) {
   const [filtrosColumna, setFiltrosColumna] = useState<ColumnFiltersState>([]);
   const [edicion, setEdicion] = useState<{ codigo: string; campo: Campo } | null>(null);
   const [mensaje, setMensaje] = useState<string | null>(null);
+  const [formAbierto, setFormAbierto] = useState(false);
+  const [nuevoCodigo, setNuevoCodigo] = useState("");
+  const [nuevaDescripcion, setNuevaDescripcion] = useState("");
+  const [nuevaUnidad, setNuevaUnidad] = useState("");
+  const [creando, setCreando] = useState(false);
+  const [confirmarBorrado, setConfirmarBorrado] = useState<string | null>(null);
 
   const datos = useMemo(() => construirArbol(cuentasLocal), [cuentasLocal]);
   const expandido = useMemo(() => expandidoHasta(datos, nivelVisible), [datos, nivelVisible]);
@@ -125,6 +146,37 @@ export function ArbolCuentas({ cuentas, editable }: Props) {
           ? "No tiene permiso para editar el maestro de cuentas."
           : "No se pudo guardar el cambio.",
       );
+    }
+  }, [cuentasLocal]);
+
+  const crearCuenta = useCallback(async () => {
+    setCreando(true);
+    setMensaje(null);
+    const resultado = await crearCuentaAccion({
+      codigo: nuevoCodigo.trim(),
+      descripcion: nuevaDescripcion.trim(),
+      unidadMedida: nuevaUnidad.trim(),
+    });
+    setCreando(false);
+    if (resultado.ok) {
+      setCuentasLocal((prev) => [...prev, resultado.cuenta]);
+      setNuevoCodigo("");
+      setNuevaDescripcion("");
+      setNuevaUnidad("");
+      setFormAbierto(false);
+    } else {
+      setMensaje(CUENTA_MOTIVOS[resultado.motivo] ?? "No se pudo crear la cuenta.");
+    }
+  }, [nuevoCodigo, nuevaDescripcion, nuevaUnidad]);
+
+  const eliminar = useCallback(async (codigo: string) => {
+    setConfirmarBorrado(null);
+    const anterior = cuentasLocal;
+    setCuentasLocal((prev) => prev.filter((c) => c.codigo !== codigo));
+    const resultado = await eliminarCuentaAccion(codigo);
+    if (!resultado.ok) {
+      setCuentasLocal(anterior);
+      setMensaje(CUENTA_MOTIVOS[resultado.motivo] ?? "No se pudo eliminar la cuenta.");
     }
   }, [cuentasLocal]);
 
@@ -242,8 +294,46 @@ export function ArbolCuentas({ cuentas, editable }: Props) {
           );
         },
       },
+      ...(editable
+        ? [
+            {
+              id: "acciones",
+              header: "",
+              enableColumnFilter: false,
+              cell: ({ row }: { row: { original: CuentaNodo } }) => {
+                const c = row.original;
+                if (confirmarBorrado === c.codigo) {
+                  return (
+                    <span className="flex items-center gap-1 whitespace-nowrap">
+                      <Boton variante="peligro" tamano="sm" onClick={() => eliminar(c.codigo)}>
+                        Confirmar
+                      </Boton>
+                      <Boton variante="fantasma" tamano="sm" onClick={() => setConfirmarBorrado(null)}>
+                        Cancelar
+                      </Boton>
+                    </span>
+                  );
+                }
+                return (
+                  <Boton
+                    variante="fantasma"
+                    tamano="sm"
+                    onClick={() => setConfirmarBorrado(c.codigo)}
+                    aria-label={`Eliminar cuenta ${c.codigo}`}
+                    title="Eliminar cuenta"
+                    className="px-1.5 hover:text-error"
+                  >
+                    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" className="size-3.5" aria-hidden>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M3.5 5h9M6.5 5V3.5h3V5M4.5 5l.5 8.5a1 1 0 0 0 1 .9h4a1 1 0 0 0 1-.9l.5-8.5" />
+                    </svg>
+                  </Boton>
+                );
+              },
+            } satisfies ColumnDef<CuentaNodo, string>,
+          ]
+        : []),
     ],
-    [edicion, editable, guardarCampo],
+    [edicion, editable, guardarCampo, confirmarBorrado, eliminar],
   );
 
   const table = useReactTable({
@@ -306,8 +396,59 @@ export function ArbolCuentas({ cuentas, editable }: Props) {
           {filas.length.toLocaleString("es-CO")} visibles · {cuentasLocal.length.toLocaleString("es-CO")} cuentas
           {!editable && " · solo lectura"}
         </span>
+        {editable && (
+          <Boton
+            variante="secundario"
+            tamano="sm"
+            onClick={() => setFormAbierto((v) => !v)}
+            className="ml-auto"
+          >
+            {formAbierto ? "Cancelar" : "+ Nueva cuenta"}
+          </Boton>
+        )}
         {mensaje && <span className="text-[11px] text-error">{mensaje}</span>}
       </div>
+
+      {editable && formAbierto && (
+        <div className="flex flex-wrap items-end gap-2 rounded-sm border border-hairline bg-panel p-2">
+          <label className="flex flex-col gap-0.5 text-[11px] text-tinta-3">
+            Código (N4/N5/N8/N10)
+            <input
+              value={nuevoCodigo}
+              onChange={(e) => setNuevoCodigo(e.target.value)}
+              placeholder="p. ej. 22001000"
+              className="w-40 rounded-sm border border-hairline bg-panel px-2 py-1 font-mono text-xs text-tinta outline-none focus:border-foco"
+            />
+          </label>
+          <label className="flex flex-col gap-0.5 text-[11px] text-tinta-3">
+            Descripción
+            <input
+              value={nuevaDescripcion}
+              onChange={(e) => setNuevaDescripcion(e.target.value)}
+              className="w-64 rounded-sm border border-hairline bg-panel px-2 py-1 text-xs text-tinta outline-none focus:border-foco"
+            />
+          </label>
+          <label className="flex flex-col gap-0.5 text-[11px] text-tinta-3">
+            Unidad
+            <input
+              value={nuevaUnidad}
+              onChange={(e) => setNuevaUnidad(e.target.value)}
+              className="w-24 rounded-sm border border-hairline bg-panel px-2 py-1 text-xs text-tinta outline-none focus:border-foco"
+            />
+          </label>
+          <Boton
+            variante="primario"
+            tamano="sm"
+            onClick={crearCuenta}
+            disabled={creando || !nuevoCodigo.trim() || !nuevaDescripcion.trim()}
+          >
+            {creando ? "Creando…" : "Crear"}
+          </Boton>
+          <span className="text-[11px] text-tinta-3">
+            El nivel, la plantilla y la cuenta padre se derivan del código.
+          </span>
+        </div>
+      )}
 
       <div className="overflow-auto rounded-sm border border-hairline">
         <table className="tabla" role="treegrid" aria-rowcount={cuentasLocal.length}>

@@ -99,4 +99,4 @@ codigo,nombre,tipo,n_articulos,revisar_nombre
 99,AJUSTES POR INFLACION,,0,false
 441,TRANSPORTE SIN IVA,Material,0,false
 523560,OBSEQUIOS,Material,0,false
-OAD,FAMILIA OAD,,8,true
+OAD,Sin nombre en el maestro (OAD),,8,true

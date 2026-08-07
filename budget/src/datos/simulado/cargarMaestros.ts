@@ -2,7 +2,7 @@ import "server-only";
 import { readFileSync } from "node:fs";
 import path from "node:path";
 import { parse } from "csv-parse/sync";
-import type { Articulo, Cuenta, Familia } from "../tipos";
+import type { Articulo, Cuenta, Familia, SucursalCatalogo } from "../tipos";
 import type { Nivel } from "@/dominio/codigo";
 import type { Decimal } from "@/dominio/decimal";
 import type { PlantillaPresupuesto, Sucursal } from "@/dominio/tipos";
@@ -19,11 +19,7 @@ function leerCsv<T extends Record<string, string>>(nombreArchivo: string): T[] {
   return parse(texto, { columns: true, skip_empty_lines: true, bom: true });
 }
 
-export interface Sucursales {
-  codigo: string;
-  nombre: string;
-  activa: boolean;
-}
+export type Sucursales = SucursalCatalogo;
 
 export interface FilaPrecio {
   articulo: string;
@@ -39,6 +35,14 @@ interface MaestrosCargados {
   sucursales: Sucursales[];
   /** clave `${articulo}|${sucursal}` -> fila de precio (única por (articulo, sucursal)). */
   precios: Map<string, FilaPrecio>;
+  /**
+   * Overrides fijados por Admin Maestros vía `fijarPrecioManual`, clave
+   * `${articulo}|${sucursal}|${anio}`. Se consultan ANTES que `precios`: un
+   * precio manual gana siempre al catálogo, y a diferencia de `precios`
+   * (formato ancho, un `anioBase` fijo por fila) puede cubrir un año fuera
+   * del rango del catálogo.
+   */
+  preciosManuales: Map<string, Decimal>;
 }
 
 // `globalThis`, no un `let` de módulo: en `next dev` cada ruta puede
@@ -123,6 +127,13 @@ export function cargarMaestros(): MaestrosCargados {
     });
   }
 
-  globalThis.__budgetMaestrosCargados = { articulos, cuentas, familias, sucursales, precios };
+  globalThis.__budgetMaestrosCargados = {
+    articulos,
+    cuentas,
+    familias,
+    sucursales,
+    precios,
+    preciosManuales: new Map(),
+  };
   return globalThis.__budgetMaestrosCargados;
 }

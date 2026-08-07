@@ -42,8 +42,20 @@ export const repositorioMaestros: RepositorioMaestros = {
   listarCuentas: pendiente,
   listarArbolCuentas: pendiente,
   actualizarCuenta: pendiente,
+  crearCuenta: pendiente,
+  eliminarCuenta: pendiente,
   listarFamilias: pendiente,
+  crearFamilia: pendiente,
+  actualizarFamilia: pendiente,
+  eliminarFamilia: pendiente,
+  crearArticulo: pendiente,
+  actualizarArticulo: pendiente,
+  eliminarArticulo: pendiente,
   listarSucursales: pendiente,
+  listarCatalogoSucursales: pendiente,
+  actualizarSucursal: pendiente,
+  fijarPrecioManual: pendiente,
+  eliminarPrecioManual: pendiente,
 };
 
 export const repositorioSesion: RepositorioSesion = {

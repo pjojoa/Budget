@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { repositorioMaestros } from "@/datos";
 import { obtenerContextoActual } from "@/datos/simulado/sesion";
+import { puedeEditarMaestros } from "@/datos/contexto";
 import { TablaArticulos } from "./TablaArticulos";
 
 const POR_PAGINA = 50;
@@ -13,11 +14,11 @@ export default async function PaginaArticulos({
   const { q, pagina: paginaTexto } = await searchParams;
   const pagina = Number(paginaTexto ?? 1);
   const ctx = await obtenerContextoActual();
-  const resultado = await repositorioMaestros.buscarArticulos(ctx, {
-    texto: q,
-    pagina,
-    porPagina: POR_PAGINA,
-  });
+  const editable = puedeEditarMaestros(ctx);
+  const [resultado, familias] = await Promise.all([
+    repositorioMaestros.buscarArticulos(ctx, { texto: q, pagina, porPagina: POR_PAGINA }),
+    editable ? repositorioMaestros.listarFamilias(ctx) : Promise.resolve([]),
+  ]);
 
   const totalPaginas = Math.ceil(resultado.total / POR_PAGINA);
   const params = new URLSearchParams({ q: q ?? "" });
@@ -53,7 +54,13 @@ export default async function PaginaArticulos({
       <h1 className="mb-3 font-condensada text-sm font-semibold uppercase tracking-wide text-tinta">
         Artículos <span className="text-tinta-3">({resultado.total.toLocaleString("es-CO")})</span>
       </h1>
-      <TablaArticulos filas={resultado.filas} busquedaServidor={q} acciones={paginacion} />
+      <TablaArticulos
+        filas={resultado.filas}
+        busquedaServidor={q}
+        acciones={paginacion}
+        editable={editable}
+        familias={familias}
+      />
     </div>
   );
 }

@@ -4,17 +4,19 @@ import { cargarMaestros } from "./cargarMaestros";
 import { latencia } from "./latencia";
 import { recalcularCascada } from "@/dominio/cascada";
 import { corteParetoIndice, explosionDeInsumos } from "@/dominio/explosion";
-import { claveCatalogo } from "@/dominio/codigo";
+import { claveCatalogo, nivelDe, normalizaCodigo, padreDe, plantillaDe } from "@/dominio/codigo";
 import {
   CERO,
   comparar,
   d,
   dividir,
   esCero,
+  esMayorQue,
   multiplicar,
   redondear,
   restar,
 } from "@/dominio/decimal";
+import type { Decimal } from "@/dominio/decimal";
 import type { EstadoPresupuesto, LineaPresupuesto, Obra } from "@/dominio/tipos";
 import { puedeEditarMaestros, puedeAprobar, veTodo } from "../contexto";
 import type { ContextoAcceso } from "../contexto";
@@ -25,6 +27,9 @@ import type {
   RepositorioSesion,
 } from "../puerto";
 import type {
+  Articulo,
+  Cuenta,
+  Familia,
   FilaComparacion,
   FiltroExplosion,
   FiltroPresupuestos,
@@ -77,6 +82,27 @@ function obtenerAlmacen(): Map<IdPresupuesto, EntradaPresupuesto> {
 
 function tieneAccesoSucursal(ctx: ContextoAcceso, sucursal: Sucursal): boolean {
   return veTodo(ctx) || ctx.sucursales.includes(sucursal);
+}
+
+/** Códigos de cuenta (cualquier nivel) que aparecen en algún presupuesto cargado. */
+function codigosCuentaEnUso(): Set<string> {
+  const codigos = new Set<string>();
+  for (const { obra } of obtenerAlmacen().values()) {
+    for (const linea of obra.lineas) codigos.add(linea.codigo);
+  }
+  return codigos;
+}
+
+/** Claves de catálogo de artículo (sin prefijo MO/TC/EQ) que aparecen como insumo en algún presupuesto cargado. */
+function clavesArticuloEnUso(): Set<string> {
+  const claves = new Set<string>();
+  for (const { obra } of obtenerAlmacen().values()) {
+    for (const linea of obra.lineas) {
+      if (!linea.insumos) continue;
+      for (const insumo of linea.insumos) claves.add(claveCatalogo(insumo.codigo));
+    }
+  }
+  return claves;
 }
 
 /** Resuelve los precios de los insumos N10 contra el catálogo de `destino`. No recalcula la cascada. */
@@ -492,7 +518,7 @@ export const repositorioMaestros: RepositorioMaestros = {
     if (consulta.texto) {
       const t = consulta.texto.toLowerCase();
       filtrados = filtrados.filter(
-        (a) => a.codigo.includes(t) || a.descripcion.toLowerCase().includes(t),
+        (a) => a.codigo.toLowerCase().includes(t) || a.descripcion.toLowerCase().includes(t),
       );
     }
     if (consulta.familia) filtrados = filtrados.filter((a) => a.familia === consulta.familia);
@@ -511,8 +537,10 @@ export const repositorioMaestros: RepositorioMaestros = {
 
   async resolverPrecio(_ctx, codigoArticulo, sucursal, anio) {
     await latencia();
-    const { precios } = cargarMaestros();
+    const { precios, preciosManuales } = cargarMaestros();
     const clave = claveCatalogo(codigoArticulo);
+    const manual = preciosManuales.get(`${clave}|${sucursal}|${anio}`);
+    if (manual !== undefined) return { precio: manual, origen: "MANUAL" };
     const fila = precios.get(`${clave}|${sucursal}`);
     if (!fila) return { precio: CERO, origen: "SIN_PRECIO" };
     const offset = anio - fila.anioBase;
@@ -527,7 +555,7 @@ export const repositorioMaestros: RepositorioMaestros = {
     let filtradas = cuentas;
     if (consulta.texto) {
       const t = consulta.texto.toLowerCase();
-      filtradas = filtradas.filter((c) => c.codigo.includes(t) || c.descripcion.toLowerCase().includes(t));
+      filtradas = filtradas.filter((c) => c.codigo.toLowerCase().includes(t) || c.descripcion.toLowerCase().includes(t));
     }
     if (consulta.nivel) filtradas = filtradas.filter((c) => c.nivel === consulta.nivel);
     if (consulta.plantilla) filtradas = filtradas.filter((c) => c.plantilla === consulta.plantilla);
@@ -561,14 +589,176 @@ export const repositorioMaestros: RepositorioMaestros = {
     return { ok: true, cuenta };
   },
 
+  async crearCuenta(ctx, { codigo, descripcion, unidadMedida }) {
+    await latencia();
+    if (!puedeEditarMaestros(ctx)) return { ok: false, motivo: "SIN_PERMISO" };
+    const { cuentas } = cargarMaestros();
+    const codigoNorm = normalizaCodigo(codigo);
+    const nivel = nivelDe(codigoNorm);
+    if (!nivel) return { ok: false, motivo: "CODIGO_INVALIDO" };
+    if (cuentas.some((c) => c.codigo === codigoNorm)) return { ok: false, motivo: "CODIGO_DUPLICADO" };
+
+    const codigoPadre = padreDe(codigoNorm);
+    if (codigoPadre && !cuentas.some((c) => c.codigo === codigoPadre)) {
+      return { ok: false, motivo: "PADRE_INEXISTENTE" };
+    }
+
+    const cuenta: Cuenta = {
+      codigo: codigoNorm,
+      nivel,
+      codigoPadre,
+      descripcion,
+      unidadMedida,
+      plantilla: plantillaDe(codigoNorm) ?? "ESPECIAL",
+      activa: true,
+    };
+    cuentas.push(cuenta);
+    return { ok: true, cuenta };
+  },
+
+  async eliminarCuenta(ctx, codigo) {
+    await latencia();
+    if (!puedeEditarMaestros(ctx)) return { ok: false, motivo: "SIN_PERMISO" };
+    const { cuentas } = cargarMaestros();
+    const indice = cuentas.findIndex((c) => c.codigo === codigo);
+    if (indice === -1) return { ok: false, motivo: "CUENTA_INEXISTENTE" };
+    if (cuentas.some((c) => c.codigoPadre === codigo)) return { ok: false, motivo: "TIENE_HIJOS" };
+    if (codigosCuentaEnUso().has(codigo)) return { ok: false, motivo: "EN_USO" };
+    cuentas.splice(indice, 1);
+    return { ok: true };
+  },
+
   async listarFamilias() {
     await latencia();
     return cargarMaestros().familias;
   },
 
+  async crearFamilia(ctx, { codigo, nombre, tipo }) {
+    await latencia();
+    if (!puedeEditarMaestros(ctx)) return { ok: false, motivo: "SIN_PERMISO" };
+    const { familias } = cargarMaestros();
+    if (familias.some((f) => f.codigo === codigo)) return { ok: false, motivo: "CODIGO_DUPLICADO" };
+    const familia: Familia = { codigo, nombre, tipo, nArticulos: 0 };
+    familias.push(familia);
+    return { ok: true, familia };
+  },
+
+  async actualizarFamilia(ctx, codigo, cambios) {
+    await latencia();
+    if (!puedeEditarMaestros(ctx)) return { ok: false, motivo: "SIN_PERMISO" };
+    const { familias } = cargarMaestros();
+    const familia = familias.find((f) => f.codigo === codigo);
+    if (!familia) return { ok: false, motivo: "FAMILIA_INEXISTENTE" };
+    if (cambios.nombre !== undefined) familia.nombre = cambios.nombre;
+    if (cambios.tipo !== undefined) familia.tipo = cambios.tipo;
+    return { ok: true, familia };
+  },
+
+  async eliminarFamilia(ctx, codigo) {
+    await latencia();
+    if (!puedeEditarMaestros(ctx)) return { ok: false, motivo: "SIN_PERMISO" };
+    const { familias, articulos } = cargarMaestros();
+    const indice = familias.findIndex((f) => f.codigo === codigo);
+    if (indice === -1) return { ok: false, motivo: "FAMILIA_INEXISTENTE" };
+    if (articulos.some((a) => a.familia === codigo)) return { ok: false, motivo: "EN_USO" };
+    familias.splice(indice, 1);
+    return { ok: true };
+  },
+
+  async crearArticulo(ctx, { codigo, descripcion, unidadMedida, familia }) {
+    await latencia();
+    if (!puedeEditarMaestros(ctx)) return { ok: false, motivo: "SIN_PERMISO" };
+    const { articulos, familias } = cargarMaestros();
+    if (articulos.some((a) => a.codigo === codigo)) return { ok: false, motivo: "CODIGO_DUPLICADO" };
+    const sinFamilia = !familia || familia === "nan";
+    const nuevoArticulo: Articulo = {
+      codigo,
+      descripcion,
+      unidadMedida,
+      familia,
+      familiaNombre: sinFamilia ? "Sin familia" : (familias.find((f) => f.codigo === familia)?.nombre ?? familia),
+      tipoLinea: "",
+      activo: true,
+      nSucursalesConPrecio: 0,
+    };
+    articulos.push(nuevoArticulo);
+    return { ok: true, articulo: nuevoArticulo };
+  },
+
+  async actualizarArticulo(ctx, codigo, cambios) {
+    await latencia();
+    if (!puedeEditarMaestros(ctx)) return { ok: false, motivo: "SIN_PERMISO" };
+    const { articulos, familias } = cargarMaestros();
+    const articulo = articulos.find((a) => a.codigo === codigo);
+    if (!articulo) return { ok: false, motivo: "ARTICULO_INEXISTENTE" };
+    if (cambios.descripcion !== undefined) articulo.descripcion = cambios.descripcion;
+    if (cambios.unidadMedida !== undefined) articulo.unidadMedida = cambios.unidadMedida;
+    if (cambios.activo !== undefined) articulo.activo = cambios.activo;
+    if (cambios.familia !== undefined) {
+      articulo.familia = cambios.familia;
+      const sinFamilia = !cambios.familia || cambios.familia === "nan";
+      articulo.familiaNombre = sinFamilia
+        ? "Sin familia"
+        : (familias.find((f) => f.codigo === cambios.familia)?.nombre ?? cambios.familia);
+    }
+    return { ok: true, articulo };
+  },
+
+  async eliminarArticulo(ctx, codigo) {
+    await latencia();
+    if (!puedeEditarMaestros(ctx)) return { ok: false, motivo: "SIN_PERMISO" };
+    const { articulos } = cargarMaestros();
+    const indice = articulos.findIndex((a) => a.codigo === codigo);
+    if (indice === -1) return { ok: false, motivo: "ARTICULO_INEXISTENTE" };
+    if (clavesArticuloEnUso().has(claveCatalogo(codigo))) return { ok: false, motivo: "EN_USO" };
+    articulos.splice(indice, 1);
+    return { ok: true };
+  },
+
   async listarSucursales() {
     await latencia();
     return cargarMaestros().sucursales.map((s) => s.nombre as Sucursal);
+  },
+
+  async listarCatalogoSucursales() {
+    await latencia();
+    return cargarMaestros().sucursales;
+  },
+
+  async actualizarSucursal(ctx, codigo, cambios) {
+    await latencia();
+    if (!puedeEditarMaestros(ctx)) return { ok: false, motivo: "SIN_PERMISO" };
+    const { sucursales } = cargarMaestros();
+    const sucursal = sucursales.find((s) => s.codigo === codigo);
+    if (!sucursal) return { ok: false, motivo: "SUCURSAL_INEXISTENTE" };
+    sucursal.activa = cambios.activa;
+    return { ok: true, sucursal };
+  },
+
+  async fijarPrecioManual(ctx, { articulo, sucursal, anio, precio }) {
+    await latencia();
+    if (!puedeEditarMaestros(ctx)) return { ok: false, motivo: "SIN_PERMISO" };
+    const { articulos, preciosManuales } = cargarMaestros();
+    if (!articulos.some((a) => a.codigo === articulo)) return { ok: false, motivo: "ARTICULO_INEXISTENTE" };
+    let valor: Decimal;
+    try {
+      valor = d(precio);
+    } catch {
+      return { ok: false, motivo: "VALOR_INVALIDO" };
+    }
+    if (!esMayorQue(valor, CERO)) return { ok: false, motivo: "VALOR_INVALIDO" };
+    preciosManuales.set(`${claveCatalogo(articulo)}|${sucursal}|${anio}`, valor);
+    return { ok: true };
+  },
+
+  async eliminarPrecioManual(ctx, articulo, sucursal, anio) {
+    await latencia();
+    if (!puedeEditarMaestros(ctx)) return { ok: false, motivo: "SIN_PERMISO" };
+    const { preciosManuales } = cargarMaestros();
+    const clave = `${claveCatalogo(articulo)}|${sucursal}|${anio}`;
+    if (!preciosManuales.has(clave)) return { ok: false, motivo: "PRECIO_INEXISTENTE" };
+    preciosManuales.delete(clave);
+    return { ok: true };
   },
 };
 
