@@ -203,16 +203,37 @@ export interface SucursalCatalogo {
  * aquí es la agrupación propia de este catálogo (viene del maestro de
  * origen como "subcapítulo"), no el código de `Familia` del maestro de
  * artículos — son taxonomías distintas aunque compartan algunos nombres.
+ *
+ * El código se reformatea desde el original del maestro (p. ej. "A1" ->
+ * "A01") para que el orden alfabético coincida con el numérico; el ancho
+ * del relleno de ceros es el mínimo necesario POR capítulo (la mayoría usa
+ * 2 dígitos, pero ESTRUCTURA e INSTALACIONES HIDRAULICAS Y SANITARIAS pasan
+ * de 99 actividades y usan 3).
  */
 export interface ActividadManoObra {
   codigo: string;
   descripcion: string;
+  /** Letra (A-P) — coincide 1:1 con `capitulo`, es la raíz del árbol. */
+  capituloCodigo: string;
   capitulo: string;
   familia: string;
   unidad: string;
   anio: number;
   /** Precio CON IVA por sucursal. Ausente = sin dato, nunca 0. */
   precios: Partial<Record<Sucursal, Decimal>>;
+  /**
+   * Código del artículo "no inventariable" vinculado en el maestro de
+   * actividades de origen (hoja `09_actividad`, columna `num_inventario`).
+   * `null` si la actividad no tiene vínculo declarado.
+   */
+  noInventariable: string | null;
+  /**
+   * Resuelto cruzando `noInventariable` contra el maestro de artículos
+   * (`03_articulos.csv`) — `null` tanto si no hay `noInventariable` como si
+   * el código no existe hoy en ese maestro (hueco de datos real, ya
+   * conocido para un puñado de artículos huérfanos; no se inventa).
+   */
+  articuloVinculado: { descripcion: string; familiaCodigo: string; familiaNombre: string } | null;
 }
 
 export interface Usuario {

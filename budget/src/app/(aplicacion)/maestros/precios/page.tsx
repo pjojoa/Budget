@@ -4,7 +4,7 @@ import { obtenerContextoActual, obtenerContextoPrecioActual } from "@/datos/simu
 import { puedeEditarMaestros } from "@/datos/contexto";
 import type { ContextoAcceso } from "@/datos/contexto";
 import { TablaPrecios } from "./TablaPrecios";
-import { TablaManoObra } from "./TablaManoObra";
+import { ArbolManoObra } from "./ArbolManoObra";
 
 const PESTANAS = [
   { valor: "", etiqueta: "Consulta individual" },
@@ -56,7 +56,7 @@ export default async function PaginaPrecios({
 
 async function PrecioManoObra({ ctx }: { ctx: ContextoAcceso }) {
   const actividades = await repositorioMaestros.listarManoObra(ctx);
-  return <TablaManoObra filas={actividades} />;
+  return <ArbolManoObra filas={actividades} />;
 }
 
 async function PrecioIndividual({

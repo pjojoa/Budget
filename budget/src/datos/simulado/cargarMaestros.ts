@@ -87,6 +87,8 @@ export function cargarMaestros(): MaestrosCargados {
     };
   });
 
+  const articuloPorCodigo = new Map(articulos.map((a) => [a.codigo, a]));
+
   const familias: Familia[] = filasFamilias.map((f) => ({
     codigo: f.codigo,
     nombre: f.nombre,
@@ -145,14 +147,21 @@ export function cargarMaestros(): MaestrosCargados {
       const v = f[`precio_${s.toLowerCase()}`];
       if (v && v.trim() !== "") precios[s] = v as Decimal;
     }
+    const noInventariable = f.no_inventariable && f.no_inventariable.trim() !== "" ? f.no_inventariable : null;
+    const articuloRef = noInventariable ? articuloPorCodigo.get(noInventariable) : undefined;
     return {
       codigo: f.codigo,
       descripcion: f.descripcion,
+      capituloCodigo: f.capitulo_codigo,
       capitulo: f.capitulo,
       familia: f.familia,
       unidad: f.unidad,
       anio: Number(f.anio),
       precios,
+      noInventariable,
+      articuloVinculado: articuloRef
+        ? { descripcion: articuloRef.descripcion, familiaCodigo: articuloRef.familia, familiaNombre: articuloRef.familiaNombre }
+        : null,
     };
   });
 
