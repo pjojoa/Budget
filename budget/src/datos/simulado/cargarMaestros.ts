@@ -64,20 +64,27 @@ export function cargarMaestros(): MaestrosCargados {
 
   const nombrePorFamilia = new Map(filasFamilias.map((f) => [f.codigo, f.nombre]));
 
-  const articulos: Articulo[] = filasArticulos.map((f) => ({
-    codigo: f.codigo,
-    descripcion: f.descripcion,
-    unidadMedida: f.unidad_medida,
-    familia: f.familia,
-    familiaNombre: nombrePorFamilia.get(f.familia) ?? f.familia,
-    tipoLinea: (f.tipo_linea as Articulo["tipoLinea"]) || "",
-    activo: f.activo === "true",
-    nSucursalesConPrecio: Number(f.n_sucursales_con_precio || 0),
-  }));
+  const articulos: Articulo[] = filasArticulos.map((f) => {
+    // "nan" en el maestro real no es una familia: es la ausencia de una
+    // (823 artículos). Mostrar el nombre real evita que un usuario vea
+    // literalmente el texto "nan" como si fuera un nombre de familia.
+    const sinFamilia = !f.familia || f.familia === "nan";
+    return {
+      codigo: f.codigo,
+      descripcion: f.descripcion,
+      unidadMedida: f.unidad_medida,
+      familia: f.familia,
+      familiaNombre: sinFamilia ? "Sin familia" : (nombrePorFamilia.get(f.familia) ?? f.familia),
+      tipoLinea: (f.tipo_linea as Articulo["tipoLinea"]) || "",
+      activo: f.activo === "true",
+      nSucursalesConPrecio: Number(f.n_sucursales_con_precio || 0),
+    };
+  });
 
   const familias: Familia[] = filasFamilias.map((f) => ({
     codigo: f.codigo,
     nombre: f.nombre,
+    tipo: f.tipo || "",
     nArticulos: Number(f.n_articulos || 0),
   }));
 

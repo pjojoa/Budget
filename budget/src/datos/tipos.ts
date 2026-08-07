@@ -176,6 +176,8 @@ export interface ConsultaCuentas {
 export interface Familia {
   codigo: string;
   nombre: string;
+  /** "Material" | "Mano de obra" | vacío — tal como viene del maestro. */
+  tipo: string;
   nArticulos: number;
 }
 
