@@ -20,4 +20,5 @@ export type {
   RepositorioSesion,
 } from "./puerto";
 export type { ContextoAcceso, Rol } from "./contexto";
+export { veTodo, puedeEditarMaestros, puedeAprobar } from "./contexto";
 export * from "./tipos";

@@ -65,34 +65,34 @@ export function PanelApu({ presupuestoId, codigo, descripcion, onCerrar, onBusca
         ) : insumos.length === 0 ? (
           <p className="p-3 text-xs text-tinta-3">Esta subactividad no tiene insumos cargados.</p>
         ) : (
-          <table className="w-full border-collapse text-xs">
+          <table className="tabla">
             <thead>
-              <tr className="sticky top-0 border-b border-hairline bg-panel text-left font-condensada uppercase tracking-wide text-tinta-3">
-                <th className="px-2 py-1 font-medium">Insumo</th>
-                <th className="px-2 py-1 font-medium">Descripción</th>
-                <th className="px-2 py-1 font-medium">UM</th>
-                <th className="px-2 py-1 text-right font-medium">Rendimiento</th>
-                <th className="px-2 py-1 text-right font-medium">Precio</th>
-                <th className="px-2 py-1 text-right font-medium">Parcial</th>
-                <th className="px-2 py-1 font-medium">Origen</th>
+              <tr>
+                <th>Insumo</th>
+                <th>Descripción</th>
+                <th>UM</th>
+                <th data-alinear="der">Rendimiento</th>
+                <th data-alinear="der">Precio</th>
+                <th data-alinear="der">Parcial</th>
+                <th>Origen</th>
               </tr>
             </thead>
             <tbody>
               {insumos.map((i) => (
-                <tr key={i.codigo} className="border-b border-hairline hover:bg-fila">
-                  <td className="px-2 py-1 font-mono text-tinta">{i.codigo}</td>
-                  <td className="max-w-xs truncate px-2 py-1 text-tinta-2" title={i.descripcionObra}>
+                <tr key={i.codigo}>
+                  <td className="font-mono text-tinta">{i.codigo}</td>
+                  <td className="max-w-xs truncate text-tinta-2" title={i.descripcionObra}>
                     {i.descripcionObra}
                   </td>
-                  <td className="px-2 py-1 text-tinta-3">{i.unidad}</td>
-                  <td className="cifra px-2 py-1">{formatearRendimiento(i.rendimiento)}</td>
-                  <td className="px-2 py-1 text-right">
+                  <td className="text-tinta-3">{i.unidad}</td>
+                  <td className="cifra">{formatearRendimiento(i.rendimiento)}</td>
+                  <td data-alinear="der">
                     <Moneda valor={i.precio} decimales={2} />
                   </td>
-                  <td className="px-2 py-1 text-right">
+                  <td data-alinear="der">
                     <Moneda valor={i.parcial} />
                   </td>
-                  <td className="px-2 py-1">
+                  <td>
                     <BadgeOrigenPrecio origen={i.origenPrecio} />
                   </td>
                 </tr>

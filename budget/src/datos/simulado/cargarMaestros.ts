@@ -41,11 +41,20 @@ interface MaestrosCargados {
   precios: Map<string, FilaPrecio>;
 }
 
-let cache: MaestrosCargados | null = null;
+// `globalThis`, no un `let` de módulo: en `next dev` cada ruta puede
+// compilarse como una entrada bajo demanda con su PROPIO registro de
+// módulos, así que un `let` no sobrevive de forma fiable entre rutas
+// distintas (una edición de cuenta hecha aquí puede "desaparecer" al
+// navegar a una ruta recién compilada). Mismo fix que en
+// `repositorioSimulado.ts`'s `obtenerAlmacen()`. Ahora que `cuentas` es
+// editable (`actualizarCuenta`), el mismo riesgo aplica aquí.
+declare global {
+  var __budgetMaestrosCargados: MaestrosCargados | undefined;
+}
 
 /** Carga los 5 CSV de maestros una sola vez por proceso servidor (~37.500 filas). */
 export function cargarMaestros(): MaestrosCargados {
-  if (cache) return cache;
+  if (globalThis.__budgetMaestrosCargados) return globalThis.__budgetMaestrosCargados;
 
   const filasArticulos = leerCsv<Record<string, string>>("03_articulos.csv");
   const filasFamilias = leerCsv<Record<string, string>>("02_familias.csv");
@@ -107,6 +116,6 @@ export function cargarMaestros(): MaestrosCargados {
     });
   }
 
-  cache = { articulos, cuentas, familias, sucursales, precios };
-  return cache;
+  globalThis.__budgetMaestrosCargados = { articulos, cuentas, familias, sucursales, precios };
+  return globalThis.__budgetMaestrosCargados;
 }

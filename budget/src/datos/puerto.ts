@@ -102,6 +102,18 @@ export interface RepositorioMaestros {
     anio: number,
   ): Promise<PrecioResuelto | null>;
   listarCuentas(ctx: ContextoAcceso, consulta: ConsultaCuentas): Promise<Pagina<Cuenta>>;
+  /**
+   * El árbol completo (sin paginar) de una plantilla, para construir la vista
+   * plegable — construir un árbol correcto exige tener todos sus nodos, algo
+   * que no se puede paginar. Igual que `obtenerArbol` de presupuestos.
+   */
+  listarArbolCuentas(ctx: ContextoAcceso, plantilla?: Cuenta["plantilla"]): Promise<Cuenta[]>;
+  /** Código y `codigoPadre` nunca son editables aquí: se derivan del código, nunca se digitan. */
+  actualizarCuenta(
+    ctx: ContextoAcceso,
+    codigo: string,
+    cambios: { descripcion?: string; unidadMedida?: string; activa?: boolean },
+  ): Promise<{ ok: true; cuenta: Cuenta } | { ok: false; motivo: "SIN_PERMISO" | "CUENTA_INEXISTENTE" }>;
   listarFamilias(ctx: ContextoAcceso): Promise<Familia[]>;
   listarSucursales(ctx: ContextoAcceso): Promise<Sucursal[]>;
 }

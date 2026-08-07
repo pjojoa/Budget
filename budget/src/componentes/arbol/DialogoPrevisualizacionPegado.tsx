@@ -59,23 +59,25 @@ export function DialogoPrevisualizacionPegado({
       )}
 
       <div className="mt-3 max-h-72 overflow-auto rounded-sm border border-hairline">
-        <table className="w-full border-collapse text-xs">
-          <thead className="sticky top-0 bg-panel">
-            <tr className="border-b border-hairline text-left font-condensada uppercase tracking-wide text-tinta-3">
-              <th className="px-2 py-1 font-medium">Código</th>
-              <th className="px-2 py-1 font-medium">Columna</th>
-              <th className="px-2 py-1 text-right font-medium">Antes</th>
-              <th className="px-2 py-1 text-right font-medium">Después</th>
-              <th className="px-2 py-1 font-medium">Estado</th>
+        <table className="tabla">
+          <thead>
+            <tr>
+              <th>Código</th>
+              <th>Columna</th>
+              <th data-alinear="der">Antes</th>
+              <th data-alinear="der">Después</th>
+              <th>Estado</th>
             </tr>
           </thead>
           <tbody>
             {resultados.map((r, i) => (
-              <tr key={`${r.codigo}-${r.columna}-${i}`} className="border-b border-hairline">
-                <td className="px-2 py-1 font-mono text-tinta">{r.codigo}</td>
-                <td className="px-2 py-1 text-tinta-2">{ETIQUETA_COLUMNA[r.columna]}</td>
-                <td className="px-2 py-1 text-right text-tinta-3">{formatearRendimiento(r.valorAnterior, 2)}</td>
-                <td className="px-2 py-1 text-right">
+              <tr key={`${r.codigo}-${r.columna}-${i}`}>
+                <td className="font-mono text-tinta">{r.codigo}</td>
+                <td className="text-tinta-2">{ETIQUETA_COLUMNA[r.columna]}</td>
+                <td data-alinear="der" className="text-tinta-3">
+                  {formatearRendimiento(r.valorAnterior, 2)}
+                </td>
+                <td data-alinear="der">
                   {r.valorNuevo ? (
                     <span className={r.estado === "aplicable" ? "text-tinta" : "text-tinta-3"}>
                       {formatearRendimiento(r.valorNuevo, 2)}
@@ -84,7 +86,7 @@ export function DialogoPrevisualizacionPegado({
                     "—"
                   )}
                 </td>
-                <td className="px-2 py-1">
+                <td>
                   {r.estado === "aplicable" && <span className="text-tinta-2">se aplica</span>}
                   {r.estado === "sin_cambio" && <span className="text-tinta-3">sin cambio</span>}
                   {r.estado === "no_editable" && (

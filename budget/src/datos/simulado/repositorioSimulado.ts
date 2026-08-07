@@ -16,7 +16,7 @@ import {
   restar,
 } from "@/dominio/decimal";
 import type { EstadoPresupuesto, LineaPresupuesto, Obra } from "@/dominio/tipos";
-import { veTodo } from "../contexto";
+import { puedeEditarMaestros, puedeAprobar, veTodo } from "../contexto";
 import type { ContextoAcceso } from "../contexto";
 import type {
   RepositorioAnalisis,
@@ -321,14 +321,28 @@ export const repositorioPresupuestos: RepositorioPresupuestos = {
     await latencia();
     const e = obtenerAlmacen().get(id);
     if (!e) return { ok: false, motivo: "TRANSICION_INVALIDA" };
+    if (!tieneAccesoSucursal(ctx, e.obra.meta.sucursal)) return { ok: false, motivo: "SIN_PERMISO" };
 
     const actual = e.obra.meta.estado;
     if (!TRANSICIONES_VALIDAS[actual].includes(nuevoEstado)) {
       return { ok: false, motivo: "TRANSICION_INVALIDA" };
     }
 
+    // El Presupuestador envía su propio trabajo a revisión; devolverlo a
+    // borrador (rechazarlo) es una acción de filtro de cualquiera de los
+    // dos directores, igual que justificar un hallazgo.
+    if (nuevoEstado === "EN_REVISION" && !ctx.roles.includes("PRESUPUESTADOR")) {
+      return { ok: false, motivo: "SIN_PERMISO" };
+    }
+    if (nuevoEstado === "BORRADOR" && !puedeAprobar(ctx)) {
+      return { ok: false, motivo: "SIN_PERMISO" };
+    }
+
     if (nuevoEstado === "APROBADO") {
-      if (!ctx.roles.includes("DIRECTOR_CPC") || !tieneAccesoSucursal(ctx, e.obra.meta.sucursal)) {
+      // Director Sucursal CPC revisa y filtra (puedeAprobar cubre esa etapa,
+      // p. ej. justificar hallazgos), pero la aprobación FINAL es exclusiva
+      // de Director Nacional CPC — es la única cuenta con veTodo().
+      if (!veTodo(ctx)) {
         return { ok: false, motivo: "SIN_PERMISO" };
       }
       const errores = e.hallazgos.filter((h) => h.severidad === "ERROR" && h.estado === "ABIERTO");
@@ -399,7 +413,7 @@ export const repositorioAnalisis: RepositorioAnalisis = {
 
   async justificarHallazgo(ctx, id, hallazgoId, justificacion) {
     await latencia();
-    if (!ctx.roles.includes("DIRECTOR_CPC") && !veTodo(ctx)) {
+    if (!puedeAprobar(ctx)) {
       return { ok: false, motivo: "SIN_PERMISO" };
     }
     if (justificacion.trim().length < 20) {
@@ -527,6 +541,24 @@ export const repositorioMaestros: RepositorioMaestros = {
       pagina,
       porPagina,
     };
+  },
+
+  async listarArbolCuentas(_ctx, plantilla) {
+    await latencia();
+    const { cuentas } = cargarMaestros();
+    return plantilla ? cuentas.filter((c) => c.plantilla === plantilla) : cuentas;
+  },
+
+  async actualizarCuenta(ctx, codigo, cambios) {
+    await latencia();
+    if (!puedeEditarMaestros(ctx)) return { ok: false, motivo: "SIN_PERMISO" };
+    const { cuentas } = cargarMaestros();
+    const cuenta = cuentas.find((c) => c.codigo === codigo);
+    if (!cuenta) return { ok: false, motivo: "CUENTA_INEXISTENTE" };
+    if (cambios.descripcion !== undefined) cuenta.descripcion = cambios.descripcion;
+    if (cambios.unidadMedida !== undefined) cuenta.unidadMedida = cambios.unidadMedida;
+    if (cambios.activa !== undefined) cuenta.activa = cambios.activa;
+    return { ok: true, cuenta };
   },
 
   async listarFamilias() {

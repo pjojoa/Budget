@@ -29,22 +29,22 @@ export default async function PaginaArticulo({ params }: { params: Promise<{ cod
       <h2 className="mb-2 font-condensada text-[11px] uppercase tracking-wide text-tinta-3">
         Precios por sucursal ({anioConsulta})
       </h2>
-      <table className="w-full max-w-md border-collapse text-xs">
+      <table className="tabla max-w-md">
         <thead>
-          <tr className="border-b border-hairline text-left font-condensada uppercase tracking-wide text-tinta-3">
-            <th className="py-1.5 pr-3 font-medium">Sucursal</th>
-            <th className="py-1.5 pr-3 text-right font-medium">Precio</th>
-            <th className="py-1.5 pr-3 font-medium">Origen</th>
+          <tr>
+            <th>Sucursal</th>
+            <th data-alinear="der">Precio</th>
+            <th>Origen</th>
           </tr>
         </thead>
         <tbody>
           {precios.map(({ sucursal, resuelto }) => (
-            <tr key={sucursal} className="border-b border-hairline">
-              <td className="py-1.5 pr-3 text-tinta-2">{sucursal}</td>
-              <td className="py-1.5 pr-3 text-right">
+            <tr key={sucursal}>
+              <td className="text-tinta-2">{sucursal}</td>
+              <td data-alinear="der">
                 <Moneda valor={resuelto?.origen === "SIN_PRECIO" ? null : (resuelto?.precio ?? null)} decimales={2} />
               </td>
-              <td className="py-1.5 pr-3">
+              <td>
                 <BadgeOrigenPrecio origen={resuelto?.origen ?? "SIN_PRECIO"} />
               </td>
             </tr>

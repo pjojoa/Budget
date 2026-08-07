@@ -1,6 +1,6 @@
 import { repositorioAnalisis } from "@/datos";
 import { obtenerContextoActual } from "@/datos/simulado/sesion";
-import { veTodo } from "@/datos/contexto";
+import { puedeAprobar } from "@/datos/contexto";
 import { BadgeSeveridad } from "@/componentes/dominio/Insignias";
 import { revalidatePath } from "next/cache";
 import type { Hallazgo, Severidad } from "@/dominio/tipos";
@@ -15,7 +15,7 @@ export default async function PaginaHallazgos({ params }: { params: Promise<{ pr
   const { presupuestoId } = await params;
   const ctx = await obtenerContextoActual();
   const hallazgos = await repositorioAnalisis.hallazgos(ctx, presupuestoId);
-  const puedeJustificar = ctx.roles.includes("DIRECTOR_CPC") || veTodo(ctx);
+  const puedeJustificar = puedeAprobar(ctx);
 
   const abiertos = hallazgos.filter((h) => h.estado === "ABIERTO");
   const resueltos = hallazgos.filter((h) => h.estado !== "ABIERTO");

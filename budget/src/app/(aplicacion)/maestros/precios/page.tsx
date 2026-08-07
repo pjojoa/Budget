@@ -28,12 +28,12 @@ export default async function PaginaPrecios({ searchParams }: { searchParams: Pr
       </form>
 
       {codigo && (
-        <table className="w-full max-w-md border-collapse text-xs">
+        <table className="tabla max-w-md">
           <thead>
-            <tr className="border-b border-hairline text-left font-condensada uppercase tracking-wide text-tinta-3">
-              <th className="py-1.5 pr-3 font-medium">Sucursal</th>
-              <th className="py-1.5 pr-3 text-right font-medium">Precio</th>
-              <th className="py-1.5 pr-3 font-medium">Origen</th>
+            <tr>
+              <th>Sucursal</th>
+              <th data-alinear="der">Precio</th>
+              <th>Origen</th>
             </tr>
           </thead>
           <tbody>
@@ -41,12 +41,12 @@ export default async function PaginaPrecios({ searchParams }: { searchParams: Pr
               sucursales.map(async (s) => {
                 const resuelto = await repositorioMaestros.resolverPrecio(ctx, codigo, s, anioConsulta);
                 return (
-                  <tr key={s} className="border-b border-hairline">
-                    <td className="py-1.5 pr-3 text-tinta-2">{s}</td>
-                    <td className="py-1.5 pr-3 text-right">
+                  <tr key={s}>
+                    <td className="text-tinta-2">{s}</td>
+                    <td data-alinear="der">
                       <Moneda valor={resuelto?.origen === "SIN_PRECIO" ? null : (resuelto?.precio ?? null)} decimales={2} />
                     </td>
-                    <td className="py-1.5 pr-3">
+                    <td>
                       <BadgeOrigenPrecio origen={resuelto?.origen ?? "SIN_PRECIO"} />
                     </td>
                   </tr>

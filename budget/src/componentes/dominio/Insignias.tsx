@@ -47,3 +47,55 @@ export function InsigniaEstadoPresupuesto({ estado }: { estado: EstadoPresupuest
   const { texto, clase } = mapa[estado];
   return <span className={`${BASE} ${clase}`}>{texto}</span>;
 }
+
+const ETIQUETA_PLANTILLA: Record<string, string> = {
+  EDIFICACION: "Edificación",
+  URBANISMO_INTERNO: "Urbanismo interno",
+  URBANISMO_EXTERNO: "Urbanismo externo",
+  MIXTA: "Mixta",
+  ESPECIAL: "Especial",
+};
+
+/** Plantilla es puramente informativa (se deriva del código) — sin color. */
+export function InsigniaPlantilla({ plantilla }: { plantilla: string }) {
+  return <span className={`${BASE} border border-hairline text-tinta-3`}>{ETIQUETA_PLANTILLA[plantilla] ?? plantilla}</span>;
+}
+
+/**
+ * Igual criterio que APROBADO en InsigniaEstadoPresupuesto: activa es lo
+ * normal y no necesita color; inactiva se marca con el mismo trazo
+ * discontinuo que BORRADOR, no requiere atención urgente pero sí lectura.
+ */
+export function InsigniaActiva({ activa }: { activa: boolean }) {
+  return activa ? (
+    <span className={`${BASE} text-tinta-2`}>Activa</span>
+  ) : (
+    <span className={`${BASE} border border-dashed border-hairline text-tinta-3`}>Inactiva</span>
+  );
+}
+
+const ETIQUETA_NIVEL: Record<4 | 5 | 8 | 10, string> = {
+  4: "Capítulo",
+  5: "Subcapítulo",
+  8: "Actividad",
+  10: "Subactividad",
+};
+
+/** Clase de tinta por nivel — para teñir el texto de la fila completa. */
+export function claseTextoNivel(nivel: 4 | 5 | 8 | 10): string {
+  return {
+    4: "text-nivel-4",
+    5: "text-nivel-5",
+    8: "text-nivel-8",
+    10: "text-nivel-10",
+  }[nivel];
+}
+
+/** Nivel jerárquico (texto plano; el color lo aporta la fila). */
+export function InsigniaNivel({ nivel }: { nivel: 4 | 5 | 8 | 10 }) {
+  return (
+    <span className={`${BASE} tracking-wide`} title={ETIQUETA_NIVEL[nivel]}>
+      N{nivel}
+    </span>
+  );
+}

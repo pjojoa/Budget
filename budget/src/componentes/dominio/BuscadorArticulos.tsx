@@ -74,15 +74,15 @@ export function BuscadorArticulos({ abierto, onCerrar, onSeleccionar }: Props) {
       />
 
       <div className="mt-3 max-h-96 overflow-auto rounded-sm border border-hairline">
-        <table className="w-full border-collapse text-xs">
-          <thead className="sticky top-0 bg-panel">
-            <tr className="border-b border-hairline text-left font-condensada uppercase tracking-wide text-tinta-3">
-              <th className="px-2 py-1 font-medium">Código</th>
-              <th className="px-2 py-1 font-medium">Descripción</th>
-              <th className="px-2 py-1 font-medium">UM</th>
-              <th className="px-2 py-1 font-medium">Familia</th>
-              <th className="px-2 py-1 text-right font-medium">Sucursales c/precio</th>
-              {onSeleccionar && <th className="px-2 py-1" />}
+        <table className="tabla">
+          <thead>
+            <tr>
+              <th>Código</th>
+              <th>Descripción</th>
+              <th>UM</th>
+              <th>Familia</th>
+              <th data-alinear="der">Sucursales c/precio</th>
+              {onSeleccionar && <th />}
             </tr>
           </thead>
           <tbody>

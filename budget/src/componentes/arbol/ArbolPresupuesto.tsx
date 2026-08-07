@@ -437,16 +437,26 @@ export function ArbolPresupuesto({ presupuestoId, lineas, marcaVersionInicial, e
         <button
           type="button"
           onClick={() => setExpandido(true)}
-          className="text-[11px] text-tinta-2 hover:text-tinta hover:underline"
+          aria-label="Expandir todo"
+          title="Expandir todo"
+          className="flex size-7 items-center justify-center rounded-sm text-tinta-3 transition-colors hover:bg-fila hover:text-tinta"
         >
-          Expandir todo
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" className="size-3.5" aria-hidden>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M2.5 6.5 5 4l2.5 2.5M5 4v8" />
+            <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 9.5 11 12 8.5 9.5M11 12V4" />
+          </svg>
         </button>
         <button
           type="button"
           onClick={() => setExpandido({})}
-          className="text-[11px] text-tinta-2 hover:text-tinta hover:underline"
+          aria-label="Colapsar todo"
+          title="Colapsar todo"
+          className="flex size-7 items-center justify-center rounded-sm text-tinta-3 transition-colors hover:bg-fila hover:text-tinta"
         >
-          Colapsar todo
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" className="size-3.5" aria-hidden>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M2.5 5.5 5 8l2.5-2.5M5 8V3" />
+            <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 10.5 11 8 8.5 10.5M11 8v5" />
+          </svg>
         </button>
         {editable && (
           <>

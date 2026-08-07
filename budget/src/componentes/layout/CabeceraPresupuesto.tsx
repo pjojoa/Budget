@@ -1,8 +1,23 @@
 import { Moneda } from "@/componentes/dominio/Moneda";
 import { InsigniaEstadoPresupuesto } from "@/componentes/dominio/Insignias";
+import { AccionesEstadoPresupuesto } from "./AccionesEstadoPresupuesto";
 import type { CabeceraPresupuesto as CabeceraPresupuestoTipo } from "@/datos/tipos";
 
-export function CabeceraPresupuesto({ cabecera }: { cabecera: CabeceraPresupuestoTipo }) {
+interface Props {
+  cabecera: CabeceraPresupuestoTipo;
+  presupuestoId: string;
+  puedeEnviarRevision: boolean;
+  puedeDevolver: boolean;
+  puedeAprobarFinal: boolean;
+}
+
+export function CabeceraPresupuesto({
+  cabecera,
+  presupuestoId,
+  puedeEnviarRevision,
+  puedeDevolver,
+  puedeAprobarFinal,
+}: Props) {
   const { error, aviso } = cabecera.nHallazgosAbiertos;
   return (
     <div className="flex flex-wrap items-center justify-between gap-3 px-3 py-2.5">
@@ -39,6 +54,12 @@ export function CabeceraPresupuesto({ cabecera }: { cabecera: CabeceraPresupuest
           <div className="text-[10px] uppercase tracking-wide text-tinta-3">$/inmueble</div>
           <Moneda valor={cabecera.valorInmueble} className="text-sm" />
         </div>
+        <AccionesEstadoPresupuesto
+          presupuestoId={presupuestoId}
+          puedeEnviarRevision={puedeEnviarRevision}
+          puedeDevolver={puedeDevolver}
+          puedeAprobarFinal={puedeAprobarFinal}
+        />
       </div>
     </div>
   );

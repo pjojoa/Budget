@@ -40,6 +40,8 @@ export const repositorioMaestros: RepositorioMaestros = {
   buscarArticulos: pendiente,
   resolverPrecio: pendiente,
   listarCuentas: pendiente,
+  listarArbolCuentas: pendiente,
+  actualizarCuenta: pendiente,
   listarFamilias: pendiente,
   listarSucursales: pendiente,
 };

@@ -1,11 +1,10 @@
 import type { Sucursal } from "@/dominio/tipos";
 
 export type Rol =
+  | "DIRECTOR_NACIONAL_CPC"
+  | "DIRECTOR_SUCURSAL_CPC"
   | "PRESUPUESTADOR"
-  | "DIRECTOR_CPC"
-  | "ADMIN_MAESTROS"
-  | "DIRECCION"
-  | "AUDITORIA";
+  | "ADMIN_MAESTROS";
 
 /**
  * Se construye una vez por request a partir de la sesión (hoy simulada,
@@ -22,10 +21,18 @@ export interface ContextoAcceso {
   sucursales: Sucursal[];
 }
 
+/** Director Nacional CPC ve todas las sucursales. */
 export function veTodo(ctx: ContextoAcceso): boolean {
-  return ctx.roles.includes("DIRECCION") || ctx.roles.includes("AUDITORIA");
+  return ctx.roles.includes("DIRECTOR_NACIONAL_CPC");
 }
 
 export function puedeEditarMaestros(ctx: ContextoAcceso): boolean {
   return ctx.roles.includes("ADMIN_MAESTROS");
+}
+
+/** Aprobar presupuestos o justificar hallazgos ERROR. */
+export function puedeAprobar(ctx: ContextoAcceso): boolean {
+  return (
+    ctx.roles.includes("DIRECTOR_SUCURSAL_CPC") || ctx.roles.includes("DIRECTOR_NACIONAL_CPC")
+  );
 }

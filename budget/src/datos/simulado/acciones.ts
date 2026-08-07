@@ -13,7 +13,9 @@ export async function iniciarSesionComo(usuarioId: string) {
   }
   const almacen = await cookies();
   almacen.set(COOKIE_USUARIO, usuarioId, { maxAge: UN_ANIO_SEGUNDOS, path: "/" });
-  redirect("/contexto");
+  // Sucursal y año solo hacen falta para crear un presupuesto (ahí se piden,
+  // en /presupuestos/nuevo) — no tiene sentido exigirlos en cada ingreso.
+  redirect("/presupuestos");
 }
 
 export async function establecerContextoPrecio(sucursal: string, anio: number) {

@@ -22,34 +22,34 @@ export default async function PaginaApu({
       <h1 className="mb-3 flex items-center gap-2 font-condensada text-sm uppercase tracking-wide text-tinta">
         APU <CodigoCuenta codigo={codigo} />
       </h1>
-      <table className="w-full border-collapse text-xs">
+      <table className="tabla">
         <thead>
-          <tr className="border-b border-hairline text-left font-condensada uppercase tracking-wide text-tinta-3">
-            <th className="py-1.5 pr-3 font-medium">Insumo</th>
-            <th className="py-1.5 pr-3 font-medium">Descripción</th>
-            <th className="py-1.5 pr-3 font-medium">UM</th>
-            <th className="py-1.5 pr-3 text-right font-medium">Rendimiento</th>
-            <th className="py-1.5 pr-3 text-right font-medium">Precio</th>
-            <th className="py-1.5 pr-3 text-right font-medium">Parcial</th>
-            <th className="py-1.5 pr-3 font-medium">Origen</th>
+          <tr>
+            <th>Insumo</th>
+            <th>Descripción</th>
+            <th>UM</th>
+            <th data-alinear="der">Rendimiento</th>
+            <th data-alinear="der">Precio</th>
+            <th data-alinear="der">Parcial</th>
+            <th>Origen</th>
           </tr>
         </thead>
         <tbody>
           {insumos.map((i) => (
-            <tr key={i.codigo} className="border-b border-hairline hover:bg-fila">
-              <td className="py-1.5 pr-3 font-mono text-tinta">{i.codigo}</td>
-              <td className="py-1.5 pr-3 text-tinta-2" title={i.descripcionObra}>
+            <tr key={i.codigo}>
+              <td className="font-mono text-tinta">{i.codigo}</td>
+              <td className="text-tinta-2" title={i.descripcionObra}>
                 {i.descripcionObra}
               </td>
-              <td className="py-1.5 pr-3 text-tinta-3">{i.unidad}</td>
-              <td className="cifra py-1.5 pr-3">{formatearRendimiento(i.rendimiento)}</td>
-              <td className="py-1.5 pr-3 text-right">
+              <td className="text-tinta-3">{i.unidad}</td>
+              <td className="cifra">{formatearRendimiento(i.rendimiento)}</td>
+              <td data-alinear="der">
                 <Moneda valor={i.precio} decimales={2} />
               </td>
-              <td className="py-1.5 pr-3 text-right">
+              <td data-alinear="der">
                 <Moneda valor={i.parcial} />
               </td>
-              <td className="py-1.5 pr-3">
+              <td>
                 <BadgeOrigenPrecio origen={i.origenPrecio} />
               </td>
             </tr>

@@ -28,6 +28,7 @@
     "@radix-ui/react-visually-hidden": "^1.2.11",
     "@tanstack/react-table": "^8.21.3",
     "@tanstack/react-virtual": "^3.14.9",
+    "@xyflow/react": "^12.11.2",
     "big.js": "^7.0.1",
     "cmdk": "^1.1.1",
     "csv-parse": "^7.0.2",

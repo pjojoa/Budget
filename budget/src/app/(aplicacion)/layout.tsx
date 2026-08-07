@@ -1,7 +1,7 @@
 import { redirect } from "next/navigation";
 import { cookies } from "next/headers";
 import { BarraSuperior } from "@/componentes/layout/BarraSuperior";
-import { NavegacionLateral } from "@/componentes/layout/NavegacionLateral";
+import { BarraLateral } from "@/componentes/layout/BarraLateral";
 import { COOKIE_USUARIO, obtenerContextoActual, obtenerContextoPrecioActual } from "@/datos/simulado/sesion";
 
 export default async function LayoutAplicacion({ children }: { children: React.ReactNode }) {
@@ -21,9 +21,7 @@ export default async function LayoutAplicacion({ children }: { children: React.R
         <span>Budget es una aplicación de escritorio — en pantallas menores a 768px algunas funciones pueden no verse completas.</span>
       </div>
       <div className="flex min-h-0 flex-1">
-        <aside className="w-48 shrink-0 border-r border-hairline bg-panel">
-          <NavegacionLateral />
-        </aside>
+        <BarraLateral />
         <main className="min-w-0 flex-1 overflow-auto bg-lienzo">{children}</main>
       </div>
       <div aria-live="polite" className="sr-only" id="region-anuncios" />

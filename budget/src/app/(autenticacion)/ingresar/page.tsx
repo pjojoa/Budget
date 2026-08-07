@@ -1,12 +1,12 @@
 import { iniciarSesionComo } from "@/datos/simulado/acciones";
 import { USUARIOS_DEMO } from "@/datos/simulado/usuarios";
+import type { Rol } from "@/datos/contexto";
 
-const ETIQUETA_ROL: Record<string, string> = {
+const ETIQUETA_ROL: Record<Rol, string> = {
+  DIRECTOR_NACIONAL_CPC: "Director Nacional CPC",
+  DIRECTOR_SUCURSAL_CPC: "Director Sucursal CPC",
   PRESUPUESTADOR: "Presupuestador",
-  DIRECTOR_CPC: "Director CPC",
-  ADMIN_MAESTROS: "Administrador de maestros",
-  DIRECCION: "Dirección / comité",
-  AUDITORIA: "Auditoría",
+  ADMIN_MAESTROS: "Admin Maestros",
 };
 
 export default function PaginaIngresar() {

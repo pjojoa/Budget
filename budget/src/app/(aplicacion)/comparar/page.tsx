@@ -1,8 +1,6 @@
 import { repositorioAnalisis, repositorioPresupuestos } from "@/datos";
 import { obtenerContextoActual } from "@/datos/simulado/sesion";
-import { CodigoCuenta } from "@/componentes/dominio/CodigoCuenta";
-import { Moneda } from "@/componentes/dominio/Moneda";
-import { Delta } from "@/componentes/dominio/Delta";
+import { TablaComparacion } from "@/componentes/dominio/TablaComparacion";
 
 export default async function PaginaComparadorLibre({
   searchParams,
@@ -55,36 +53,5 @@ async function ResultadoComparacion({ idA, idB }: { idA: string; idB: string }) 
     return <p className="text-xs text-tinta-2">Sin diferencias a nivel de capítulo.</p>;
   }
 
-  return (
-    <table className="w-full border-collapse text-xs">
-      <thead>
-        <tr className="border-b border-hairline text-left font-condensada uppercase tracking-wide text-tinta-3">
-          <th className="py-1.5 pr-3 font-medium">Código</th>
-          <th className="py-1.5 pr-3 font-medium">Descripción</th>
-          <th className="py-1.5 pr-3 text-right font-medium">A</th>
-          <th className="py-1.5 pr-3 text-right font-medium">B</th>
-          <th className="py-1.5 pr-3 text-right font-medium">Delta</th>
-        </tr>
-      </thead>
-      <tbody>
-        {filas.map((f) => (
-          <tr key={f.codigo} className="border-b border-hairline hover:bg-fila">
-            <td className="py-1.5 pr-3">
-              <CodigoCuenta codigo={f.codigo} />
-            </td>
-            <td className="py-1.5 pr-3 text-tinta-2">{f.descripcion}</td>
-            <td className="py-1.5 pr-3 text-right">
-              <Moneda valor={f.valorA} />
-            </td>
-            <td className="py-1.5 pr-3 text-right">
-              <Moneda valor={f.valorB} />
-            </td>
-            <td className="py-1.5 pr-3 text-right">
-              <Delta anterior={f.valorA} nuevo={f.valorB} />
-            </td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
-  );
+  return <TablaComparacion filas={filas} />;
 }
