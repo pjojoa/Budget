@@ -63,7 +63,7 @@ export function TablaArticulos({ filas, acciones, busquedaServidor }: Props) {
       placeholderBusqueda="Filtrar en esta página…"
       acciones={
         <>
-          <form method="GET" className="flex items-center gap-2">
+          <form key="busqueda-servidor" method="GET" className="flex items-center gap-2">
             <input
               name="q"
               defaultValue={busquedaServidor}
@@ -71,7 +71,9 @@ export function TablaArticulos({ filas, acciones, busquedaServidor }: Props) {
               className="w-56 rounded-sm border border-hairline bg-panel px-2 py-1.5 text-xs text-tinta outline-none focus:border-foco"
             />
           </form>
-          {acciones}
+          <div key="acciones-servidor" className="contents">
+            {acciones}
+          </div>
         </>
       }
     />

@@ -10,8 +10,12 @@ const ENLACES: { href: string; etiqueta: string; icono: ReactNode }[] = [
     etiqueta: "Presupuestos",
     icono: (
       <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" aria-hidden>
-        <rect x="3" y="2.5" width="10" height="11" rx="1.2" />
-        <path strokeLinecap="round" d="M5.5 5.5h5M5.5 8h5M5.5 10.5h3" />
+        <circle cx="8" cy="8" r="5.5" />
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M10.2 6.2C9.8 5.5 9 5.1 8 5.1c-1.4 0-2.3.7-2.3 1.7S6.6 8.3 8 8.3s2.3.5 2.3 1.5S9.4 11.4 8 11.4c-1 0-1.8-.4-2.2-1.1M8 3.8v1.3M8 11.4v1.3"
+        />
       </svg>
     ),
   },
@@ -30,8 +34,13 @@ const ENLACES: { href: string; etiqueta: string; icono: ReactNode }[] = [
     etiqueta: "Maestros",
     icono: (
       <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" aria-hidden>
-        <path strokeLinejoin="round" d="M3 3.5h4.5v9H3.8A.8.8 0 0 1 3 11.7V3.5Z" />
-        <path strokeLinejoin="round" d="M13 3.5H8.5v9H12.2a.8.8 0 0 0 .8-.8V3.5Z" />
+        <path
+          strokeLinejoin="round"
+          d="M3.2 8.2c0-1.2.5-2.3 1.5-3.1C5.5 4.4 6.7 4 8 4s2.5.4 3.3 1.1c1 .8 1.5 1.9 1.5 3.1v.3H3.2v-.3Z"
+        />
+        <path strokeLinecap="round" d="M2.5 8.5h11" />
+        <path strokeLinejoin="round" d="M5.2 8.5v2.2a.8.8 0 0 0 .8.8h.4M10.8 8.5v2.2a.8.8 0 0 1-.8.8h-.4" />
+        <path strokeLinecap="round" d="M8 4V2.8" />
       </svg>
     ),
   },
@@ -40,8 +49,11 @@ const ENLACES: { href: string; etiqueta: string; icono: ReactNode }[] = [
     etiqueta: "Documentación",
     icono: (
       <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" aria-hidden>
-        <path strokeLinejoin="round" d="M4 2.5h6.5L13 5v8.5a.8.8 0 0 1-.8.8H4a.8.8 0 0 1-.8-.8V3.3a.8.8 0 0 1 .8-.8Z" />
-        <path strokeLinecap="round" d="M5.5 7h5M5.5 9.5h5M5.5 12h3" />
+        <path
+          strokeLinejoin="round"
+          d="M8 3.2c-1.2-.7-2.6-1-4.2-.9v9.2c1.6-.1 3 .2 4.2.9 1.2-.7 2.6-1 4.2-.9V2.3c-1.6-.1-3 .2-4.2.9Z"
+        />
+        <path strokeLinecap="round" d="M8 3.2v9.2" />
       </svg>
     ),
   },

@@ -26,17 +26,19 @@ export default async function PaginaArticulos({
     <div className="flex items-center gap-3 text-xs text-tinta-2">
       {pagina > 1 && (
         <Link
+          key="anterior"
           href={`/maestros/articulos?${new URLSearchParams({ ...Object.fromEntries(params), pagina: String(pagina - 1) })}`}
           className="hover:text-tinta hover:underline"
         >
           ← Anterior
         </Link>
       )}
-      <span>
+      <span key="contador">
         Página {pagina} de {totalPaginas.toLocaleString("es-CO")}
       </span>
       {pagina < totalPaginas && (
         <Link
+          key="siguiente"
           href={`/maestros/articulos?${new URLSearchParams({ ...Object.fromEntries(params), pagina: String(pagina + 1) })}`}
           className="hover:text-tinta hover:underline"
         >
