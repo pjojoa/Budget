@@ -4,15 +4,17 @@ import { TituloDoc, Intro, Seccion, Nota } from "@/componentes/documentacion/Doc
 import { DiagramaEntidades } from "@/componentes/modelo-datos/DiagramaEntidades";
 
 export default function PaginaModeloDatos() {
-  const { articulos, cuentas, familias, sucursales, precios } = cargarMaestros();
+  const { articulos, cuentas, familias, sucursales, precios, manoObra } = cargarMaestros();
   const obras = cargarObras();
 
   return (
     <div className="mx-auto max-w-6xl p-6">
       <TituloDoc>Modelo de datos</TituloDoc>
       <Intro>
-        Hoy no hay una base de datos real conectada: los datos viven en los 5 CSV del maestro y en los JSON de cada
-        presupuesto, bajo <span className="font-mono text-tinta-3">budget/datos-mock/</span>. Los conteos de esta
+        Hoy no hay una base de datos real conectada: los datos viven en los 6 CSV del maestro y en los JSON de cada
+        presupuesto, bajo <span className="font-mono text-tinta-3">budget/datos-mock/</span> — ya no dependen de los
+        Excel originales de Marval (se transformaron una sola vez y esos archivos fuente se eliminaron de la raíz del
+        repo). Los conteos de esta
         página se leen en cada visita de esos mismos archivos — si el maestro o un presupuesto cambian, esta pantalla
         lo refleja sin que nadie la actualice a mano. El modelo relacional de abajo es el contrato de TypeScript
         actual (<span className="font-mono text-tinta-3">src/dominio/tipos.ts</span> y{" "}
@@ -56,6 +58,11 @@ export default function PaginaModeloDatos() {
               <td className="font-mono text-tinta-3">05_precios.csv</td>
               <td className="cifra">{precios.size.toLocaleString("es-CO")}</td>
             </tr>
+            <tr>
+              <td>Mano de obra (no inventariable)</td>
+              <td className="font-mono text-tinta-3">06_mano_obra_precios.csv</td>
+              <td className="cifra">{manoObra.length.toLocaleString("es-CO")}</td>
+            </tr>
           </tbody>
         </table>
 
@@ -96,8 +103,8 @@ export default function PaginaModeloDatos() {
 
         <Nota>
           Supabase todavía no está conectado — <span className="font-mono">src/datos/supabase/repositorioSupabase.ts</span> tiene
-          las firmas listas pero cada método lanza &quot;pendiente de implementar&quot;. Cuando se conecte, esta será
-          una sexta fuente y las de arriba dejarán de ser CSV/JSON en disco.
+          las firmas listas pero cada método lanza &quot;pendiente de implementar&quot;. Cuando se conecte, reemplazará a
+          las de arriba — dejarán de ser CSV/JSON en disco.
         </Nota>
       </Seccion>
 

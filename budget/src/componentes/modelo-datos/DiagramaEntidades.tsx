@@ -40,9 +40,13 @@ const NODE_TYPES = { entidad: NodoEntidad };
 
 // Disposición en capas (izquierda→derecha) según la dirección de las
 // relaciones, para que ningún borde tenga que cruzar hacia atrás:
-// Hallazgo/Precio (sin entrantes) → Obra → LineaPresupuesto/Sucursal →
-// Insumo/Cuenta → Articulo → Familia. ContextoAcceso queda aparte, arriba,
-// sin ninguna línea — es la única entidad que no persiste.
+// Hallazgo/Precio/ActividadManoObra (sin entrantes) → Obra →
+// LineaPresupuesto/Sucursal → Insumo/Cuenta → Articulo → Familia.
+// ActividadManoObra vive junto a Precio (mismo patrón: resuelve por código
+// contra Articulo y por nombre contra Sucursal, sin FK declarada — es el
+// catálogo de mano de obra "no inventariable", ver ArbolManoObra.tsx).
+// ContextoAcceso queda aparte, arriba, sin ninguna línea — es la única
+// entidad que no persiste.
 const NODOS: Node<DatosNodoEntidad>[] = [
   {
     id: "ContextoAcceso",
@@ -119,6 +123,21 @@ const NODOS: Node<DatosNodoEntidad>[] = [
     position: { x: 780, y: 580 },
     data: { nombre: "Precio (maestro)", origen: "cargarMaestros.ts", campos: ["clave: articulo|sucursal", "anioBase, precioAnio[4]"] },
   },
+  {
+    id: "ActividadManoObra",
+    type: "entidad",
+    position: { x: 1300, y: 580 },
+    data: {
+      nombre: "ActividadManoObra",
+      origen: "datos/tipos.ts",
+      campos: [
+        "codigo, descripcion",
+        "capituloCodigo, capitulo, familia",
+        "precios: Partial<Sucursal→Decimal>",
+        "noInventariable, articuloVinculado?",
+      ],
+    },
+  },
 ];
 
 function crearEdge(id: string, source: string, target: string, label: string, solida: boolean): Edge {
@@ -149,6 +168,8 @@ const EDGES: Edge[] = [
   crearEdge("articulo-familia", "Articulo", "Familia", "N—1", false),
   crearEdge("precio-articulo", "Precio", "Articulo", "por código", false),
   crearEdge("precio-sucursal", "Precio", "Sucursal", "por nombre", false),
+  crearEdge("manoobra-articulo", "ActividadManoObra", "Articulo", "noInventariable", false),
+  crearEdge("manoobra-sucursal", "ActividadManoObra", "Sucursal", "precios por nombre", false),
 ];
 
 /**
