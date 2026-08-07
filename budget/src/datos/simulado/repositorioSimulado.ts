@@ -620,11 +620,34 @@ export const repositorioMaestros: RepositorioMaestros = {
     await latencia();
     if (!puedeEditarMaestros(ctx)) return { ok: false, motivo: "SIN_PERMISO" };
     const { cuentas } = cargarMaestros();
-    const indice = cuentas.findIndex((c) => c.codigo === codigo);
-    if (indice === -1) return { ok: false, motivo: "CUENTA_INEXISTENTE" };
-    if (cuentas.some((c) => c.codigoPadre === codigo)) return { ok: false, motivo: "TIENE_HIJOS" };
-    if (codigosCuentaEnUso().has(codigo)) return { ok: false, motivo: "EN_USO" };
-    cuentas.splice(indice, 1);
+    if (!cuentas.some((c) => c.codigo === codigo)) return { ok: false, motivo: "CUENTA_INEXISTENTE" };
+
+    const porPadre = new Map<string, string[]>();
+    for (const c of cuentas) {
+      if (!c.codigoPadre) continue;
+      const hijos = porPadre.get(c.codigoPadre) ?? [];
+      hijos.push(c.codigo);
+      porPadre.set(c.codigoPadre, hijos);
+    }
+    const subarbol = new Set<string>([codigo]);
+    const pila = [codigo];
+    while (pila.length > 0) {
+      const actual = pila.pop()!;
+      for (const hijo of porPadre.get(actual) ?? []) {
+        if (subarbol.has(hijo)) continue;
+        subarbol.add(hijo);
+        pila.push(hijo);
+      }
+    }
+
+    const enUso = codigosCuentaEnUso();
+    for (const c of subarbol) {
+      if (enUso.has(c)) return { ok: false, motivo: "EN_USO" };
+    }
+
+    for (let i = cuentas.length - 1; i >= 0; i--) {
+      if (subarbol.has(cuentas[i].codigo)) cuentas.splice(i, 1);
+    }
     return { ok: true };
   },
 
@@ -759,6 +782,11 @@ export const repositorioMaestros: RepositorioMaestros = {
     if (!preciosManuales.has(clave)) return { ok: false, motivo: "PRECIO_INEXISTENTE" };
     preciosManuales.delete(clave);
     return { ok: true };
+  },
+
+  async listarManoObra() {
+    await latencia();
+    return cargarMaestros().manoObra;
   },
 };
 

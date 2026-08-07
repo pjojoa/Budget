@@ -56,6 +56,7 @@ export const repositorioMaestros: RepositorioMaestros = {
   actualizarSucursal: pendiente,
   fijarPrecioManual: pendiente,
   eliminarPrecioManual: pendiente,
+  listarManoObra: pendiente,
 };
 
 export const repositorioSesion: RepositorioSesion = {

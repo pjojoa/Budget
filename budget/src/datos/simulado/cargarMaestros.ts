@@ -2,7 +2,7 @@ import "server-only";
 import { readFileSync } from "node:fs";
 import path from "node:path";
 import { parse } from "csv-parse/sync";
-import type { Articulo, Cuenta, Familia, SucursalCatalogo } from "../tipos";
+import type { ActividadManoObra, Articulo, Cuenta, Familia, SucursalCatalogo } from "../tipos";
 import type { Nivel } from "@/dominio/codigo";
 import type { Decimal } from "@/dominio/decimal";
 import type { PlantillaPresupuesto, Sucursal } from "@/dominio/tipos";
@@ -43,6 +43,7 @@ interface MaestrosCargados {
    * del rango del catálogo.
    */
   preciosManuales: Map<string, Decimal>;
+  manoObra: ActividadManoObra[];
 }
 
 // `globalThis`, no un `let` de módulo: en `next dev` cada ruta puede
@@ -56,7 +57,7 @@ declare global {
   var __budgetMaestrosCargados: MaestrosCargados | undefined;
 }
 
-/** Carga los 5 CSV de maestros una sola vez por proceso servidor (~37.500 filas). */
+/** Carga los 6 CSV de maestros una sola vez por proceso servidor (~38.300 filas). */
 export function cargarMaestros(): MaestrosCargados {
   if (globalThis.__budgetMaestrosCargados) return globalThis.__budgetMaestrosCargados;
 
@@ -65,6 +66,7 @@ export function cargarMaestros(): MaestrosCargados {
   const filasCuentas = leerCsv<Record<string, string>>("04_cuentas.csv");
   const filasSucursales = leerCsv<Record<string, string>>("01_sucursales.csv");
   const filasPrecios = leerCsv<Record<string, string>>("05_precios.csv");
+  const filasManoObra = leerCsv<Record<string, string>>("06_mano_obra_precios.csv");
 
   const nombrePorFamilia = new Map(filasFamilias.map((f) => [f.codigo, f.nombre]));
 
@@ -127,6 +129,33 @@ export function cargarMaestros(): MaestrosCargados {
     });
   }
 
+  const SUCURSALES_MANO_OBRA: Sucursal[] = [
+    "BARRANQUILLA",
+    "BOGOTA",
+    "BUCARAMANGA",
+    "CALI",
+    "CARTAGENA",
+    "RICAURTE",
+    "ZIPAQUIRA",
+  ];
+
+  const manoObra: ActividadManoObra[] = filasManoObra.map((f) => {
+    const precios: Partial<Record<Sucursal, Decimal>> = {};
+    for (const s of SUCURSALES_MANO_OBRA) {
+      const v = f[`precio_${s.toLowerCase()}`];
+      if (v && v.trim() !== "") precios[s] = v as Decimal;
+    }
+    return {
+      codigo: f.codigo,
+      descripcion: f.descripcion,
+      capitulo: f.capitulo,
+      familia: f.familia,
+      unidad: f.unidad,
+      anio: Number(f.anio),
+      precios,
+    };
+  });
+
   globalThis.__budgetMaestrosCargados = {
     articulos,
     cuentas,
@@ -134,6 +163,7 @@ export function cargarMaestros(): MaestrosCargados {
     sucursales,
     precios,
     preciosManuales: new Map(),
+    manoObra,
   };
   return globalThis.__budgetMaestrosCargados;
 }

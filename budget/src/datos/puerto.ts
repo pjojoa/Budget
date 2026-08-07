@@ -19,6 +19,7 @@ import type { Decimal } from "@/dominio/decimal";
 import type { Insumo, LineaPresupuesto, FilaExplosion } from "@/dominio/tipos";
 import type { ContextoAcceso } from "./contexto";
 import type {
+  ActividadManoObra,
   Articulo,
   CabeceraPresupuesto,
   ConsultaArticulos,
@@ -127,11 +128,11 @@ export interface RepositorioMaestros {
     | { ok: true; cuenta: Cuenta }
     | { ok: false; motivo: "SIN_PERMISO" | "CODIGO_INVALIDO" | "CODIGO_DUPLICADO" | "PADRE_INEXISTENTE" }
   >;
-  /** Bloqueada si la cuenta tiene hijas en el maestro o está referenciada por un presupuesto cargado. */
+  /** Elimina la cuenta y su subárbol. Bloqueada si alguna está referenciada por un presupuesto cargado. */
   eliminarCuenta(
     ctx: ContextoAcceso,
     codigo: string,
-  ): Promise<{ ok: true } | { ok: false; motivo: "SIN_PERMISO" | "CUENTA_INEXISTENTE" | "TIENE_HIJOS" | "EN_USO" }>;
+  ): Promise<{ ok: true } | { ok: false; motivo: "SIN_PERMISO" | "CUENTA_INEXISTENTE" | "EN_USO" }>;
 
   listarFamilias(ctx: ContextoAcceso): Promise<Familia[]>;
   crearFamilia(
@@ -192,6 +193,15 @@ export interface RepositorioMaestros {
     sucursal: Sucursal,
     anio: number,
   ): Promise<{ ok: true } | { ok: false; motivo: "SIN_PERMISO" | "PRECIO_INEXISTENTE" }>;
+
+  /**
+   * Catálogo de mano de obra "no inventariable" (jornales/comisiones que se
+   * cotizan por sucursal, no artículos del maestro de materiales). Sin
+   * paginar como `listarArbolCuentas`/`listarFamilias`: es un catálogo
+   * completo del tamaño de un maestro (770 filas), no un listado de líneas
+   * de presupuesto.
+   */
+  listarManoObra(ctx: ContextoAcceso): Promise<ActividadManoObra[]>;
 }
 
 export interface RepositorioSesion {

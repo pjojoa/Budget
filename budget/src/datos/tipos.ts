@@ -195,6 +195,26 @@ export interface SucursalCatalogo {
   activa: boolean;
 }
 
+/**
+ * Actividad de mano de obra "no inventariable": un ítem de jornal/comisión
+ * que se cotiza por sucursal (p. ej. "Comisión día de topografía"), a
+ * diferencia de los `Articulo` del maestro de materiales — no tiene
+ * insumos propios ni se referencia como MO/TC/EQ dentro de un APU. `familia`
+ * aquí es la agrupación propia de este catálogo (viene del maestro de
+ * origen como "subcapítulo"), no el código de `Familia` del maestro de
+ * artículos — son taxonomías distintas aunque compartan algunos nombres.
+ */
+export interface ActividadManoObra {
+  codigo: string;
+  descripcion: string;
+  capitulo: string;
+  familia: string;
+  unidad: string;
+  anio: number;
+  /** Precio CON IVA por sucursal. Ausente = sin dato, nunca 0. */
+  precios: Partial<Record<Sucursal, Decimal>>;
+}
+
 export interface Usuario {
   id: string;
   nombre: string;
