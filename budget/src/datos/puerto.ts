@@ -142,8 +142,11 @@ export interface RepositorioMaestros {
   actualizarFamilia(
     ctx: ContextoAcceso,
     codigo: string,
-    cambios: { nombre?: string; tipo?: string },
-  ): Promise<{ ok: true; familia: Familia } | { ok: false; motivo: "SIN_PERMISO" | "FAMILIA_INEXISTENTE" }>;
+    cambios: { nombre?: string; tipo?: string; factorAjusteAnual?: Decimal | null },
+  ): Promise<
+    | { ok: true; familia: Familia }
+    | { ok: false; motivo: "SIN_PERMISO" | "FAMILIA_INEXISTENTE" | "VALOR_INVALIDO" }
+  >;
   /** Bloqueada si algún artículo del maestro sigue referenciando esta familia. */
   eliminarFamilia(
     ctx: ContextoAcceso,

@@ -94,6 +94,8 @@ export function cargarMaestros(): MaestrosCargados {
     nombre: f.nombre,
     tipo: f.tipo || "",
     nArticulos: Number(f.n_articulos || 0),
+    factorAjusteAnual:
+      f.factor_ajuste_anual && f.factor_ajuste_anual.trim() !== "" ? (f.factor_ajuste_anual as Decimal) : null,
   }));
 
   const cuentas: Cuenta[] = filasCuentas.map((f) => ({

@@ -661,7 +661,7 @@ export const repositorioMaestros: RepositorioMaestros = {
     if (!puedeEditarMaestros(ctx)) return { ok: false, motivo: "SIN_PERMISO" };
     const { familias } = cargarMaestros();
     if (familias.some((f) => f.codigo === codigo)) return { ok: false, motivo: "CODIGO_DUPLICADO" };
-    const familia: Familia = { codigo, nombre, tipo, nArticulos: 0 };
+    const familia: Familia = { codigo, nombre, tipo, nArticulos: 0, factorAjusteAnual: null };
     familias.push(familia);
     return { ok: true, familia };
   },
@@ -674,6 +674,20 @@ export const repositorioMaestros: RepositorioMaestros = {
     if (!familia) return { ok: false, motivo: "FAMILIA_INEXISTENTE" };
     if (cambios.nombre !== undefined) familia.nombre = cambios.nombre;
     if (cambios.tipo !== undefined) familia.tipo = cambios.tipo;
+    if (cambios.factorAjusteAnual !== undefined) {
+      if (cambios.factorAjusteAnual === null) {
+        familia.factorAjusteAnual = null;
+      } else {
+        let valor: Decimal;
+        try {
+          valor = d(cambios.factorAjusteAnual);
+        } catch {
+          return { ok: false, motivo: "VALOR_INVALIDO" };
+        }
+        if (!esMayorQue(valor, CERO)) return { ok: false, motivo: "VALOR_INVALIDO" };
+        familia.factorAjusteAnual = valor;
+      }
+    }
     return { ok: true, familia };
   },
 

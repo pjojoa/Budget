@@ -37,7 +37,7 @@ export async function crearCuentaAccion(cuenta: {
 
 export async function eliminarCuentaAccion(
   codigo: string,
-): Promise<{ ok: true } | { ok: false; motivo: "SIN_PERMISO" | "CUENTA_INEXISTENTE" | "TIENE_HIJOS" | "EN_USO" }> {
+): Promise<{ ok: true } | { ok: false; motivo: "SIN_PERMISO" | "CUENTA_INEXISTENTE" | "EN_USO" }> {
   const ctx = await obtenerContextoActual();
   const resultado = await repositorioMaestros.eliminarCuenta(ctx, codigo);
   if (resultado.ok) revalidatePath("/maestros/cuentas");
@@ -61,8 +61,11 @@ export async function crearFamiliaAccion(familia: {
 
 export async function actualizarFamiliaAccion(
   codigo: string,
-  cambios: { nombre?: string; tipo?: string },
-): Promise<{ ok: true; familia: Familia } | { ok: false; motivo: "SIN_PERMISO" | "FAMILIA_INEXISTENTE" }> {
+  cambios: { nombre?: string; tipo?: string; factorAjusteAnual?: Decimal | null },
+): Promise<
+  | { ok: true; familia: Familia }
+  | { ok: false; motivo: "SIN_PERMISO" | "FAMILIA_INEXISTENTE" | "VALOR_INVALIDO" }
+> {
   const ctx = await obtenerContextoActual();
   const resultado = await repositorioMaestros.actualizarFamilia(ctx, codigo, cambios);
   if (resultado.ok) {

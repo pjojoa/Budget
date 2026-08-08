@@ -179,6 +179,15 @@ export interface Familia {
   /** "Material" | "Mano de obra" | vacío — tal como viene del maestro. */
   tipo: string;
   nArticulos: number;
+  /**
+   * Multiplicador para proyectar el precio de esta familia al año
+   * siguiente (p. ej. 1.065 = +6,5%). La proyección de precios sucede
+   * por familia, no por artículo individual: `precio_anio_siguiente =
+   * precio_anio_actual * factorAjusteAnual`. `null` = la familia no
+   * tiene un factor definido en el maestro de ajustes (p. ej. códigos
+   * especiales como OAD, 441, 523560).
+   */
+  factorAjusteAnual: Decimal | null;
 }
 
 export interface PrecioResuelto {
