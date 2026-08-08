@@ -2,7 +2,15 @@ import "server-only";
 import { readFileSync } from "node:fs";
 import path from "node:path";
 import { parse } from "csv-parse/sync";
-import type { ActividadManoObra, Articulo, Cuenta, Familia, SucursalCatalogo } from "../tipos";
+import type {
+  ActividadManoObra,
+  AnioCatalogoMaterial,
+  Articulo,
+  Cuenta,
+  Familia,
+  MaterialCatalogo,
+  SucursalCatalogo,
+} from "../tipos";
 import type { Nivel } from "@/dominio/codigo";
 import type { Decimal } from "@/dominio/decimal";
 import type { PlantillaPresupuesto, Sucursal } from "@/dominio/tipos";
@@ -44,6 +52,7 @@ interface MaestrosCargados {
    */
   preciosManuales: Map<string, Decimal>;
   manoObra: ActividadManoObra[];
+  materiales: MaterialCatalogo[];
 }
 
 // `globalThis`, no un `let` de módulo: en `next dev` cada ruta puede
@@ -57,7 +66,7 @@ declare global {
   var __budgetMaestrosCargados: MaestrosCargados | undefined;
 }
 
-/** Carga los 6 CSV de maestros una sola vez por proceso servidor (~38.300 filas). */
+/** Carga los 7 CSV de maestros una sola vez por proceso servidor (~54.000 filas). */
 export function cargarMaestros(): MaestrosCargados {
   if (globalThis.__budgetMaestrosCargados) return globalThis.__budgetMaestrosCargados;
 
@@ -67,6 +76,7 @@ export function cargarMaestros(): MaestrosCargados {
   const filasSucursales = leerCsv<Record<string, string>>("01_sucursales.csv");
   const filasPrecios = leerCsv<Record<string, string>>("05_precios.csv");
   const filasManoObra = leerCsv<Record<string, string>>("06_mano_obra_precios.csv");
+  const filasMateriales = leerCsv<Record<string, string>>("07_catalogo_materiales.csv");
 
   const nombrePorFamilia = new Map(filasFamilias.map((f) => [f.codigo, f.nombre]));
 
@@ -133,19 +143,19 @@ export function cargarMaestros(): MaestrosCargados {
     });
   }
 
-  const SUCURSALES_MANO_OBRA: Sucursal[] = [
+  const SUCURSALES_CATALOGO: Sucursal[] = [
     "BARRANQUILLA",
     "BOGOTA",
     "BUCARAMANGA",
     "CALI",
     "CARTAGENA",
-    "RICAURTE",
+    "SANTA_MARTA",
     "ZIPAQUIRA",
   ];
 
   const manoObra: ActividadManoObra[] = filasManoObra.map((f) => {
     const precios: Partial<Record<Sucursal, Decimal>> = {};
-    for (const s of SUCURSALES_MANO_OBRA) {
+    for (const s of SUCURSALES_CATALOGO) {
       const v = f[`precio_${s.toLowerCase()}`];
       if (v && v.trim() !== "") precios[s] = v as Decimal;
     }
@@ -167,6 +177,36 @@ export function cargarMaestros(): MaestrosCargados {
     };
   });
 
+  const ANIOS_CATALOGO_MATERIAL: AnioCatalogoMaterial[] = [2023, 2024, 2025, 2026, 2027, 2028, 2029, 2030];
+
+  // Formato largo (una fila por material×sucursal, igual que 05_precios.csv)
+  // pivotado a un registro por material con precios[sucursal][año] anidado —
+  // el propio catálogo ya trae los 8 años reales, sin anio_base que resolver.
+  const materialesPorCodigo = new Map<string, MaterialCatalogo>();
+  for (const f of filasMateriales) {
+    let material = materialesPorCodigo.get(f.codigo);
+    if (!material) {
+      const sinFamilia = !f.familia || f.familia === "nan";
+      material = {
+        codigo: f.codigo,
+        descripcion: f.descripcion,
+        familia: f.familia,
+        familiaNombre: sinFamilia ? "Sin familia" : (nombrePorFamilia.get(f.familia) ?? f.familia),
+        unidad: f.unidad,
+        estado: f.estado === "CADUCADO" ? "CADUCADO" : "EXISTENTE",
+        precios: {},
+      };
+      materialesPorCodigo.set(f.codigo, material);
+    }
+    const preciosPorAnio: Partial<Record<AnioCatalogoMaterial, Decimal>> = {};
+    for (const anio of ANIOS_CATALOGO_MATERIAL) {
+      const v = f[`precio_${anio}`];
+      if (v && v.trim() !== "") preciosPorAnio[anio] = v as Decimal;
+    }
+    material.precios[f.sucursal as Sucursal] = preciosPorAnio;
+  }
+  const materiales = [...materialesPorCodigo.values()];
+
   globalThis.__budgetMaestrosCargados = {
     articulos,
     cuentas,
@@ -175,6 +215,7 @@ export function cargarMaestros(): MaestrosCargados {
     precios,
     preciosManuales: new Map(),
     manoObra,
+    materiales,
   };
   return globalThis.__budgetMaestrosCargados;
 }

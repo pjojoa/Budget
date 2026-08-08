@@ -802,6 +802,31 @@ export const repositorioMaestros: RepositorioMaestros = {
     await latencia();
     return cargarMaestros().manoObra;
   },
+
+  async buscarMateriales(_ctx, consulta) {
+    await latencia();
+    const { materiales } = cargarMaestros();
+    let filtrados = materiales;
+
+    if (consulta.texto) {
+      const t = consulta.texto.toLowerCase();
+      filtrados = filtrados.filter(
+        (m) => m.codigo.toLowerCase().includes(t) || m.descripcion.toLowerCase().includes(t),
+      );
+    }
+    if (consulta.familia) filtrados = filtrados.filter((m) => m.familia === consulta.familia);
+    if (consulta.soloExistentes) filtrados = filtrados.filter((m) => m.estado === "EXISTENTE");
+
+    const pagina = consulta.pagina ?? 1;
+    const porPagina = consulta.porPagina ?? 50;
+    const inicio = (pagina - 1) * porPagina;
+    return {
+      filas: filtrados.slice(inicio, inicio + porPagina),
+      total: filtrados.length,
+      pagina,
+      porPagina,
+    };
+  },
 };
 
 // ---------------------------------------------------------------------------

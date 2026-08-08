@@ -1,4 +1,4 @@
-﻿codigo,descripcion,capitulo_codigo,capitulo,familia,unidad,anio,no_inventariable,precio_barranquilla,precio_bogota,precio_bucaramanga,precio_cali,precio_cartagena,precio_ricaurte,precio_zipaquira
+﻿codigo,descripcion,capitulo_codigo,capitulo,familia,unidad,anio,no_inventariable,precio_barranquilla,precio_bogota,precio_bucaramanga,precio_cali,precio_cartagena,precio_santa_marta,precio_zipaquira
 A01,Comisión Dia de topografía,A,"PRELIMINARES, EXCAVACION Y RELLENOS",TOPOGRAFIA,UN,2026,01101,210608.28,120058.05,180952.24,554421.71,236934.31,138066.76,138066.76
 A10,Cerramiento en lámina Lisa Galvanizada Todo Costo,A,"PRELIMINARES, EXCAVACION Y RELLENOS",CERRAMIENTOS,ML,2026,60729,50681.65,,,,55749.82,,
 A12,Desmonte Cerramiento polisombra,A,"PRELIMINARES, EXCAVACION Y RELLENOS",CERRAMIENTOS,ML,2026,70395,1992.74,2862.74,2513.92,2447.01,2192.01,3292.15,3292.15

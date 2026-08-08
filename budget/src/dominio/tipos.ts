@@ -8,7 +8,7 @@ export type Sucursal =
   | "CARTAGENA"
   | "CALI"
   | "ZIPAQUIRA"
-  | "RICAURTE";
+  | "SANTA_MARTA";
 
 export type EstadoPresupuesto = "BORRADOR" | "EN_REVISION" | "APROBADO" | "SUPERSEDIDO";
 

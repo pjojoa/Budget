@@ -245,6 +245,40 @@ export interface ActividadManoObra {
   articuloVinculado: { descripcion: string; familiaCodigo: string; familiaNombre: string } | null;
 }
 
+/**
+ * Años cubiertos por el catálogo de materiales (`ZPRECIOS OG MARVAL`):
+ * 2023-2026 son precios reales donde existen (o proyectados desde el
+ * último año real usando el factor de la familia); 2027-2030 son siempre
+ * proyección compuesta sobre el precio de 2026 ya validado.
+ */
+export type AnioCatalogoMaterial = 2023 | 2024 | 2025 | 2026 | 2027 | 2028 | 2029 | 2030;
+
+/**
+ * Catálogo de materiales para consulta al armar un APU — un registro por
+ * código, con el precio resuelto por (sucursal, año). A diferencia de
+ * `Precio` (formato ancho anio_base+4), aquí cada año es explícito porque
+ * la fuente ya trae 2023-2030 calculados; no hay `anio_base` que resolver.
+ */
+export interface MaterialCatalogo {
+  codigo: string;
+  descripcion: string;
+  familia: string;
+  familiaNombre: string;
+  unidad: string;
+  /** "CADUCADO": la fuente ya no lo cotiza — se muestra, nunca se oculta. */
+  estado: "EXISTENTE" | "CADUCADO";
+  /** precios[sucursal][año] — ausente = sin dato para esa combinación, nunca 0. */
+  precios: Partial<Record<Sucursal, Partial<Record<AnioCatalogoMaterial, Decimal>>>>;
+}
+
+export interface ConsultaMateriales {
+  texto?: string;
+  familia?: string;
+  soloExistentes?: boolean;
+  pagina?: number;
+  porPagina?: number;
+}
+
 export interface Usuario {
   id: string;
   nombre: string;

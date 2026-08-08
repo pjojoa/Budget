@@ -24,6 +24,7 @@ import type {
   CabeceraPresupuesto,
   ConsultaArticulos,
   ConsultaCuentas,
+  ConsultaMateriales,
   Cuenta,
   Familia,
   FiltroExplosion,
@@ -34,6 +35,7 @@ import type {
   IdPresupuesto,
   LoteCambios,
   MarcaVersion,
+  MaterialCatalogo,
   Pagina,
   PrecioResuelto,
   ResultadoGuardado,
@@ -205,6 +207,13 @@ export interface RepositorioMaestros {
    * de presupuesto.
    */
   listarManoObra(ctx: ContextoAcceso): Promise<ActividadManoObra[]>;
+
+  /**
+   * Catálogo de materiales para consulta al armar un APU (`ZPRECIOS OG
+   * MARVAL`, 7.869 artículos) — sí se pagina: es del tamaño de un maestro
+   * de artículos, no de un catálogo de referencia como mano de obra.
+   */
+  buscarMateriales(ctx: ContextoAcceso, consulta: ConsultaMateriales): Promise<Pagina<MaterialCatalogo>>;
 }
 
 export interface RepositorioSesion {
